@@ -1,0 +1,83 @@
+[Library]
+others = $MODEL_TECH/../modelsim.ini
+SmartFusion2 = G:/Microsemi/Libero_SoC_v11.7/Designer/lib/modelsim/precompiled/vlog/SmartFusion2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+postlayout = ../designer/test_4463andcpuopration/simulation/postlayout
+CORERSENC_LIB = CORERSENC_LIB
+COREAPB3_LIB = COREAPB3_LIB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+syncad_vhdl_lib = G:\Microsemi\Libero_SoC_v11.7\Designer/lib/actel/syncad_vhdl_lib
+
+[vcom]
+VHDL93 = 1
+
+[vsim]
+IterationLimit = 5000

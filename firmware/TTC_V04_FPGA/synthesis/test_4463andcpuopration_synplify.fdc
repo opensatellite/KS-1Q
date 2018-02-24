@@ -1,0 +1,8 @@
+#0 define_false_path
+#1001 define_clock {n:divider_0.Bit_Count_16dec[3]} -name {divider|Bit_Count_16dec_inferred_clock[3]} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_0} -rise {0.000000} -fall {5.000000}
+#1002 define_clock {n:OSC_0.N_XTLOSC_CLKOUT} -name {test_4463andcpuopration_OSC_0_OSC|N_XTLOSC_CLKOUT_inferred_clock} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_1} -rise {0.000000} -fall { . . . 
+#1003 define_clock {n:test_4463andcpuopration_MSS_0.SPI_0_CLK_M2F} -name {test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_2} -rise {0.0 . . . 
+#1004 define_clock {p:RX_GPIO1} -name {test_4463andcpuopration|RX_GPIO1} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_3} -rise {0.000000} -fall {5.000000}
+#1005 define_clock {n:divider_0.Bit_Count_2dec} -name {divider|Bit_Count_2dec_inferred_clock} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_4} -rise {0.000000} -fall {5.000000}
+#1006 define_clock {p:TX_GPIO1} -name {test_4463andcpuopration|TX_GPIO1} -ref_rise {0.000000} -ref_fall {5.000000} -uncertainty {0.000000} -period {10.000000} -clockgroup {Inferred_clkgroup_5} -rise {0.000000} -fall {5.000000}
+define_attribute {i:OSC_0}  {syn_noprune} 1

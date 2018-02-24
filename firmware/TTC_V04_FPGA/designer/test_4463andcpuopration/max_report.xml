@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>test_4463andcpuopration</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>SmartFusion2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2S010</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>144 TQ</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>-40 - 100 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Min Operating Conditions</cell>
+ <cell>BEST - 1.26 V - -40 C</cell>
+</row>
+<row>
+ <cell>Max Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 100 C</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>Primary</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Period (ns)</cell>
+ <cell>Frequency (MHz)</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>External Hold (ns)</cell>
+ <cell>Min Clock-To-Out (ns)</cell>
+ <cell>Max Clock-To-Out (ns)</cell>
+</header>
+<row>
+ <cell>FCCC_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>8.243</cell>
+ <cell>121.315</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>0.637</cell>
+ <cell>0.870</cell>
+ <cell>6.399</cell>
+ <cell>15.145</cell>
+</row>
+<row>
+ <cell>OSC_0/I_XTLOSC:CLKOUT</cell>
+ <cell>1.406</cell>
+ <cell>711.238</cell>
+ <cell>62.500</cell>
+ <cell>16.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>RX_GPIO1</cell>
+ <cell>9.566</cell>
+ <cell>104.537</cell>
+ <cell>1000.000</cell>
+ <cell>1.000</cell>
+ <cell>5.365</cell>
+ <cell>0.872</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>TX_GPIO1</cell>
+ <cell>2.867</cell>
+ <cell>348.797</cell>
+ <cell>1000.000</cell>
+ <cell>1.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>4.450</cell>
+ <cell>9.534</cell>
+</row>
+<row>
+ <cell>divider_0/Bit_Count_16dec[3]:Q</cell>
+ <cell>7.271</cell>
+ <cell>137.533</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>divider_0/Bit_Count_2dec:Q</cell>
+ <cell>3.292</cell>
+ <cell>303.767</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>test_4463andcpuopration_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:SPI0_CLK_OUT</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>5.926</cell>
+ <cell>-2.776</cell>
+ <cell>2.337</cell>
+ <cell>7.665</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Min Delay (ns)</cell>
+ <cell>Max Delay (ns)</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+</table>
+</section>
+</doc>

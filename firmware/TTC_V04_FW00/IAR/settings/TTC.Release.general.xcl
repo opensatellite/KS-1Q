@@ -1,0 +1,13 @@
+"C:\Workprogram\IAR\arm\bin\armproc.dll" 
+
+"C:\Workprogram\IAR\arm\bin\armjlink.dll" 
+
+"F:\Work\M2S010 OS\IAR\README.txt" 
+
+--plugin "C:\Workprogram\IAR\arm\bin\armbat.dll" 
+
+--flash_loader "C:\Workprogram\IAR\arm\config\flashloader\Microsemi\FlashM2Sxxx.board" 
+
+
+
+

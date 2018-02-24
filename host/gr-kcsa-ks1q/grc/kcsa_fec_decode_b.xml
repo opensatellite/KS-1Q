@@ -1,0 +1,50 @@
+<block>
+  <name>FEC Decode</name>
+  <key>kcsa_fec_decode_b</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.fec_decode_b($frame_len, False, False, $rs_dual_basis, $pass_all)</make>
+  <param>
+    <name>Frame Length</name>
+    <key>frame_len</key>
+    <value>223</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>RS Dual basis</name>
+    <key>rs_dual_basis</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+	<name>On</name>
+	<key>True</key>
+    </option>
+    <option>
+	<name>Off</name>
+	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Pass All</name>
+    <key>pass_all</key>
+    <value>False</value>
+    <type>bool</type>
+    <hide>#if str($pass_all) == 'False' then 'part' else 'none'#</hide>
+    <option>
+	<name>On</name>
+	<key>True</key>
+    </option>
+    <option>
+	<name>Off</name>
+	<key>False</key>
+    </option>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

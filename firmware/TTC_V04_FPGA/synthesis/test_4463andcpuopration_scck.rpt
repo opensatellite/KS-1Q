@@ -1,0 +1,33 @@
+# Synopsys Constraint Checker(syntax only), version mapact, Build 1659R, built Dec 10 2015
+# Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Mon Oct 31 14:45:31 2016
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "test_4463andcpuopration"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+Start                                                                Requested     Requested     Clock        Clock              
+Clock                                                                Frequency     Period        Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------
+divider|Bit_Count_2dec_inferred_clock                                100.0 MHz     10.000        inferred     Inferred_clkgroup_4
+divider|Bit_Count_16dec_inferred_clock[3]                            100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock             100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+test_4463andcpuopration_OSC_0_OSC|N_XTLOSC_CLKOUT_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+test_4463andcpuopration|RX_GPIO1                                     100.0 MHz     10.000        inferred     Inferred_clkgroup_3
+test_4463andcpuopration|TX_GPIO1                                     100.0 MHz     10.000        inferred     Inferred_clkgroup_5
+=================================================================================================================================

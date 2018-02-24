@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<block>
+  <name>CCSDS TC</name>
+  <key>kcsa_ccsds_tc</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.ccsds_tc($spacecraft_id, $version, $decim, $randomizer, $sine_samples, $acq_samples)</make>
+  <param>
+    <name>Spacecraft ID</name>
+    <key>spacecraft_id</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Version</name>
+    <key>version</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Decimation</name>
+    <key>decim</key>
+    <value>16</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Randomizer</name>
+    <key>randomizer</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+    	<name>On</name>
+    	<key>True</key>
+    </option>
+    <option>
+    	<name>Off</name>
+    	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Sine_samples</name>
+    <key>sine_samples</key>
+    <value>1024</value>
+  	<type>int</type>
+  </param>
+  <param>
+    <name>Acq_samples</name>
+    <key>acq_samples</key>
+    <value>64</value>
+    <type>int</type>
+  </param>
+  <check>$decim &gt;= 0</check>
+  <check>$sine_samples &gt;= 0</check>
+  <check>$acq_samples &gt;= 16</check>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <sink>
+    <name>pdu</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+  <doc>
+CCSDS Telecommand controller
+Send kiss message through TC uplink.
+|-----------KISS DATA------------|
+|---32 * CLTU = 224 bytes--------|
+Data will be truncated if too long
+while there's no data, it sends IDLE sequence (01010101).
+Input port is used for rate limiting
+  </doc>
+</block>

@@ -1,0 +1,22 @@
+data DESIGN test_4463andcpuopration
+data HPATH 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration'
+data CPATH 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/constraint/io'
+data CDIR 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/constraint'
+data ETYPE IO
+data FAM SmartFusion2
+data DIE PA4M1000_S
+data PACKAGE tq144
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE OLD
+data AFL 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration.afl'
+data ADL 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration.adl'
+data LOC 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration.loc'
+data SEG 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration.seg'
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+

@@ -1,0 +1,23 @@
+data DESIGN test_4463andcpuopration
+data HPATH 'C:/Users/Administrator/Desktop/v03workplace/designer/test_4463andcpuopration'
+data FPCPATH 'C:/Users/Administrator/Desktop/v03workplace/constraint/fp'
+data IOCPATH 'C:/Users/Administrator/Desktop/v03workplace/constraint/io'
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE tq144
+data IO_DEFT_STD LVCMOS33
+data RESTRICTPROBEPINS 0
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data ENABLE_AUTO_VERCHK 2
+data ALICUTIL_BD 42
+data RECORD_QUALIFIED_PATHS 0
+data ORPHAN_HYDRA_TOOL HYDRA_netlist_viewer
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data BLOCK_INSTANTIATION 1
+data FP_PDC_0 'C:/Users/Administrator/Desktop/v03workplace/constraint/fp/test_4463andcpuopration.fp.pdc'
+

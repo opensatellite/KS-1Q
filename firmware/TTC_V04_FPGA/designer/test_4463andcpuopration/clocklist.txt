@@ -1,0 +1,6 @@
+"OSC_0/I_XTLOSC:CLKOUT",62.5,"OSC_0/I_XTLOSC:CLKOUT","OSC_0/I_XTLOSC:CLKOUT"
+"RX_GPIO1",100000,"RX_GPIO1","RX_GPIO1"
+"TX_GPIO1",40000,"TX_GPIO1","TX_GPIO1"
+"divider_0/Bit_Count_16dec[3]:Q",,"divider_0/Bit_Count_16dec[3]:Q","divider_0/Bit_Count_16dec[3]:Q"
+"divider_0/Bit_Count_2dec:Q",,"divider_0/Bit_Count_2dec:Q","divider_0/Bit_Count_2dec:Q"
+"test_4463andcpuopration_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:SPI0_CLK_OUT",,"test_4463andcpuopration_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:SPI0_CLK_OUT","test_4463andcpuopration_MSS_0/MSS_ADLIB_INST/INST_MSS_010_IP:SPI0_CLK_OUT"

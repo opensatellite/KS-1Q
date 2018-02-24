@@ -1,0 +1,262 @@
+// ********************************************************************
+// Actel Corporation Proprietary and Confidential
+//  Copyright 2010 Actel Corporation.  All rights reserved.
+//
+// ANY USE OR REDISTRIBUTION IN PART OR IN WHOLE MUST BE HANDLED IN
+// ACCORDANCE WITH THE ACTEL LICENSE AGREEMENT AND MUST BE APPROVED
+// IN ADVANCE IN WRITING.
+//
+// Description:	User testbench APB3 master BFM script for CoreAPB3
+//
+// SVN Revision Information:
+// SVN $Revision: 18490 $
+// SVN $Date: 2012-11-21 18:03:55 +0000 (Wed, 21 Nov 2012) $
+//
+// Resolved SARs
+// SAR      Date     Who   Description
+//
+// Notes:
+//
+// ********************************************************************
+
+//-------------------------------------------------------------------------
+// Memory Map
+// Define name and base address of each resource.
+//-------------------------------------------------------------------------
+memmap base 0x0
+
+// Global variables to store local copy of testbench parameters and constants
+// derived from testbench parameters.
+int APB_DWIDTH
+int IADDR_OPTION
+int APBSLOT0ENABLE
+int APBSLOT1ENABLE
+int APBSLOT2ENABLE
+int APBSLOT3ENABLE
+int APBSLOT4ENABLE
+int APBSLOT5ENABLE
+int APBSLOT6ENABLE
+int APBSLOT7ENABLE
+int APBSLOT8ENABLE
+int APBSLOT9ENABLE
+int APBSLOT10ENABLE
+int APBSLOT11ENABLE
+int APBSLOT12ENABLE
+int APBSLOT13ENABLE
+int APBSLOT14ENABLE
+int APBSLOT15ENABLE
+int MADDR_BITS
+int UPR_NIBBLE_POSN
+int SC_0
+int SC_1
+int SC_2
+int SC_3
+int SC_4
+int SC_5
+int SC_6
+int SC_7
+int SC_8
+int SC_9
+int SC_10
+int SC_11
+int SC_12
+int SC_13
+int SC_14
+int SC_15
+
+int slot_incr
+int atmp
+int slot_enable[16]
+int slot_combine[16]
+int iaddr_opt
+int i
+
+
+procedure main
+header "CoreAPB3 Test Harness"
+debug 3;
+
+// Initialize local variables passed from testbench HDL to the
+// ARGVALUE* BFM parameters.
+call init_parameter_vars
+
+// Set size of slot increment based on the MADDR_BITS parameter.
+if MADDR_BITS == 12
+    set slot_incr 0x00000100
+endif
+if MADDR_BITS == 16
+    set slot_incr 0x00001000
+endif
+if MADDR_BITS == 20
+    set slot_incr 0x00010000
+endif
+if MADDR_BITS == 24
+    set slot_incr 0x00100000
+endif
+if MADDR_BITS == 28
+    set slot_incr 0x01000000
+endif
+if MADDR_BITS == 32
+    set slot_incr 0x10000000
+endif
+
+// Create vector for slot enable indication.
+set slot_enable[0]  APBSLOT0ENABLE
+set slot_enable[1]  APBSLOT1ENABLE
+set slot_enable[2]  APBSLOT2ENABLE
+set slot_enable[3]  APBSLOT3ENABLE
+set slot_enable[4]  APBSLOT4ENABLE
+set slot_enable[5]  APBSLOT5ENABLE
+set slot_enable[6]  APBSLOT6ENABLE
+set slot_enable[7]  APBSLOT7ENABLE
+set slot_enable[8]  APBSLOT8ENABLE
+set slot_enable[9]  APBSLOT9ENABLE
+set slot_enable[10] APBSLOT10ENABLE
+set slot_enable[11] APBSLOT11ENABLE
+set slot_enable[12] APBSLOT12ENABLE
+set slot_enable[13] APBSLOT13ENABLE
+set slot_enable[14] APBSLOT14ENABLE
+set slot_enable[15] APBSLOT15ENABLE
+// Create vector for slot combined indication
+set slot_combine[0]  SC_0
+set slot_combine[1]  SC_1
+set slot_combine[2]  SC_2
+set slot_combine[3]  SC_3
+set slot_combine[4]  SC_4
+set slot_combine[5]  SC_5
+set slot_combine[6]  SC_6
+set slot_combine[7]  SC_7
+set slot_combine[8]  SC_8
+set slot_combine[9]  SC_9
+set slot_combine[10] SC_10
+set slot_combine[11] SC_11
+set slot_combine[12] SC_12
+set slot_combine[13] SC_13
+set slot_combine[14] SC_14
+set slot_combine[15] SC_15
+
+loop i 0 15 1
+    // iaddr_opt is set to (i + 2) because values for IADDR_OPTION relevant
+    // to slots 0 to 15 run from 2 to 17.
+    // (IADDR_OPTION = 0  ->  indirect addressing not in use.)
+    // (IADDR_OPTION = 1  ->  indirect address sourced from IADDR port.)
+    set iaddr_opt i + 2
+    if IADDR_OPTION == iaddr_opt
+        if APB_DWIDTH == 8
+            set atmp i * slot_incr + 0x0
+            write     b base atmp 0xdd
+            set atmp i * slot_incr + 0x4
+            write     b base atmp 0xcc
+            set atmp i * slot_incr + 0x8
+            write     b base atmp 0xbb
+            set atmp i * slot_incr + 0xc
+            write     b base atmp 0xaa
+
+            set atmp i * slot_incr + 0x0
+            readcheck b base atmp 0xdd
+            set atmp i * slot_incr + 0x4
+            readcheck b base atmp 0xcc
+            set atmp i * slot_incr + 0x8
+            readcheck b base atmp 0xbb
+            set atmp i * slot_incr + 0xc
+            readcheck b base atmp 0xaa
+        endif
+        if APB_DWIDTH == 16
+            set atmp i * slot_incr + 0x0
+            write     h base atmp 0xccdd
+            set atmp i * slot_incr + 0x4
+            write     h base atmp 0xaabb
+
+            set atmp i * slot_incr + 0x0
+            readcheck h base atmp 0xccdd
+            set atmp i * slot_incr + 0x4
+            readcheck h base atmp 0xaabb
+        endif
+        if APB_DWIDTH == 32
+            set atmp i * slot_incr + 0x0
+            write   w base atmp 0xaabbccdd
+
+            set atmp i * slot_incr + 0x0
+            readcheck w base atmp 0xaabbccdd
+        endif
+    else
+        # Clear write indication bits for all slaves
+        iowrite 0x0001ffff
+        iowrite 0x00000000
+        # Check that bits are clear
+        iomask 0x00000000 0x0001ffff
+
+        if slot_combine[i]
+            set atmp i * slot_incr + 0x0
+            write     w base atmp 0xa5a5a5a5
+            readcheck w base atmp 0xa5a5a5a5
+            # Check that an access to slave 16 (combined slave) has occurred
+            iotstbit 16 1
+            # Clear slave access indication bit
+            iosetbit 16
+            ioclrbit 16
+            iotstbit 16 0
+            # Check that all indication bits are now zero
+            iomask 0x00000000 0x0001ffff
+        else
+            if slot_enable[i]
+                set atmp i * slot_incr + 0x0
+                write     w base atmp 0x12345678
+                readcheck w base atmp 0x12345678
+                # Check that an access to slave i has occurred
+                iotstbit i 1
+                # Clear slave access indication bit
+                iosetbit i
+                ioclrbit i
+                iotstbit i 0
+                # Check that all indication bits are now zero
+                iomask 0x00000000 0x0001ffff
+             endif
+        endif
+    endif
+endloop
+
+return
+
+//-------------------------------------------------------------------------
+// Initialize local variables from the ARGVALUE* BFM parameters passed
+// down from the testbench HDL.
+//-------------------------------------------------------------------------
+procedure init_parameter_vars
+	set APB_DWIDTH          $ARGVALUE0
+	set IADDR_OPTION        $ARGVALUE1
+	set APBSLOT0ENABLE      $ARGVALUE2
+	set APBSLOT1ENABLE      $ARGVALUE3
+	set APBSLOT2ENABLE      $ARGVALUE4
+	set APBSLOT3ENABLE      $ARGVALUE5
+	set APBSLOT4ENABLE      $ARGVALUE6
+	set APBSLOT5ENABLE      $ARGVALUE7
+	set APBSLOT6ENABLE      $ARGVALUE8
+	set APBSLOT7ENABLE      $ARGVALUE9
+	set APBSLOT8ENABLE      $ARGVALUE10
+	set APBSLOT9ENABLE      $ARGVALUE11
+	set APBSLOT10ENABLE     $ARGVALUE12
+	set APBSLOT11ENABLE     $ARGVALUE13
+	set APBSLOT12ENABLE     $ARGVALUE14
+	set APBSLOT13ENABLE     $ARGVALUE15
+	set APBSLOT14ENABLE     $ARGVALUE16
+	set APBSLOT15ENABLE     $ARGVALUE17
+	set MADDR_BITS          $ARGVALUE18
+	set UPR_NIBBLE_POSN     $ARGVALUE19
+	set SC_0                $ARGVALUE20
+	set SC_1                $ARGVALUE21
+	set SC_2                $ARGVALUE22
+	set SC_3                $ARGVALUE23
+	set SC_4                $ARGVALUE24
+	set SC_5                $ARGVALUE25
+	set SC_6                $ARGVALUE26
+	set SC_7                $ARGVALUE27
+	set SC_8                $ARGVALUE28
+	set SC_9                $ARGVALUE29
+	set SC_10               $ARGVALUE30
+	set SC_11               $ARGVALUE31
+	set SC_12               $ARGVALUE32
+	set SC_13               $ARGVALUE33
+	set SC_14               $ARGVALUE34
+	set SC_15               $ARGVALUE35
+return

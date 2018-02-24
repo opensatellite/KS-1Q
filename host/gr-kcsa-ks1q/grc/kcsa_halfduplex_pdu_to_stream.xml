@@ -1,0 +1,49 @@
+<block>
+  <name>Halfduplex PDU To Stream</name>
+  <key>kcsa_halfduplex_pdu_to_stream</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.halfduplex_pdu_to_stream($acqsamples, $acqcount, $flenmode, $syncword, $syncbits)</make>
+  <param>
+    <name>Acqsamples</name>
+    <key>acqsamples</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Acqsample Count</name>
+    <key>acqcount</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Frame Length Mode</name>
+    <key>flenmode</key>
+	<value>False</value>	  
+    <type>bool</type>
+    <option>
+	<name>Fixed</name>
+	<key>True</key>
+    </option>
+    <option>
+	<name>Variable</name>
+	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Syncword</name>
+    <key>syncword</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Syncbits</name>
+    <key>syncbits</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>pdu</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>data</name>
+    <type>byte</type>
+  </source>
+</block>

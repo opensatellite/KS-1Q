@@ -1,0 +1,37 @@
+fsm_options -device {CPU_W_HDL_R_0.State[2:0]}
+
+define_state State_S1 00001 {c:\users\administrator\desktop\workplace\hdl\cpu_w_hdl_r.v} 80 4 80 11
+state_output State_S1 {State[0]} 1
+
+define_state State_S2 00010 {c:\users\administrator\desktop\workplace\hdl\cpu_w_hdl_r.v} 117 4 117 11
+state_output State_S2 {State[1]} 1
+
+define_state State_S3 00100 {c:\users\administrator\desktop\workplace\hdl\cpu_w_hdl_r.v} 127 4 127 11
+state_output State_S3 {State[2]} 1
+
+fsm_options -resetState State_S1
+
+define_transition State_S3 State_S3 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = 11--------------}
+define_transition State_S2 State_S3 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = --01111011------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = -------1--------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = --1-------------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ---0------------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ----0-----------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = -----0----------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ------0---------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = --------0-------}
+define_transition State_S2 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ---------0------}
+define_transition State_S1 State_S2 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ----------000001}
+define_transition State_S3 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = 0---------------}
+define_transition State_S3 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = -0--------------}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = --------------1-}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = -------------1--}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ------------1---}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = -----------1----}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ----------1-----}
+define_transition State_S1 State_S1 {Flag_A_Tx,Flag_B_Tx,Addr[0],Addr[1],Addr[2],Addr[3],Addr[4],Addr[5],Addr[6],Addr[7],byte_count[0],byte_count[1],byte_count[2],byte_count[3],byte_count[4],byte_count[5] = ---------------0}
+fsm_options -SRSPath {C:\Users\Administrator\Desktop\workplace\synthesis\test_4463andcpuopration.srs}
+fsm_options -SRSTime 1474195117
+fsm_options -FSMPath {CPU_W_HDL_R_0.State[2:0]}
+fsm_options -view {ScratchLib.cell3.netlist|i:CPU_W_HDL_R_0.State[2:0]}
+fsm_options -ID {7640644}

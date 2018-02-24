@@ -1,0 +1,59 @@
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : OFF
+TDPR scenario            : Primary
+
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 34 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V4.0 - 11.7.0 
+Design: test_4463andcpuopration         Started: Mon Oct 31 14:46:35 2016
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 6 seconds
+Placement Runtime            : 34 seconds
+
+Placer completed successfully.
+
+Design: test_4463andcpuopration         
+Finished: Mon Oct 31 14:47:38 2016
+Total CPU Time:     00:01:00            Total Elapsed Time: 00:01:03
+Total Memory Usage: 328.0 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\designer\test_4463andcpuopration\test_4463andcpuoprationStarted: Mon Oct 31 14:47:43 2016
+
+
+Router completed successfully.
+
+Design: C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\designer\test_4463andcpuopration\test_4463andcpuopration
+Finished: Mon Oct 31 14:48:03 2016
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:00:20
+Total Memory Usage: 495.7 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Number of violating paths: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 2226 | 12084 | 18.42      |
+| DFF           | 1057 | 12084 | 8.75       |
+| I/O Register  | 1    | 252   | 0.40       |
+| Logic Element | 2256 | 12084 | 18.67      |
++---------------+------+-------+------------+
+

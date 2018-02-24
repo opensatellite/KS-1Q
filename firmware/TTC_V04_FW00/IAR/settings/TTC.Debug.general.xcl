@@ -1,0 +1,13 @@
+"G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armjlink.dll" 
+
+"F:\¿Æ´´º½Ìì\finish\10_27_v04workplace\v04workplace\TTC\TTC\IAR\Debug\Exe\c.out" 
+
+--plugin "G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--flash_loader "G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\Microsemi\FlashM2Sxxx.board" 
+
+
+
+

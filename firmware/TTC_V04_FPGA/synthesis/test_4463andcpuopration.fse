@@ -1,0 +1,42 @@
+
+fsm_encoding {6680684} sequential
+
+fsm_state_encoding {6680684} State1_S1 {0}
+
+fsm_state_encoding {6680684} State1_S2 {1}
+
+fsm_registers {6680684} {State1[0]} 
+
+fsm_encoding {7650653} sequential
+
+fsm_state_encoding {7650653} State_S1 {00}
+
+fsm_state_encoding {7650653} State_S2 {01}
+
+fsm_state_encoding {7650653} State_S3 {10}
+
+fsm_registers {7650653} {State[1]}  {State[0]} 
+
+fsm_encoding {11570572} sequential
+
+fsm_state_encoding {11570572} State1_S0 {00}
+
+fsm_state_encoding {11570572} State1_S1 {01}
+
+fsm_state_encoding {11570572} State1_S2 {10}
+
+fsm_state_encoding {11570572} State1_S3 {11}
+
+fsm_registers {11570572} {State[1]}  {State[0]} 
+
+fsm_encoding {12500501} sequential
+
+fsm_state_encoding {12500501} State_S0 {00}
+
+fsm_state_encoding {12500501} State_S1 {01}
+
+fsm_state_encoding {12500501} State_S2 {10}
+
+fsm_state_encoding {12500501} State_S3 {11}
+
+fsm_registers {12500501} {State[1]}  {State[0]} 

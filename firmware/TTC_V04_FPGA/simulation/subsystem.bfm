@@ -1,0 +1,20 @@
+#===========================================================
+# Created by Microsemi SmartDesign Mon Oct 31 14:44:47 2016
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+
+memmap Glue_Logic_0 0x30000000;

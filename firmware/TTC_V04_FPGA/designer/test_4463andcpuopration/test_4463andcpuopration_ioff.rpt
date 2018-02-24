@@ -1,0 +1,15 @@
+I/O Register Combining Report
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+Date: Mon Oct 31 14:48:18 2016
+
+I/O Register Combining Summary
++-----------+---------------+------------------+
+| Port Name | Register Type | Register Name    |
++-----------+---------------+------------------+
+| TX_GPIO0  | Output        | DATA_OUT_0/DataO |
++-----------+---------------+------------------+
+
+I/O DDR Register Combining Summary
++
++
+

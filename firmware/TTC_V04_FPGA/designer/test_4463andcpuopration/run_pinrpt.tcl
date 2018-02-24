@@ -1,0 +1,10 @@
+DESIGN=test_4463andcpuopration
+DESDIR=C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\designer\test_4463andcpuopration
+TARGET_DIR=C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\designer\test_4463andcpuopration
+FAM=SmartFusion2
+DIE=PA4M1000_S
+PACKAGE=tq144
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+BANK_REPORT=1
+IOREG_REPORT=1

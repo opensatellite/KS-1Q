@@ -1,0 +1,20 @@
+<block>
+  <name>AFSK1200 RAW RX</name>
+  <key>kcsa_afsk1200_raw_rx</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.afsk1200_raw_rx($sample_rate)</make>
+  <param>
+    <name>Sample_rate</name>
+    <key>sample_rate</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+   <name>out</name>
+   <type>byte</type>
+  </source>
+</block>

@@ -1,0 +1,217 @@
+Compile Report
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+Date: Mon Oct 31 14:46:17 2016
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S010S        |
+| Package                        | 144 TQ         |
+| Speed Grade                    | STD            |
+| Temp                           | -40:25:100     |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | No             |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-------------------------------------------------------------------------------------------------------------+
+| Topcell | test_4463andcpuopration                                                                                     |
+| Format  | EDIF                                                                                                        |
+| Source  | C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\synthesis\test_4463andcpuopration.edn        |
+| Source  | C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\constraint\io\test_4463andcpuopration.io.pdc |
+| Source  | C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\constraint\fp\test_4463andcpuopration.fp.pdc |
++---------+-------------------------------------------------------------------------------------------------------------+
+
+Options
++---------------------------------------------------------+-------+
+| Merge User SDC file(s) with Existing Timing Constraints | true  |
+| Abort Compile if errors are found in PDC file(s)        | true  |
+| Enable Single Event Transient mitigation                | false |
+| Enable Design Separation Methodology                    | false |
+| Limit the number of high fanout nets to display to      | 10    |
++---------------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 2226 | 12084 | 18.42      |
+| DFF                       | 1057 | 12084 | 8.75       |
+| I/O Register              | 1    | 252   | 0.40       |
+| User I/O                  | 34   | 84    | 40.48      |
+| -- Single-ended I/O       | 34   | 84    | 40.48      |
+| -- Differential I/O Pairs | 0    | 37    | 0.00       |
+| RAM64x18                  | 0    | 22    | 0.00       |
+| RAM1K18                   | 3    | 21    | 14.29      |
+| MACC                      | 0    | 22    | 0.00       |
+| Chip Globals              | 7    | 8     | 87.50      |
+| CCC                       | 0    | 2     | 0.00       |
+| RCOSC_25_50MHZ            | 0    | 1     | 0.00       |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 1    | 1     | 100.00     |
+| MSS                       | 1    | 1     | 100.00     |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+------+
+| Type                     | 4LUT | DFF  |
++--------------------------+------+------+
+| Fabric Logic             | 2118 | 949  |
+| RAM64x18 Interface Logic | 0    | 0    |
+| RAM1K18 Interface Logic  | 108  | 108  |
+| MACC Interface Logic     | 0    | 0    |
+| Total Used               | 2226 | 1057 |
++--------------------------+------+------+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 1    | 1     |
+| SPI           | 1    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 0    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 6      | 2    |
+| 7      | 2    |
+| 9      | 3    |
+| 10     | 1    |
+| 17     | 1    |
+| 32     | 1    |
+| 33     | 2    |
+| Total  | 12   |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 10           | 0           | 0               |
+| Output I/O                    | 23           | 1           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  10   |  24    |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  34   | 100.00%    |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  0    | 0.00%      |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+-----------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                  |
++--------+---------+-----------------------------------------------------------------------+
+| 633    | INT_NET | Net   : test_4463andcpuopration_MSS_0_GPIO_1_M2F                      |
+|        |         | Driver: test_4463andcpuopration_MSS_0/MSS_ADLIB_INST_RNIHTQ8/U0_RGB1  |
+|        |         | Source: NETLIST                                                       |
+| 372    | INT_NET | Net   : RX_GPIO1_c                                                    |
+|        |         | Driver: RX_GPIO1_ibuf_RNIEM3F/U0_RGB1                                 |
+|        |         | Source: NETLIST                                                       |
+| 345    | INT_NET | Net   : divider_0.Bit_Count_16dec_i_1[3]                              |
+|        |         | Driver: divider_0/Bit_Count_16dec_inferred_clock_RNI1ANC_0[3]/U0_RGB1 |
+|        |         | Source: NETLIST                                                       |
+| 315    | INT_NET | Net   : RSControl_0_NGRST                                             |
+|        |         | Driver: RSControl_0/NGRST_RNIHQ59/U0_RGB1                             |
+|        |         | Source: NETLIST                                                       |
+| 130    | INT_NET | Net   : P_CLK                                                         |
+|        |         | Driver: divider_0/Bit_Count_2dec_inferred_clock_RNI1195/U0_RGB1       |
+|        |         | Source: NETLIST                                                       |
+| 104    | INT_NET | Net   : OSC_0_XTLOSC_O2F                                              |
+|        |         | Driver: OSC_0/I_XTLOSC_FAB_CLKINT/U0_RGB1                             |
+|        |         | Source: NETLIST                                                       |
+| 6      | INT_NET | Net   : TX_GPIO1_c                                                    |
+|        |         | Driver: TX_GPIO1_ibuf_RNIGE8B/U0_RGB1                                 |
+|        |         | Source: NETLIST                                                       |
++--------+---------+-----------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+-----------------------------------------------------------+
+| Fanout | Type    | Name                                                      |
++--------+---------+-----------------------------------------------------------+
+| 110    | INT_NET | Net   : CLTU_0/State1[0]                                  |
+|        |         | Driver: CLTU_0/State1[0]                                  |
+| 83     | INT_NET | Net   : CCA_NIRQ_c                                        |
+|        |         | Driver: CCA_NIRQ_ibuf                                     |
+| 74     | INT_NET | Net   : HDL_W_CPU_R_BUFF_0/N_159                          |
+|        |         | Driver: HDL_W_CPU_R_BUFF_0/MSG_TRP1_11_iv_28_304_i_0_0_o2 |
+| 67     | INT_NET | Net   : HDL_W_CPU_R_BUFF_0/State_Abuff[0]                 |
+|        |         | Driver: HDL_W_CPU_R_BUFF_0/State_Abuff[0]                 |
+| 67     | INT_NET | Net   : CLTU_0/Shift_reg_68_sn_N_84_mux                   |
+|        |         | Driver: CLTU_0/un1_TC_Packet_Counter17_3_RNIHKFMA         |
+| 67     | INT_NET | Net   : Glue_Logic_0/PRDATA34_2_0                         |
+|        |         | Driver: Glue_Logic_0/PRDATA30_2_0                         |
+| 66     | INT_NET | Net   : ENASM                                             |
+|        |         | Driver: CPU_W_HDL_R_0/En_ASG                              |
+| 60     | INT_NET | Net   : RX_GPIO0_c                                        |
+|        |         | Driver: RX_GPIO0_ibuf                                     |
+| 56     | INT_NET | Net   : CLTU_0/un1_DataO41_22_i_0                         |
+|        |         | Driver: CLTU_0/un1_DataO41_22_0_a3_0_4_RNIRAVS            |
+| 52     | INT_NET | Net   : CLTU_0/un1_Syn_reg[6]                             |
+|        |         | Driver: CLTU_0/un1_Syn_reg_i_o3[6]                        |
++--------+---------+-----------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+-----------------------------------------------------------+
+| Fanout | Type    | Name                                                      |
++--------+---------+-----------------------------------------------------------+
+| 110    | INT_NET | Net   : CLTU_0/State1[0]                                  |
+|        |         | Driver: CLTU_0/State1[0]                                  |
+| 83     | INT_NET | Net   : CCA_NIRQ_c                                        |
+|        |         | Driver: CCA_NIRQ_ibuf                                     |
+| 74     | INT_NET | Net   : HDL_W_CPU_R_BUFF_0/N_159                          |
+|        |         | Driver: HDL_W_CPU_R_BUFF_0/MSG_TRP1_11_iv_28_304_i_0_0_o2 |
+| 67     | INT_NET | Net   : HDL_W_CPU_R_BUFF_0/State_Abuff[0]                 |
+|        |         | Driver: HDL_W_CPU_R_BUFF_0/State_Abuff[0]                 |
+| 67     | INT_NET | Net   : CLTU_0/Shift_reg_68_sn_N_84_mux                   |
+|        |         | Driver: CLTU_0/un1_TC_Packet_Counter17_3_RNIHKFMA         |
+| 67     | INT_NET | Net   : Glue_Logic_0/PRDATA34_2_0                         |
+|        |         | Driver: Glue_Logic_0/PRDATA30_2_0                         |
+| 66     | INT_NET | Net   : ENASM                                             |
+|        |         | Driver: CPU_W_HDL_R_0/En_ASG                              |
+| 60     | INT_NET | Net   : RX_GPIO0_c                                        |
+|        |         | Driver: RX_GPIO0_ibuf                                     |
+| 56     | INT_NET | Net   : CLTU_0/un1_DataO41_22_i_0                         |
+|        |         | Driver: CLTU_0/un1_DataO41_22_0_a3_0_4_RNIRAVS            |
+| 52     | INT_NET | Net   : CLTU_0/un1_Syn_reg[6]                             |
+|        |         | Driver: CLTU_0/un1_Syn_reg_i_o3[6]                        |
++--------+---------+-----------------------------------------------------------+
+

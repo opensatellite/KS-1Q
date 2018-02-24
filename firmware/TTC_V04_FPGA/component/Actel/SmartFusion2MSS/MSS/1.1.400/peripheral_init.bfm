@@ -1,0 +1,294 @@
+# -----------------------------------------------------------------------------
+# Top Level Initialization procedure
+#
+# Warning:  Do not modify this file, it may lead to unexpected
+#           simulation failures in your Microcontroller Subsystem.
+#
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Registers   Range
+# -----------------------------------------------------------------------------
+# MDDR         0x40020000 - 0x40020FFF (starts at 0x40020800)
+# FDDR         0x40021000 - 0x40021FFF
+# Internal     0x40022000 - 0x40023FFF
+# (Unused)     0x40024000 - 0x40027FFF
+# SERDESIF_0   0x40028000 - 0x4002BFFF
+# SERDESIF_1   0x4002C000 - 0x4002FFFF
+# SERDESIF_2   0x40030000 - 0x40033FFF
+# SERDESIF_3   0x40034000 - 0x40037FFF
+# -----------------------------------------------------------------------------
+
+# Initialization memory map
+memmap MDDR     0x40020800;
+memmap FDDR     0x40021000;
+memmap SERDESIF_0 0x40028000;
+memmap SERDESIF_1 0x4002C000;
+memmap SERDESIF_2 0x40030000;
+memmap SERDESIF_3 0x40034000;
+
+# CoreSF2Config memory map
+memmap CORE_CONFIG_INTERNAL_REGISTERS 0x40022000;
+constant STATUS_REG 0x4
+
+# SERDES_IF_x memory map
+constant LANE_0_PMA_STATUS        0x10C0
+constant LANE_1_PMA_STATUS        0x14C0
+constant LANE_2_PMA_STATUS        0x18C0
+constant LANE_3_PMA_STATUS        0x1CC0
+constant SYSTEM_SER_SOFT_RESET    0x2008
+constant SYSTEM_CONFIG_PHY_MODE_1 0x2028
+
+#ifdef USE_MDDR
+include "MDDR_init.bfm"
+#endif
+#ifdef USE_FDDR
+include "FDDR_init.bfm"
+#endif
+#ifdef USE_SERDESIF_0
+include "SERDESIF_0_init.bfm"
+#endif
+#ifdef USE_SERDESIF_1
+include "SERDESIF_1_init.bfm"
+#endif
+#ifdef USE_SERDESIF_2
+include "SERDESIF_2_init.bfm"
+#endif
+#ifdef USE_SERDESIF_3
+include "SERDESIF_3_init.bfm"
+#endif
+
+procedure init;
+
+int x_init_done;
+int x_sdif_release;
+int x_sdif0_pma;
+int x_sdif0_pcie1_pma;
+int x_sdif1_pma;
+int x_sdif1_pcie1_pma;
+int x_sdif2_pma;
+int x_sdif2_pcie1_pma;
+int x_sdif3_pma;
+int x_sdif3_pcie1_pma;
+int x_ser_soft_reset;
+int x_ser_phy_mode_1;
+int loop_sdif_release;
+int loop_sdif0_pma;
+int loop_sdif0_pcie1_pma;
+int loop_sdif1_pma;
+int loop_sdif1_pcie1_pma;
+int loop_sdif2_pma;
+int loop_sdif2_pcie1_pma;
+int loop_sdif3_pma;
+int loop_sdif3_pcie1_pma;
+int loop_init_done;
+
+print "Start Initialization";
+
+# ---------------------------
+# Start Configuration phase 1
+# ---------------------------
+
+print "Start Register Configuration Phase 1";
+
+#ifdef USE_MDDR
+call MDDR_init;
+#endif
+
+#ifdef USE_FDDR
+call FDDR_init;
+#endif
+
+#ifdef USE_SERDESIF_0
+call SERDESIF_0_init;
+#endif
+
+#ifdef USE_SERDESIF_1
+call SERDESIF_1_init;
+#endif
+
+#ifdef USE_SERDESIF_2
+call SERDESIF_2_init;
+#endif
+
+#ifdef USE_SERDESIF_3
+call SERDESIF_3_init;
+#endif
+
+# -------------------------------------------
+# End of configuration phase 1 (CONFIG1_DONE)
+# -------------------------------------------
+
+print "End Register Configuration Phase 1";
+
+write w CORE_CONFIG_INTERNAL_REGISTERS 0x000 0x1;
+
+# ------------------------------------
+# If any SERDES, wait for SDIF_RELEASE
+# ------------------------------------
+
+print "Start Register Configuration Phase 2";
+
+#ifdef USE_SERDESIF
+set loop_sdif_release 1
+while loop_sdif_release
+  readstore b CORE_CONFIG_INTERNAL_REGISTERS STATUS_REG x_sdif_release
+  set x_sdif_release x_sdif_release & 0x02
+  set loop_sdif_release x_sdif_release == 0
+endwhile
+#endif
+
+# -----------------------------------------------------
+# Foreach SERDES with PCIE: 
+#   - poll for PMA_READY (lane 0 for now)
+#   - write PCIE registers
+#   - issue a soft-reset to the PCIe controller
+# PCIE_CTLR_SOFTRESET  0 (PCIe core for non-090, PCIE_0 for 090)
+# PCIE2_CTLR_SOFTRESET 6 (PCIE_1 for 090)
+# -----------------------------------------------------
+
+#ifdef USE_SERDESIF_0_PCIE_0
+
+readstore w SERDESIF_0 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1
+set x_ser_phy_mode_1 x_ser_phy_mode_1 & 0xFFFFF0FF
+set x_ser_phy_mode_1 x_ser_phy_mode_1 | SERDESIF_0_lane_x_cfg_phy_mode_1
+write w SERDESIF_0 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1;
+
+set loop_sdif0_pma 1
+while loop_sdif0_pma
+  readstore b SERDESIF_0 SERDESIF_0_lane_x_pma_status x_sdif0_pma
+  set x_sdif0_pma x_sdif0_pma & 0x80
+  set loop_sdif0_pma x_sdif0_pma == 0
+endwhile
+
+call SERDESIF_0_init_pcie;
+
+readstore w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset
+set x_ser_soft_reset x_ser_soft_reset & 0xFFFFFFFE
+write w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+set x_ser_soft_reset x_ser_soft_reset | 0x00000001
+write w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+
+#endif
+
+#ifdef USE_SERDESIF_0_PCIE_1
+
+readstore w SERDESIF_0 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1
+set x_ser_phy_mode_1 x_ser_phy_mode_1 & 0xFFFFF0FF
+set x_ser_phy_mode_1 x_ser_phy_mode_1 | SERDESIF_0_pcie1_lane_x_cfg_phy_mode_1
+write w SERDESIF_0 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1;
+
+set loop_sdif0_pcie1_pma 1
+while loop_sdif0_pcie1_pma
+  readstore b SERDESIF_0 SERDESIF_0_pcie1_lane_x_pma_status x_sdif0_pcie1_pma
+  set x_sdif0_pcie1_pma x_sdif0_pcie1_pma & 0x80
+  set loop_sdif0_pcie1_pma x_sdif0_pcie1_pma == 0
+endwhile
+
+call SERDESIF_0_init_pcie1;
+
+readstore w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset
+set x_ser_soft_reset x_ser_soft_reset & 0xFFFFFFBF
+write w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+set x_ser_soft_reset x_ser_soft_reset | 0x00000040
+write w SERDESIF_0 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+
+#endif
+
+#ifdef USE_SERDESIF_1_PCIE_0
+
+readstore w SERDESIF_1 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1
+set x_ser_phy_mode_1 x_ser_phy_mode_1 & 0xFFFFF0FF
+set x_ser_phy_mode_1 x_ser_phy_mode_1 | SERDESIF_1_lane_x_cfg_phy_mode_1
+write w SERDESIF_1 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1;
+
+set loop_sdif1_pma 1
+while loop_sdif1_pma
+  readstore b SERDESIF_1 SERDESIF_1_lane_x_pma_status x_sdif1_pma
+  set x_sdif1_pma x_sdif1_pma & 0x80
+  set loop_sdif1_pma x_sdif1_pma == 0
+endwhile
+
+call SERDESIF_1_init_pcie;
+
+readstore w SERDESIF_1 SYSTEM_SER_SOFT_RESET x_ser_soft_reset
+set x_ser_soft_reset x_ser_soft_reset & 0xFFFFFFFE
+write w SERDESIF_1 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+set x_ser_soft_reset x_ser_soft_reset | 0x00000001
+write w SERDESIF_1 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+
+#endif
+
+#ifdef USE_SERDESIF_2_PCIE_0
+
+readstore w SERDESIF_2 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1
+set x_ser_phy_mode_1 x_ser_phy_mode_1 & 0xFFFFF0FF
+set x_ser_phy_mode_1 x_ser_phy_mode_1 | SERDESIF_2_lane_x_cfg_phy_mode_1
+write w SERDESIF_2 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1;
+
+set loop_sdif2_pma 1
+while loop_sdif2_pma
+  readstore b SERDESIF_2 SERDESIF_2_lane_x_pma_status x_sdif2_pma
+  set x_sdif2_pma x_sdif2_pma & 0x80
+  set loop_sdif2_pma x_sdif2_pma == 0
+endwhile
+
+call SERDESIF_2_init_pcie;
+
+readstore w SERDESIF_2 SYSTEM_SER_SOFT_RESET x_ser_soft_reset
+set x_ser_soft_reset x_ser_soft_reset & 0xFFFFFFFE
+write w SERDESIF_2 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+set x_ser_soft_reset x_ser_soft_reset | 0x00000001
+write w SERDESIF_2 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+
+#endif
+
+#ifdef USE_SERDESIF_3_PCIE_0
+
+readstore w SERDESIF_3 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1
+set x_ser_phy_mode_1 x_ser_phy_mode_1 & 0xFFFFF0FF
+set x_ser_phy_mode_1 x_ser_phy_mode_1 | SERDESIF_3_lane_x_cfg_phy_mode_1
+write w SERDESIF_3 SYSTEM_CONFIG_PHY_MODE_1 x_ser_phy_mode_1;
+
+set loop_sdif3_pma 1
+while loop_sdif3_pma
+  readstore b SERDESIF_3 SERDESIF_3_lane_x_pma_status x_sdif3_pma
+  set x_sdif3_pma x_sdif3_pma & 0x80
+  set loop_sdif3_pma x_sdif3_pma == 0
+endwhile
+
+call SERDESIF_3_init_pcie;
+
+readstore w SERDESIF_3 SYSTEM_SER_SOFT_RESET x_ser_soft_reset
+set x_ser_soft_reset x_ser_soft_reset & 0xFFFFFFFE
+write w SERDESIF_3 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+set x_ser_soft_reset x_ser_soft_reset | 0x00000001
+write w SERDESIF_3 SYSTEM_SER_SOFT_RESET x_ser_soft_reset;
+
+#endif
+
+# -------------------------------------------
+# End of configuration phase 2 (CONFIG2_DONE)
+# -------------------------------------------
+
+print "End Register Configuration Phase 2";
+
+write w CORE_CONFIG_INTERNAL_REGISTERS 0x000 0x3;
+
+# -----------------------------------------------------
+# Wait until INIT_DONE
+# -----------------------------------------------------
+
+print "Wait until INIT_DONE";
+
+set loop_init_done 1
+while loop_init_done
+  readstore b CORE_CONFIG_INTERNAL_REGISTERS STATUS_REG x_init_done 
+  set x_init_done x_init_done & 0x01
+  set loop_init_done x_init_done == 0
+endwhile
+
+print "End Initialization";
+
+return
+

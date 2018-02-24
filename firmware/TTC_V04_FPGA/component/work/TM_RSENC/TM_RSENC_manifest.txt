@@ -1,0 +1,21 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Fri Sep 16 12:54:04 2016
+Project   :  C:\Users\Administrator\Desktop\workplace
+Component :  TM_RSENC
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rs.mon
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/CoreRSENC.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/RSENC.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/RSENC_KIT.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/TM_RSENC_TM_RSENC_0_RSEnc_auto.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/coreparameters.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/test/user/RSEnc_bhv.v
+    C:/Users/Administrator/Desktop/workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/test/user/testbench.v
+

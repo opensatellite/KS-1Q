@@ -1,0 +1,27 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.7 11.7.0.119
+
+# Design Name: test_4463andcpuopration 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010S , Package: 144 TQ , Speed grade: STD 
+
+# Date generated: Mon Oct 24 19:47:44 2016 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+

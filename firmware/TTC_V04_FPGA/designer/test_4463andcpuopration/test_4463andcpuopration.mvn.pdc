@@ -1,0 +1,76 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.7 11.7.0.119
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S010S , Package: 144 TQ , Speed grade: STD 
+
+# Date generated: Mon Oct 31 14:46:17 2016 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank2 -vcci 3.30 -fixed no
+set_iobank Bank4 -vcci 3.30 -fixed no
+set_iobank Bank7 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io A3.3V_EN -DIRECTION OUTPUT -pinname 61 -fixed yes
+set_io ADC_CS -DIRECTION OUTPUT -pinname 1 -fixed yes
+set_io ADC_CSTART -DIRECTION OUTPUT -pinname 4 -fixed yes
+set_io ADC_FS -DIRECTION OUTPUT -pinname 2 -fixed yes
+set_io ADC_INT -DIRECTION INPUT -pinname 9 -fixed yes
+set_io ADC_PWDN -DIRECTION OUTPUT -pinname 3 -fixed yes
+set_io ANT_SW1 -DIRECTION OUTPUT -pinname 20 -fixed yes
+set_io ANT_SW2 -DIRECTION OUTPUT -pinname 21 -fixed yes
+set_io BOARD_NO -DIRECTION INPUT -pinname 14 -fixed yes
+set_io CAN1_RS -DIRECTION OUTPUT -pinname 63 -fixed yes
+set_io CAN1_RX -DIRECTION OUTPUT -pinname 64 -fixed yes
+set_io CAN1_TX -DIRECTION INPUT -pinname 66 -fixed yes
+set_io CAN2_RS -DIRECTION OUTPUT -pinname 67 -fixed yes
+set_io CCA_NIRQ -DIRECTION INPUT -pinname 19 -fixed yes
+set_io DEVRST_N -DIRECTION INPUT -pinname 72
+set_io L3V3_EN1 -DIRECTION OUTPUT -pinname 46 -fixed yes
+set_io L3V3_EN2 -DIRECTION OUTPUT -pinname 43 -fixed yes
+set_io L4463_RX_CS -DIRECTION OUTPUT -pinname 47 -fixed yes
+set_io L4463_TX_CS -DIRECTION OUTPUT -pinname 58 -fixed yes
+set_io L4V_EN -DIRECTION OUTPUT -pinname 94 -fixed yes
+set_io L4V_PG -DIRECTION INPUT -pinname 10 -fixed yes
+set_io PA4V_ON -DIRECTION OUTPUT -pinname 22 -fixed yes
+set_io RXD4 -DIRECTION INPUT -pinname 8 -fixed yes
+set_io RX_GPIO0 -DIRECTION INPUT -pinname 15 -fixed yes
+set_io RX_GPIO1 -DIRECTION INPUT -pinname 16 -fixed yes
+set_io RX_SDN -DIRECTION OUTPUT -pinname 48 -fixed yes
+set_io SPI_CLK -DIRECTION OUTPUT -OUT_DRIVE 20 -OUT_LOAD 20 -pinname 55 -fixed yes
+set_io SPI_FRAM_CS -DIRECTION OUTPUT -pinname 44 -fixed yes
+set_io SPI_MISO -DIRECTION INPUT -RES_PULL Down -pinname 56 -fixed yes
+set_io SPI_MOSI -DIRECTION OUTPUT -OUT_DRIVE 20 -OUT_LOAD 20 -pinname 57 -fixed yes
+set_io SW -DIRECTION OUTPUT -pinname 13 -fixed yes
+set_io TXD4 -DIRECTION OUTPUT -OUT_DRIVE 20 -pinname 7 -fixed yes
+set_io TX_GPIO0 -DIRECTION OUTPUT -pinname 49 -fixed yes -REGISTER YES -OUT_REG Yes
+set_io TX_GPIO1 -DIRECTION INPUT -pinname 93 -fixed yes
+set_io TX_SDN -DIRECTION OUTPUT -OUT_DRIVE 20 -pinname 60 -fixed yes
+set_io XTL -DIRECTION INPUT -pinname 70
+
+#
+# Core cell constraints
+#
+

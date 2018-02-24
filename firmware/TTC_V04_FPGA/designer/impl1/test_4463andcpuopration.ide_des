@@ -1,0 +1,11 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\Administrator\Desktop\10.22_v04workplace\v04workplace\designer\impl1\test_4463andcpuopration.adb"
+LIST SOURCE_FILES
+VALUE "C:\Users\Administrator\Desktop\10.22_v04workplace\v04workplace\constraint\io\test_4463andcpuopration.io.pdc;pdc"
+VALUE "C:\Users\Administrator\Desktop\10.22_v04workplace\v04workplace\constraint\fp\test_4463andcpuopration.fp.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Users\Administrator\Desktop\10.22_v04workplace\v04workplace\synthesis\test_4463andcpuopration_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

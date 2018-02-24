@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<block>
+  <name>BER Test Source</name>
+  <key>kcsa_ber_source</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.ber_source()</make>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+  <doc>
+BER source
+Bitstream source for bit error rate test
+Measure BER with self synchorization comparator
+Use with BER sink
+  </doc>
+</block>

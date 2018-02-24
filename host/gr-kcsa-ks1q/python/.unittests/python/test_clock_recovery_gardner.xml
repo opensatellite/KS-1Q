@@ -1,0 +1,28 @@
+<testsuite errors="0" failures="2" name="unittest.suite.TestSuite" tests="2" time="0.007">
+  <testcase classname="__main__.test_clock_recovery_gardner" name="test02" time="0.0046">
+    <failure type="exceptions.AssertionError">0.9997 != 0.0 within 4 places
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "qa_clock_recovery_gardner.py", line 69, in test02
+    self.assertFloatTuplesAlmostEqual(expected_result, dst_data, 4)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/gr_unittest.py", line 90, in assertFloatTuplesAlmostEqual
+    self.assertAlmostEqual (a[i], b[i], places, msg)
+  File "/usr/lib/python2.7/unittest/case.py", line 563, in assertAlmostEqual
+    raise self.failureException(msg)
+    </failure>
+  </testcase>
+  <testcase classname="__main__.test_clock_recovery_gardner" name="test04" time="0.0020">
+    <failure type="exceptions.AssertionError">-1.2 != -1.862645149230957e-08 within 1 places
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "qa_clock_recovery_gardner.py", line 103, in test04
+    self.assertFloatTuplesAlmostEqual(expected_result, dst_data, 1)
+  File "/usr/local/lib/python2.7/dist-packages/gnuradio/gr_unittest.py", line 90, in assertFloatTuplesAlmostEqual
+    self.assertAlmostEqual (a[i], b[i], places, msg)
+  File "/usr/lib/python2.7/unittest/case.py", line 563, in assertAlmostEqual
+    raise self.failureException(msg)
+    </failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

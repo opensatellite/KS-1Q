@@ -1,0 +1,10 @@
+.qmake*
+*.o
+KS1GCS
+*.pyc
+*.pyo
+*.pro.user
+Makefile
+moc_*
+ui_*.h
+

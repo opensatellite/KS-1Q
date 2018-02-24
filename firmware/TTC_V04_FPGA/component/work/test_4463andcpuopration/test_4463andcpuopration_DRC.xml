@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>test_4463andcpuopration</header>
+  <drc>
+    <status>G:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin DATA_OUT_0:c0</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_4463andcpuopration/pins/DATA_OUT_0:c0</crossprobe>
+  </drc>
+  <drc>
+    <status>G:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin DATA_OUT_0:c1</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_4463andcpuopration/pins/DATA_OUT_0:c1</crossprobe>
+  </drc>
+  <drc>
+    <status>G:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin HDL_W_CPU_R_BUFF_0:Flag_OF</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_4463andcpuopration/pins/HDL_W_CPU_R_BUFF_0:Flag_OF</crossprobe>
+  </drc>
+  <drc>
+    <status>G:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin test_4463andcpuopration_MSS_0:GPIO_24_M2F</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/test_4463andcpuopration/pins/test_4463andcpuopration_MSS_0:GPIO_24_M2F</crossprobe>
+  </drc>
+</drcreport>

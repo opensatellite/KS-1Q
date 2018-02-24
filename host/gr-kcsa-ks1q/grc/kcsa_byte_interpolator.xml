@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<block>
+  <name>byte_interpolator</name>
+  <key>kcsa_byte_interpolator</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.byte_interpolator($interp)</make>
+  <param>
+    <name>Interpolation</name>
+    <key>interp</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

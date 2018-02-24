@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<block>
+  <name>PDU to Stream 2</name>
+  <key>kcsa_pdu_to_stream2</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.pdu_to_stream2($decim, $filler, $firstfill)</make>
+  <param>
+    <name>Decimation</name>
+    <key>decim</key>
+    <value></value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Filler</name>
+    <key>filler</key>
+    <value>0x00</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>First fill</name>
+    <key>firstfill</key>
+	<value>1024</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <sink>
+    <name>pdu</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>data</name>
+    <type>byte</type>
+  </source>
+  <source>
+    <name>amp</name>
+    <type>byte</type>
+    <optional>1</optional>
+  </source>
+</block>

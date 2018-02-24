@@ -1,0 +1,177 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[DebugChecksum]
+Checksum=-1687215024
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[Breakpoints]
+Count=0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=166000000
+ClockAutoDetect=1
+ClockWanted=250000
+JtagSpeed=250000
+Prescaler=664
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+Title_0=I0
+Symbol_0=0 4 0
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[SfrWindow]
+Show=1 1
+Sort=4 0
+[struct_types]
+Fmt0=csp_id_t-ext	4	0
+Fmt1=struct dm_var_s-mcutemp	3	0
+Fmt2=struct dm_var_s-patemp	3	0
+[array_types]
+Fmt0=signed char[8]	4	0
+Fmt1=uint16_t[7]	4	0
+Fmt2=uint16_t[8]	3	0
+Fmt3=uint8_t[2048]	4	0
+Fmt4=uint8_t[220]	4	0
+Fmt5=unsigned char[220]	4	0
+Fmt6=unsigned char[25]	4	0
+[watch_formats]
+Fmt0={W}1:FLAG	4	0
+Fmt1={W}1:buf[tail]	4	0
+Fmt2={W}1:data	4	0
+Fmt3={W}1:flag	4	0
+Fmt4={W}1:id	4	0
+Fmt5={W}1:pin	4	0
+Fmt6={W}1:spi_data	4	0
+Fmt7={W}1:temp	4	0
+Fmt8={W}1:tx_on	3	0
+Fmt9={W}1:uxTopPriority	4	0
+Fmt10={W}1:uxTopReadyPriority	4	0
+Fmt11={W}42:0x30000000	4	0
+Fmt12={W}42:FLAG	4	0
+Fmt13={W}42:tmp_fifo	0	2
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\app\adc_task.c}.17.3" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop\TTC\TTC\app}.50.9" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\user_drivers\tlv2548.c}.50.9" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\user_drivers\tlv2548.c}.31.2" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\app\adc_task.c}.11.5" 0 0 1 "" 0 "" 0
+Bp5=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\user_drivers\tlv2548.c}.54.2" 0 0 1 "" 0 "" 0
+Bp6=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop\TTC\TTC\app}.245.2" 0 0 1 "" 0 "" 0
+Bp7=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop\TTC\TTC\app}.187.2" 0 0 1 "" 0 "" 0
+Bp8=_ 0 "EMUL_CODE" "0x0000A83C" 0 0 1 "" 0 "" 0
+Bp9=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop\TTC\TTC\app}.39.25" 0 0 1 "" 0 "" 0
+Bp10=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\app\rf_rx_task.c}.46.25" 0 0 1 "" 0 "" 0
+Bp11=_ 0 "EMUL_CODE" "{C:\Users\Administrator\Desktop\TTC\TTC\app\main.c}.125.9" 0 0 1 "" 0 "" 0
+Count=12
+[Aliases]
+Count=0
+SuppressDialog=0

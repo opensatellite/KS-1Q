@@ -1,0 +1,35 @@
+ -B 
+
+"--endian=little" 
+
+"--cpu=Cortex-M3" 
+
+"--fpu=None" 
+
+"-p" 
+
+"G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\CONFIG\debugger\Microsemi\M2S010.ddf" 
+
+"--drv_verify_download" 
+
+"--semihosting=none" 
+
+"--device=M2S010" 
+
+"--drv_communication=USB0" 
+
+"--drv_interface_speed=auto" 
+
+"--jlink_initial_speed=1000" 
+
+"--jlink_reset_strategy=0,0" 
+
+"--drv_interface=SWD" 
+
+"--drv_catch_exceptions=0x401" 
+
+"--drv_swo_clock_setup=16000000,1,2000000" 
+
+
+
+

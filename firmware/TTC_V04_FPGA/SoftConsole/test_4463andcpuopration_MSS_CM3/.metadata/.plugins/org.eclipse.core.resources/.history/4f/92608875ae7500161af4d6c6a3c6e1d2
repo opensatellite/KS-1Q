@@ -1,0 +1,7 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS := F:/project/test_4463andcpuopration/SoftConsole/test_4463andcpuopration_MSS_CM3/test_4463andcpuopration_MSS_CM3_hw_platform/Debug/CMSIS/startup_gcc/startup_m2sxxx.o F:/project/test_4463andcpuopration/SoftConsole/test_4463andcpuopration_MSS_CM3/test_4463andcpuopration_MSS_CM3_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+
+LIBS := -ltest_4463andcpuopration_MSS_CM3_hw_platform

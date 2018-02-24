@@ -1,0 +1,249 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.7 11.7.0.119
+# Family: SmartFusion2 , Die: M2S010S , Package: 144 TQ
+# Date generated: Mon Oct 24 19:47:44 2016 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io A3.3V_EN        \
+    -pinname 61        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ADC_CS          \
+    -pinname 1         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ADC_CSTART      \
+    -pinname 4         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ADC_FS          \
+    -pinname 2         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ADC_INT        \
+    -pinname 9        \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io ADC_PWDN        \
+    -pinname 3         \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ANT_SW1         \
+    -pinname 20        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ANT_SW2         \
+    -pinname 21        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io BOARD_NO       \
+    -pinname 14       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io CAN1_RS         \
+    -pinname 63        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io CAN1_RX         \
+    -pinname 64        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io CAN1_TX        \
+    -pinname 66       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io CAN2_RS         \
+    -pinname 67        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io CCA_NIRQ       \
+    -pinname 19       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io L3V3_EN1        \
+    -pinname 46        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io L3V3_EN2        \
+    -pinname 43        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io L4463_RX_CS     \
+    -pinname 47        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io L4463_TX_CS     \
+    -pinname 58        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io L4V_EN          \
+    -pinname 94        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io L4V_PG         \
+    -pinname 10       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io PA4V_ON         \
+    -pinname 22        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io RXD4           \
+    -pinname 8        \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io RX_GPIO0       \
+    -pinname 15       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io RX_GPIO1       \
+    -pinname 16       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io RX_SDN          \
+    -pinname 48        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_CLK         \
+    -pinname 55        \
+    -fixed yes         \
+    -OUT_DRIVE 20      \
+    -OUT_LOAD 20       \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_FRAM_CS     \
+    -pinname 44        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_MISO       \
+    -pinname 56       \
+    -fixed yes        \
+    -RES_PULL Down    \
+    -DIRECTION INPUT
+
+
+set_io SPI_MOSI        \
+    -pinname 57        \
+    -fixed yes         \
+    -OUT_DRIVE 20      \
+    -OUT_LOAD 20       \
+    -DIRECTION OUTPUT
+
+
+set_io SW              \
+    -pinname 13        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io TXD4            \
+    -pinname 7         \
+    -fixed yes         \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+set_io TX_GPIO0        \
+    -pinname 49        \
+    -fixed yes         \
+    -REGISTER Yes      \
+    -OUT_REG Yes       \
+    -DIRECTION OUTPUT
+
+
+set_io TX_GPIO1       \
+    -pinname 93       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io TX_SDN          \
+    -pinname 60        \
+    -fixed yes         \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

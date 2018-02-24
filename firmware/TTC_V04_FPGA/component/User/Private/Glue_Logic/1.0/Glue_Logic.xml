@@ -1,0 +1,238 @@
+<spirit:component xmlns:actel-cc="http://www.actel.com/XMLSchema/CoreConsole" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.1 http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.1/component.xsd">
+  <spirit:vendor>User</spirit:vendor>
+  <spirit:library>Private</spirit:library>
+  <spirit:name>Glue_Logic</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+  <spirit:busInterface>
+    <spirit:name>BIF_1</spirit:name>
+    <spirit:busType spirit:vendor="AMBA" spirit:library="AMBA2" spirit:name="APB" spirit:version="r0p0"/>
+    <spirit:slave></spirit:slave>
+    <spirit:signalMap>
+      <spirit:signalName>
+        <spirit:componentSignalName>PADDR</spirit:componentSignalName><spirit:busSignalName>PADDR</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PENABLE</spirit:componentSignalName><spirit:busSignalName>PENABLE</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PWRITE</spirit:componentSignalName><spirit:busSignalName>PWRITE</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PRDATA</spirit:componentSignalName><spirit:busSignalName>PRDATA</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PWDATA</spirit:componentSignalName><spirit:busSignalName>PWDATA</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PREADY</spirit:componentSignalName><spirit:busSignalName>PREADY</spirit:busSignalName></spirit:signalName>
+      <spirit:signalName>
+        <spirit:componentSignalName>PSEL</spirit:componentSignalName><spirit:busSignalName>PSELx</spirit:busSignalName></spirit:signalName></spirit:signalMap>
+    <spirit:vendorExtensions></spirit:vendorExtensions>
+  </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+  </spirit:memoryMaps>
+  <spirit:hwModel>
+    <spirit:views>
+    </spirit:views>
+    <spirit:signals>
+      <spirit:signal>
+        <spirit:name>Clk</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Rst</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_A_Tx_Finish</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_B_Tx_Finish</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_Int</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>15</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_A_Tx</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_B_Tx</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_A_HDL_Rec_Finish</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_B_HDL_Rec_Finish</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_A_Rx</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_B_Rx</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>SpacecraftID</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>15</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_Sending</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>MASK</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>15</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>ADDR</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>15</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Flag_RX_ing</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>TM_Packet_Counter</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>TC_Packet_Counter</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>TC_Error_Counter</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PADDR</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PSEL</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PENABLE</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PWRITE</spirit:name>
+        <spirit:direction>in</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PRDATA</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PWDATA</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>PREADY</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>Data_In</spirit:name>
+        <spirit:direction>in</spirit:direction>
+        <spirit:left>31</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>USER_RA_TRP1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>3</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>USER_REN_TRP1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>MSG_TRP1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>7</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>MSG_WA_TRP1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+        <spirit:left>9</spirit:left>
+        <spirit:right>0</spirit:right>
+      </spirit:signal>
+      <spirit:signal>
+        <spirit:name>USER_WEN_TRP1</spirit:name>
+        <spirit:direction>out</spirit:direction>
+      </spirit:signal>
+    </spirit:signals>
+    <spirit:hwParameters>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_0" spirit:name="Flag_Register_Addr_0" spirit:prompt="Flag_Register_Addr_0:" spirit:dataType="int" spirit:resolve="user">805306368</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_1" spirit:name="Flag_Register_Addr_1" spirit:prompt="Flag_Register_Addr_1:" spirit:dataType="int" spirit:resolve="user">805306372</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_2" spirit:name="Flag_Register_Addr_2" spirit:prompt="Flag_Register_Addr_2:" spirit:dataType="int" spirit:resolve="user">805306376</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_3" spirit:name="Flag_Register_Addr_3" spirit:prompt="Flag_Register_Addr_3:" spirit:dataType="int" spirit:resolve="user">805306380</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_4" spirit:name="Flag_Register_Addr_4" spirit:prompt="Flag_Register_Addr_4:" spirit:dataType="int" spirit:resolve="user">805306384</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_5" spirit:name="Flag_Register_Addr_5" spirit:prompt="Flag_Register_Addr_5:" spirit:dataType="int" spirit:resolve="user">805306388</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_6" spirit:name="Flag_Register_Addr_6" spirit:prompt="Flag_Register_Addr_6:" spirit:dataType="int" spirit:resolve="user">805306392</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_7" spirit:name="Flag_Register_Addr_7" spirit:prompt="Flag_Register_Addr_7:" spirit:dataType="int" spirit:resolve="user">805306396</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_8" spirit:name="Flag_Register_Addr_8" spirit:prompt="Flag_Register_Addr_8:" spirit:dataType="int" spirit:resolve="user">805306400</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_9" spirit:name="Flag_Register_Addr_9" spirit:prompt="Flag_Register_Addr_9:" spirit:dataType="int" spirit:resolve="user">805306404</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_10" spirit:name="Flag_Register_Addr_10" spirit:prompt="Flag_Register_Addr_10:" spirit:dataType="int" spirit:resolve="user">805306408</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_11" spirit:name="Flag_Register_Addr_11" spirit:prompt="Flag_Register_Addr_11:" spirit:dataType="int" spirit:resolve="user">805306412</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_12" spirit:name="Flag_Register_Addr_12" spirit:prompt="Flag_Register_Addr_12:" spirit:dataType="int" spirit:resolve="user">805306416</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_13" spirit:name="Flag_Register_Addr_13" spirit:prompt="Flag_Register_Addr_13:" spirit:dataType="int" spirit:resolve="user">805306420</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_14" spirit:name="Flag_Register_Addr_14" spirit:prompt="Flag_Register_Addr_14:" spirit:dataType="int" spirit:resolve="user">805306424</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Flag_Register_Addr_15" spirit:name="Flag_Register_Addr_15" spirit:prompt="Flag_Register_Addr_15:" spirit:dataType="int" spirit:resolve="user">805306428</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Tx_Base_Addr_A" spirit:name="Tx_Base_Addr_A" spirit:prompt="Tx_Base_Addr_A:" spirit:dataType="int" spirit:resolve="user">786440</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Tx_Base_Addr_B" spirit:name="Tx_Base_Addr_B" spirit:prompt="Tx_Base_Addr_B:" spirit:dataType="int" spirit:resolve="user">786448</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Rec_Base_Addr_A" spirit:name="Rec_Base_Addr_A" spirit:prompt="Rec_Base_Addr_A:" spirit:dataType="int" spirit:resolve="user">805330944</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="Rec_Base_Addr_B" spirit:name="Rec_Base_Addr_B" spirit:prompt="Rec_Base_Addr_B:" spirit:dataType="int" spirit:resolve="user">805339136</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="TM_Length" spirit:name="TM_Length" spirit:prompt="TM_Length:" spirit:dataType="int" spirit:resolve="user">1784</spirit:hwParameter>
+      <spirit:hwParameter spirit:id="TC_Length" spirit:name="TC_Length" spirit:prompt="TC_Length:" spirit:dataType="int" spirit:resolve="user">1792</spirit:hwParameter>
+    </spirit:hwParameters>
+  </spirit:hwModel>
+  <spirit:choices>
+  </spirit:choices>
+  <spirit:fileSets>
+  <spirit:fileSet spirit:fileSetId="HDL_FILESET">
+    <spirit:file>
+      <spirit:name>hdl/Glue_Logic.v</spirit:name>
+      <spirit:fileType>verilogSource</spirit:fileType>
+    <spirit:vendorExtensions></spirit:vendorExtensions>
+    </spirit:file>
+  <spirit:vendorExtensions></spirit:vendorExtensions>
+  </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:vendorExtensions>
+    <actel-cc:type typeName="IP"/>
+    <actel-cc:instantiateOnCreation value="false"/>
+    <actel-cc:diveInPermission value="READ_WRITE"/>
+    <actel-cc:categories categoryName="OS" style="hidden">
+      <actel-cc:category name="PC">
+      </actel-cc:category>
+    </actel-cc:categories>
+  </spirit:vendorExtensions>
+</spirit:component>

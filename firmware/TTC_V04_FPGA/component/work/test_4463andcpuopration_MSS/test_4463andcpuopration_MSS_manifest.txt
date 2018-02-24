@@ -1,0 +1,26 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Oct 29 00:44:10 2016
+Project   :  C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace
+Component :  test_4463andcpuopration_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test_4463andcpuopration_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test_4463andcpuopration_MSS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test_4463andcpuopration_MSS_pre.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/SmartFusion2MSS/MSS/1.1.400/peripheral_init.bfm
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/CM3_compile_bfm.tcl
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test.bfm
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/sys_config_mss_clocks.h
+

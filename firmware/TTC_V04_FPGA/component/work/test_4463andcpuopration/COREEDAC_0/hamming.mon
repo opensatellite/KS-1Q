@@ -1,0 +1,70 @@
+
+Function maxMaxRowOnes shows the Max XOR width = 
+  30 at User Data width of 56
+
+Hsiao parity check matrix (no I matrix) -----------------
+Data width = 8, No of parity bits = 5
+ 1  1  0  1  0  1  1  0 
+ 1  0  1  1  0  1  0  1 
+ 1  0  1  0  1  0  1  1 
+ 0  1  1  0  1  1  0  0 
+ 0  1  0  1  1  0  1  1 
+
+Max number of 1's in a row (max XOR width)=5
+------------ Hsiao parity check matrix ends ----------
+Encoder ----------------------------------------
+dataWidth=8, parWidth=5, dataIn = 
+0 0 0 0 0 0 0 0 
+Here is the relevant part of parity check matrix: 
+0 1 1 0 1 0 1 1   --parity bit[0]
+1 0 1 0 1 1 0 1   --parity bit[1]
+1 1 0 1 0 1 0 1   --parity bit[2]
+0 0 1 1 0 1 1 0   --parity bit[3]
+1 1 0 1 1 0 1 0   --parity bit[4]
+
+Parity bits = 
+[0]=0 [1]=0 [2]=0 [3]=0 [4]=0 
+Codeword = 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+Encoder ends -----------------------------------
+
+   xorWidth =      5
+
+***  CONFIG VALUES INSIDE generate_rtl()  ***
+protected RAM mode:	1
+triple:							0
+edac_name:					test_4463andcpuopration_COREEDAC_0_
+edac_kk:			8
+single_clk:		0
+enc_pipe :		0
+dec_pipe :		0
+ram_pipe :		0
+ram_depth :		1024
+uram:					0
+ram_a_pipe:		1
+uram_port_b:	0
+init_ram:			0
+scrub_on:			0
+writeback_on:	1
+div_width:		10
+timer_width:	32
+timeout_set:	1000
+scrub_Amin:		0
+scrub_Amax:		255
+test:					0
+dly_rA:				0
+dataIn:				0
+fpga_family:	19
+simul_ram:		0
+lang:					verilog
+homeDirectory: 
+uniqueName:		test_4463andcpuopration_COREEDAC_0_
+Die:					M2S010S
+
+
+
+ DECODER: dataW=8;  parW=5;  dataInp = 0 =
+00000000
+Codeword = 
+0000000000000
+ErrPos  Synd 

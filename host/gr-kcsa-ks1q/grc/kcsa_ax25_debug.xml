@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<block>
+  <name>AX25 Debug</name>
+  <key>kcsa_ax25_debug</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.ax25_debug()</make>
+  <sink>
+    <name>pdu</name>
+    <type>message</type>
+  </sink>
+</block>
+

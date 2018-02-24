@@ -1,0 +1,1547 @@
+#Build: Synplify Pro J-2015.03M-SP1-2, Build 266R, Dec 14 2015
+#install: G:\Microsemi\Libero_SoC_v11.7\Synplify
+#OS: Windows 8 6.2
+#Hostname: PC-201605131816
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v"
+@I::"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\hypermods.v"
+@I::"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\umr_capim.v"
+@I::"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_objects.v"
+@I::"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\vlog\scemi_pipes.svh"
+@I::"F:\project\test_4463andcpuopration\hdl\ASM_Generato.v"
+@I::"F:\project\test_4463andcpuopration\hdl\CPU_W_HDL_R.v"
+@I::"F:\project\test_4463andcpuopration\hdl\Convolutional_Encoder.v"
+@I::"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v"
+@I::"F:\project\test_4463andcpuopration\hdl\RSControl.v"
+@I::"F:\project\test_4463andcpuopration\hdl\randomizer.v"
+@I::"F:\project\test_4463andcpuopration\hdl\Switch.v"
+@I::"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v"
+@I::"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v"
+@I::"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v"
+@I::"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v"
+@I::"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC.v"
+@I::"F:\project\test_4463andcpuopration\hdl\divider.v"
+@I::"F:\project\test_4463andcpuopration\hdl\divider_2.v"
+@I::"F:\project\test_4463andcpuopration\hdl\parallel_to_serial.v"
+@I::"F:\project\test_4463andcpuopration\hdl\rest.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v"
+@I:"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v":"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\functions.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\FCCC_0\test_4463andcpuopration_FCCC_0_FCCC.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_syn.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\SgCore\OSC\2.0.101\osc_comps.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v"
+@I::"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v"
+@I::"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\test_4463andcpuopration.v"
+Verilog syntax check successful!
+Selecting top level module test_4463andcpuopration
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\ASM_Generato.v":38:7:38:18|Synthesizing module ASM_Generato
+
+@A: CL282 :"F:\project\test_4463andcpuopration\hdl\ASM_Generato.v":62:2:62:7|Feedback mux created for signal pending -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CL177 :"F:\project\test_4463andcpuopration\hdl\ASM_Generato.v":62:2:62:7|Sharing sequential element En_ASM_Out.
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\Convolutional_Encoder.v":25:7:25:27|Synthesizing module Convolutional_Encoder
+
+@W: CG296 :"F:\project\test_4463andcpuopration\hdl\Convolutional_Encoder.v":81:9:81:11|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"F:\project\test_4463andcpuopration\hdl\Convolutional_Encoder.v":82:15:82:41|Referenced variable Convolutional_Encoder_out_1 is not in sensitivity list
+@W: CG290 :"F:\project\test_4463andcpuopration\hdl\Convolutional_Encoder.v":82:45:82:71|Referenced variable Convolutional_Encoder_out_0 is not in sensitivity list
+@W: CG775 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v":30:7:30:23|Synthesizing module COREAPB3_MUXPTOB3
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":31:7:31:14|Synthesizing module CoreAPB3
+
+	APB_DWIDTH=6'b001000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b0
+	APBSLOT1ENABLE=1'b0
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b1
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b100000
+	UPR_NIBBLE_POSN=4'b0110
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC_RESET=32'b00000000000000000000000000000000
+	IADDR_NOTINUSE=32'b00000000000000000000000000000000
+	IADDR_EXTERNAL=32'b00000000000000000000000000000001
+	IADDR_SLOT0=32'b00000000000000000000000000000010
+	IADDR_SLOT1=32'b00000000000000000000000000000011
+	IADDR_SLOT2=32'b00000000000000000000000000000100
+	IADDR_SLOT3=32'b00000000000000000000000000000101
+	IADDR_SLOT4=32'b00000000000000000000000000000110
+	IADDR_SLOT5=32'b00000000000000000000000000000111
+	IADDR_SLOT6=32'b00000000000000000000000000001000
+	IADDR_SLOT7=32'b00000000000000000000000000001001
+	IADDR_SLOT8=32'b00000000000000000000000000001010
+	IADDR_SLOT9=32'b00000000000000000000000000001011
+	IADDR_SLOT10=32'b00000000000000000000000000001100
+	IADDR_SLOT11=32'b00000000000000000000000000001101
+	IADDR_SLOT12=32'b00000000000000000000000000001110
+	IADDR_SLOT13=32'b00000000000000000000000000001111
+	IADDR_SLOT14=32'b00000000000000000000000000010000
+	IADDR_SLOT15=32'b00000000000000000000000000010001
+	SL0=16'b0000000000000000
+	SL1=16'b0000000000000000
+	SL2=16'b0000000000000000
+	SL3=16'b0000000000001000
+	SL4=16'b0000000000000000
+	SL5=16'b0000000000000000
+	SL6=16'b0000000000000000
+	SL7=16'b0000000000000000
+	SL8=16'b0000000000000000
+	SL9=16'b0000000000000000
+	SL10=16'b0000000000000000
+	SL11=16'b0000000000000000
+	SL12=16'b0000000000000000
+	SL13=16'b0000000000000000
+	SL14=16'b0000000000000000
+	SL15=16'b0000000000000000
+	SC=16'b0000000000000000
+	SC_qual=16'b0000000000000000
+   Generated name = CoreAPB3_Z1
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":244:12:244:20|No assignment to wire IA_PRDATA
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":259:7:259:27|Synthesizing module edac_kitDelay_bit_reg
+
+	DELAY=32'b00000000000000000000000000000001
+   Generated name = edac_kitDelay_bit_reg_1
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":267:6:267:14|No assignment to delayLine_1_
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":99:7:99:14|Synthesizing module wide_xor
+
+	WIDTH=32'b00000000000000000000000000000101
+	MICRO_W=32'b00000000000000000000000000000011
+	PIPE1=32'b11111111111111111111111111111111
+	PIPE2=32'b11111111111111111111111111111111
+	LAYERS=32'b00000000000000000000000000000010
+   Generated name = wide_xor_5s_3s_4294967295_4294967295_2s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":42:7:42:15|Synthesizing module layer_xor
+
+	LOG_WIDTH=32'b00000000000000000000000000000010
+	MICRO_W=32'b00000000000000000000000000000011
+	PIPE=1'b0
+	WIDTHIN=32'b00000000000000000000000000001001
+	WIDTHOUT=32'b00000000000000000000000000000011
+   Generated name = layer_xor_2s_3s_0_9s_3s
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":54:22:54:28|No assignment to layer_r
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":42:7:42:15|Synthesizing module layer_xor
+
+	LOG_WIDTH=32'b00000000000000000000000000000001
+	MICRO_W=32'b00000000000000000000000000000011
+	PIPE=1'b0
+	WIDTHIN=32'b00000000000000000000000000000011
+	WIDTHOUT=32'b00000000000000000000000000000001
+   Generated name = layer_xor_1s_3s_0_3s_1s
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":54:22:54:28|No assignment to layer_r
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v":15:7:15:53|Synthesizing module test_4463andcpuopration_COREEDAC_0_ham_enc_vlog
+
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	PIPE1=32'b11111111111111111111111111111111
+	PIPE2=32'b11111111111111111111111111111111
+   Generated name = test_4463andcpuopration_COREEDAC_0_ham_enc_vlog_8s_5_4294967295_4294967295
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":347:7:347:23|Synthesizing module edac_kitDelay_reg
+
+	BITWIDTH=32'b00000000000000000000000000001011
+	DELAY=32'b00000000000000000000000000000000
+   Generated name = edac_kitDelay_reg_11_0s
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":356:21:356:29|No assignment to delayLine_0_
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":357:10:357:10|No assignment to i
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":347:7:347:23|Synthesizing module edac_kitDelay_reg
+
+	BITWIDTH=32'b00000000000000000000000000001101
+	DELAY=32'b00000000000000000000000000000000
+   Generated name = edac_kitDelay_reg_13_0
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":356:21:356:29|No assignment to delayLine_0_
+@W: CG133 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":357:10:357:10|No assignment to i
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":99:7:99:14|Synthesizing module wide_xor
+
+	WIDTH=32'b00000000000000000000000000000110
+	MICRO_W=32'b00000000000000000000000000000011
+	PIPE1=32'b11111111111111111111111111111111
+	PIPE2=32'b11111111111111111111111111111111
+	LAYERS=32'b00000000000000000000000000000010
+   Generated name = wide_xor_6s_3s_4294967295_4294967295_2s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v":111:7:111:53|Synthesizing module test_4463andcpuopration_COREEDAC_0_ham_dec_vlog
+
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	DEC_DLY=32'b00000000000000000000000000000000
+	PIPE1=32'b11111111111111111111111111111111
+	PIPE2=32'b11111111111111111111111111111111
+	SYND_PIPE=5'b00000
+   Generated name = test_4463andcpuopration_COREEDAC_0_ham_dec_vlog_8s_5_0_4294967295_4294967295_0
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v":28:7:28:44|Synthesizing module test_4463andcpuopration_COREEDAC_0_ecc
+
+	MODE=32'b00000000000000000000000000000001
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	ENC_PIPE1=32'b11111111111111111111111111111111
+	ENC_PIPE2=32'b11111111111111111111111111111111
+	DEC_PIPE1=32'b11111111111111111111111111111111
+	DEC_PIPE2=32'b11111111111111111111111111111111
+	SYND_PIPE=5'b00000
+	ENC_PIPE=32'b00000000000000000000000000000000
+	DEC_PIPE=32'b00000000000000000000000000000000
+	SCRUB_ON=32'b00000000000000000000000000000000
+	RAM_LOGDEPTH=32'b00000000000000000000000000001010
+	RAM_PIPE=32'b00000000000000000000000000000000
+	DLY_RD_A_ON=32'b00000000000000000000000000000000
+   Generated name = test_4463andcpuopration_COREEDAC_0_ecc_Z2
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":30:7:30:49|Synthesizing module test_4463andcpuopration_COREEDAC_0_sub_edac
+
+	MODE=32'b00000000000000000000000000000001
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	ENC_PIPE1=32'b11111111111111111111111111111111
+	ENC_PIPE2=32'b11111111111111111111111111111111
+	DEC_PIPE1=32'b11111111111111111111111111111111
+	DEC_PIPE2=32'b11111111111111111111111111111111
+	SYND_PIPE=5'b00000
+	ENC_PIPE=32'b00000000000000000000000000000000
+	DEC_PIPE=32'b00000000000000000000000000000000
+	DLY_RD_A_ON=32'b00000000000000000000000000000000
+	SCRUB_ON=32'b00000000000000000000000000000000
+	WRBK_ON=32'b00000000000000000000000000000001
+	DIV_WDTH=32'b00000000000000000000000000001010
+	TMOUT_SET=32'b00000000000000000000001111101000
+	SCRUB_AMIN=32'b00000000000000000000000000000000
+	SCRUB_AMAX=32'b00000000000000000000000011111111
+	RAM_LOGDEPTH=32'b00000000000000000000000000001010
+	RAM_PIPE=32'b00000000000000000000000000000000
+	INIT_RAM=32'b00000000000000000000000000000000
+	SINGLECLK=32'b00000000000000000000000000000000
+	TEST=32'b00000000000000000000000000000000
+   Generated name = test_4463andcpuopration_COREEDAC_0_sub_edac_Z3
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":66:7:66:22|Synthesizing module edac_kitCrossClk
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":118:24:118:35|No assignment to wire mux_scrub_rd
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":118:38:118:49|No assignment to wire mux_scrub_wr
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":120:7:120:21|No assignment to wire stop_scrub_rd_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":121:7:121:21|No assignment to wire stop_scrub_wr_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":125:26:125:35|No assignment to wire scrub_rA_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":131:7:131:17|No assignment to wire scrub_rEn_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":133:26:133:35|No assignment to wire scrub_wA_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":134:33:134:42|No assignment to wire scrub_wD_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":135:7:135:17|No assignment to wire scrub_wEn_w
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":136:7:136:22|No assignment to wire error_from_scrub
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":136:25:136:46|No assignment to wire correctable_from_scrub
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":138:7:138:15|No assignment to wire scrub_due
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":139:13:139:22|No assignment to wire wr_mux_sel
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":142:26:142:32|No assignment to wire init_wA
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":29:7:29:45|Synthesizing module test_4463andcpuopration_COREEDAC_0_edac
+
+	MODE=32'b00000000000000000000000000000001
+	TMR=32'b00000000000000000000000000000000
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	ENC_PIPE1=32'b11111111111111111111111111111111
+	ENC_PIPE2=32'b11111111111111111111111111111111
+	DEC_PIPE1=32'b11111111111111111111111111111111
+	DEC_PIPE2=32'b11111111111111111111111111111111
+	SYND_PIPE=5'b00000
+	ENC_PIPE=32'b00000000000000000000000000000000
+	DEC_PIPE=32'b00000000000000000000000000000000
+	DLY_RD_A_ON=32'b00000000000000000000000000000000
+	SCRUB_ON=32'b00000000000000000000000000000000
+	WRBK_ON=32'b00000000000000000000000000000001
+	DIV_WDTH=32'b00000000000000000000000000001010
+	TMOUT_SET=32'b00000000000000000000001111101000
+	SCRUB_AMIN=32'b00000000000000000000000000000000
+	SCRUB_AMAX=32'b00000000000000000000000011111111
+	RAM_LOGDEPTH=32'b00000000000000000000000000001010
+	RAM_PIPE=32'b00000000000000000000000000000000
+	SINGLECLK=32'b00000000000000000000000000000000
+	INIT_RAM=32'b00000000000000000000000000000000
+	TEST=32'b00000000000000000000000000000000
+   Generated name = test_4463andcpuopration_COREEDAC_0_edac_Z4
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":154:45:154:54|No assignment to wire re_code_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":154:57:154:66|No assignment to wire re_code_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":155:19:155:28|No assignment to wire ram_wEn_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":155:31:155:40|No assignment to wire ram_wEn_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":156:44:156:52|No assignment to wire ram_wD_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":156:55:156:63|No assignment to wire ram_wD_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":157:37:157:45|No assignment to wire ram_wA_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":157:48:157:56|No assignment to wire ram_wA_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":158:19:158:28|No assignment to wire ram_rEn_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":158:31:158:40|No assignment to wire ram_rEn_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":159:37:159:45|No assignment to wire ram_rA_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":159:48:159:56|No assignment to wire ram_rA_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":160:41:160:53|No assignment to wire ram_rA_lat_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":160:56:160:68|No assignment to wire ram_rA_lat_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":161:7:161:24|No assignment to wire now_scrubbing_trp1
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":161:27:161:44|No assignment to wire now_scrubbing_trp2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":161:47:161:64|No assignment to wire now_scrubbing_trp3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":162:23:162:36|No assignment to wire correctable_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":162:39:162:52|No assignment to wire correctable_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":163:17:163:24|No assignment to wire error_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":163:27:163:34|No assignment to wire error_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":164:20:164:30|No assignment to wire slowdown_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":164:33:164:43|No assignment to wire slowdown_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":165:20:165:30|No assignment to wire tmoutflg_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":165:33:165:43|No assignment to wire tmoutflg_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":166:22:166:34|No assignment to wire scrub_done_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":166:37:166:49|No assignment to wire scrub_done_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":167:22:167:34|No assignment to wire scrub_corr_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":167:37:167:49|No assignment to wire scrub_corr_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":168:7:168:15|No assignment to wire samerw_w1
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":168:18:168:26|No assignment to wire samerw_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":168:29:168:37|No assignment to wire samerw_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":169:25:169:40|No assignment to wire now_scrubbing_w2
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":169:43:169:58|No assignment to wire now_scrubbing_w3
+
+@W: CG360 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":171:7:171:14|No assignment to wire samerw_w
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v":31:7:31:49|Synthesizing module test_4463andcpuopration_COREEDAC_0_COREEDAC
+
+	MODE=32'b00000000000000000000000000000001
+	TMR=32'b00000000000000000000000000000000
+	DAT_WIDTH=32'b00000000000000000000000000001000
+	USER_ENC_PIPE=32'b00000000000000000000000000000000
+	USER_DEC_PIPE=32'b00000000000000000000000000000000
+	SCRUB_ON=32'b00000000000000000000000000000000
+	WRBK_ON=32'b00000000000000000000000000000001
+	DIV_WDTH=32'b00000000000000000000000000001010
+	TMOUT_SET=32'b00000000000000000000001111101000
+	SCRUB_AMIN=32'b00000000000000000000000000000000
+	SCRUB_AMAX=32'b00000000000000000000000011111111
+	RAM_DEPTH=32'b00000000000000000000010000000000
+	RAM_PIPE=32'b00000000000000000000000000000000
+	URAM=32'b00000000000000000000000000000000
+	URAM_PORT_B=32'b00000000000000000000000000000000
+	URAM_A_PIPE=32'b00000000000000000000000000000001
+	INIT_RAM=32'b00000000000000000000000000000000
+	DLY_RD_A_ON=32'b00000000000000000000000000000000
+	SINGLECLK=32'b00000000000000000000000000000000
+	TEST=32'b00000000000000000000000000000000
+	SIM_RAM=32'b00000000000000000000000000000000
+	FAMILY=32'b00000000000000000000000000010011
+	RAM_LOGDEPTH=32'b00000000000000000000000000001010
+	PAR_WIDTH=32'b00000000000000000000000000000101
+	XORWDTH=7'b0000101
+	ENC_LAYERS=32'b00000000000000000000000000000010
+	DEC_LAYERS=32'b00000000000000000000000000000010
+	ENC_PIPE1=32'b11111111111111111111111111111111
+	ENC_PIPE2=32'b11111111111111111111111111111111
+	DEC_PIPE1=32'b11111111111111111111111111111111
+	DEC_PIPE2=32'b11111111111111111111111111111111
+	SYND_PIPE=5'b00000
+	ENC_DLY1=32'b00000000000000000000000000000000
+	ENC_DLY2=32'b00000000000000000000000000000000
+	DEC_DLY1=32'b00000000000000000000000000000000
+	DEC_DLY2=32'b00000000000000000000000000000000
+	ENC_PIPE=32'b00000000000000000000000000000000
+	DEC_PIPE=32'b00000000000000000000000000000000
+	AX_SILICON_ISSUE=32'b00000000000000000000000000000001
+   Generated name = test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":382:7:382:13|Synthesizing module RAM1K18
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v":5:7:5:47|Synthesizing module test_4463andcpuopration_COREEDAC_0_actram
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\CPU_W_HDL_R.v":21:7:21:17|Synthesizing module CPU_W_HDL_R
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\divider.v":2:7:2:13|Synthesizing module divider
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\divider_2.v":2:7:2:15|Synthesizing module divider_2
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":727:7:727:9|Synthesizing module CCC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\FCCC_0\test_4463andcpuopration_FCCC_0_FCCC.v":5:7:5:41|Synthesizing module test_4463andcpuopration_FCCC_0_FCCC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":21:7:21:16|Synthesizing module Glue_Logic
+
+	Flag_Register_Addr_0=32'b00110000000000000000000000000000
+	Flag_Register_Addr_1=32'b00110000000000000000000000000001
+	Flag_Register_Addr_2=32'b00110000000000000000000000000010
+	Flag_Register_Addr_3=32'b00110000000000000000000000000011
+	Flag_Register_Addr_4=32'b00110000000000000000000000000100
+	Flag_Register_Addr_5=32'b00110000000000000000000000000101
+	Flag_Register_Addr_6=32'b00110000000000000000000000000110
+	Flag_Register_Addr_7=32'b00110000000000000000000000000111
+	Flag_Register_Addr_8=32'b00110000000000000000000000001000
+	Flag_Register_Addr_9=32'b00110000000000000000000000001001
+	Flag_Register_Addr_10=32'b00110000000000000000000000001010
+	Flag_Register_Addr_11=32'b00110000000000000000000000001011
+	Flag_Register_Addr_12=32'b00110000000000000000000000001100
+	Flag_Register_Addr_13=32'b00110000000000000000000000001101
+	Flag_Register_Addr_14=32'b00110000000000000000000000001110
+	Flag_Register_Addr_15=32'b00110000000000000000000000001111
+	Tx_Base_Addr_A=32'b00000000000000000000000000000000
+	Tx_Base_Addr_B=32'b00000000000000000000000000000000
+	Rec_Base_Addr_A=32'b00000000000000000000000000000000
+	Rec_Base_Addr_B=32'b00000000000000000000000000000000
+   Generated name = Glue_Logic_Z6
+
+@A: CL282 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Feedback mux created for signal USER_WEN_TRP1 -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Feedback mux created for signal PRDATA[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Feedback mux created for signal MSG_WA_TRP1[9:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Feedback mux created for signal MSG_TRP1[7:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[0] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[1] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[2] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[3] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[4] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[5] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[6] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[7] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[8] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit MSG_WA_TRP1[9] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit PRDATA[2] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit PRDATA[3] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit PRDATA[4] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit PRDATA[5] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit PRDATA[6] is always 0, optimizing ...
+@W: CL189 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Register bit USER_WEN_TRP1 is always 1, optimizing ...
+@W: CL279 :"F:\project\test_4463andcpuopration\hdl\Glue_Logic.v":103:0:103:5|Pruning register bits 6 to 2 of PRDATA[7:0] 
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":63:7:63:16|Synthesizing module XTLOSC_FAB
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":23:7:23:12|Synthesizing module XTLOSC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":5:7:5:39|Synthesizing module test_4463andcpuopration_OSC_0_OSC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\parallel_to_serial.v":21:7:21:24|Synthesizing module parallel_to_serial
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\randomizer.v":21:7:21:16|Synthesizing module Randomizer
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\rest.v":21:7:21:10|Synthesizing module rest
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\RSControl.v":21:7:21:15|Synthesizing module RSControl
+
+@N: CG364 :"F:\project\test_4463andcpuopration\hdl\Switch.v":21:7:21:12|Synthesizing module Switch
+
+@N: CG364 :"G:\Microsemi\Libero_SoC_v11.7\Synplify\lib\generic\smartfusion2.v":718:7:718:14|Synthesizing module SYSRESET
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_syn.v":5:7:5:13|Synthesizing module MSS_010
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v":9:7:9:33|Synthesizing module test_4463andcpuopration_MSS
+
+@W: CG775 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v":29:7:29:35|Found Component TM_RSENC_TM_RSENC_0_CORERSENC in library CORERSENC_LIB
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v":88:7:88:35|Synthesizing module TM_RSENC_TM_RSENC_0_kitCountS
+
+	WIDTH=32'b00000000000000000000000000001000
+	DCVALUE=32'b00000000000000000000000011111101
+	BUILD_DC=32'b00000000000000000000000000000001
+   Generated name = TM_RSENC_TM_RSENC_0_kitCountS_8s_253s_1s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v":39:7:39:42|Synthesizing module TM_RSENC_TM_RSENC_0_kitDelay_bit_reg
+
+	DELAY=32'b00000000000000000000000000000100
+   Generated name = TM_RSENC_TM_RSENC_0_kitDelay_bit_reg_4s
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v":47:6:47:14|No assignment to delayLine_4_
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":94:7:94:34|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_SM
+
+	KK=32'b00000000000000000000000011011111
+	TT=32'b00000000000000000000000000010000
+	NN=32'b00000000000000000000000011111111
+	MM=32'b00000000000000000000000000001000
+	CCSDS=32'b00000000000000000000000000000001
+	CCSDS_CONV=32'b00000000000000000000000000000001
+	LATENCY=32'b00000000000000000000000000000100
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_SM_223s_16s_255s_8s_1s_1s_4s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v":32:7:32:33|Synthesizing module TM_RSENC_TM_RSENC_0_gf_mult
+
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_gf_mult_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000000001
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_1s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000001011011
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_91s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000001111111
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_127s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000001010110
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_86s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000010000
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_16s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000011110
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_30s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000001101
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_13s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000011101011
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_235s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000001100001
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_97s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000010100101
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_165s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000001000
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_8s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000101010
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_42s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000110110
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_54s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000010101011
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_171s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000000100000
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_32s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":28:7:28:35|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_tap
+
+	GG=32'b00000000000000000000000001110001
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_tap_113s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":50:7:50:39|Synthesizing module TM_RSENC_TM_RSENC_0_rsEnc_lastTap
+
+	GG=32'b00000000000000000000000001011011
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_rsEnc_lastTap_91s_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v":124:7:124:31|Synthesizing module TM_RSENC_TM_RSENC_0_gfIIR
+
+	MM=32'b00000000000000000000000000001000
+   Generated name = TM_RSENC_TM_RSENC_0_gfIIR_8s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v":29:7:29:35|Synthesizing module TM_RSENC_TM_RSENC_0_CORERSENC
+
+	TT=32'b00000000000000000000000000010000
+	NN=32'b00000000000000000000000011111111
+	MM=32'b00000000000000000000000000001000
+	CCSDS=32'b00000000000000000000000000000001
+	CCSDS_CONV=32'b00000000000000000000000000000001
+	FAMILY=32'b00000000000000000000000000010011
+	KK=32'b00000000000000000000000011011111
+   Generated name = TM_RSENC_TM_RSENC_0_CORERSENC_16s_255s_8s_1s_1s_19s_223s
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":225:7:225:33|Synthesizing module TM_RSENC_TM_RSENC_0_tal1tab
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v":197:7:197:32|Synthesizing module TM_RSENC_TM_RSENC_0_taltab
+
+@W: CG133 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v":53:6:53:10|No assignment to r1RST
+@W: CG133 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v":53:13:53:17|No assignment to r2RST
+@W: CG133 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v":53:20:53:24|No assignment to r3RST
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC.v":9:7:9:14|Synthesizing module TM_RSENC
+
+@N: CG364 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\test_4463andcpuopration.v":9:7:9:29|Synthesizing module test_4463andcpuopration
+
+@N: CL135 :"F:\project\test_4463andcpuopration\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v":56:6:56:11|Found seqShift genblk1.delayLine, depth=4, width=1
+@N: CL201 :"F:\project\test_4463andcpuopration\hdl\RSControl.v":50:0:50:5|Trying to extract state machine for register State
+Extracted state machine for register State
+State machine has 4 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00100
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":15:7:15:24|*Output RCOSC_25_50MHZ_CCC has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":16:7:16:24|*Output RCOSC_25_50MHZ_O2F has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v":19:7:19:16|*Output XTLOSC_CCC has undriven bits -- simulation mismatch possible.
+@N: CL201 :"F:\project\test_4463andcpuopration\hdl\CPU_W_HDL_R.v":63:0:63:5|Trying to extract state machine for register State
+Extracted state machine for register State
+State machine has 3 reachable states with original encodings of:
+   00001
+   00010
+   00100
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v":156:35:156:51|Input CODE_FROM_EXT_RAM is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":108:8:108:22|Input stop_scrub_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":109:8:109:22|Input stop_scrub_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":112:24:112:31|Input msg_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":113:24:113:31|Input msg_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":116:8:116:20|Input user_wEn_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":117:8:117:20|Input user_wEn_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":119:27:119:38|Input user_wA_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":120:27:120:38|Input user_wA_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":122:8:122:20|Input user_rEn_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":123:8:123:20|Input user_rEn_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":125:27:125:38|Input user_rA_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":126:27:126:38|Input user_rA_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":138:8:138:23|Input start_scrub_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":139:8:139:23|Input start_scrub_trp3 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":141:8:141:21|Input rst_timer_trp2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v":142:8:142:21|Input rst_timer_trp3 is unused
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":111:9:111:16|*Output slowdown has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":112:9:112:16|*Output tmoutflg has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":113:9:113:18|*Output scrub_done has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":114:9:114:18|*Output scrub_corr has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":115:9:115:21|*Output now_scrubbing has undriven bits -- simulation mismatch possible.
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":87:8:87:17|Input stop_scrub is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":98:8:98:18|Input start_scrub is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":99:8:99:16|Input rst_timer is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v":100:34:100:40|Input inj_err is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v":70:29:70:34|Input ram_rA is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:9:352:13|Input nGrst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:16:352:18|Input rst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:21:352:23|Input clk is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:26:352:30|Input clkEn is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:9:352:13|Input nGrst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:16:352:18|Input rst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:21:352:23|Input clk is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v":352:26:352:30|Input clkEn is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:8:49:12|Input nGrst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:15:49:17|Input rst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:20:49:22|Input clk is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:25:49:29|Input clkEn is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:8:49:12|Input nGrst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:15:49:17|Input rst is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:20:49:22|Input clk is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v":49:25:49:29|Input clkEn is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":72:36:72:40|Input IADDR is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":73:13:73:19|Input PRESETN is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":74:13:74:16|Input PCLK is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":104:18:104:25|Input PRDATAS0 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":105:18:105:25|Input PRDATAS1 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":106:18:106:25|Input PRDATAS2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":108:18:108:25|Input PRDATAS4 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":109:18:109:25|Input PRDATAS5 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":110:18:110:25|Input PRDATAS6 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":111:18:111:25|Input PRDATAS7 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":112:18:112:25|Input PRDATAS8 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":113:18:113:25|Input PRDATAS9 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":114:18:114:26|Input PRDATAS10 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":115:18:115:26|Input PRDATAS11 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":116:18:116:26|Input PRDATAS12 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":117:18:117:26|Input PRDATAS13 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":118:18:118:26|Input PRDATAS14 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":119:18:119:26|Input PRDATAS15 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":121:13:121:20|Input PREADYS0 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":122:13:122:20|Input PREADYS1 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":123:13:123:20|Input PREADYS2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":125:13:125:20|Input PREADYS4 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":126:13:126:20|Input PREADYS5 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":127:13:127:20|Input PREADYS6 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":128:13:128:20|Input PREADYS7 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":129:13:129:20|Input PREADYS8 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":130:13:130:20|Input PREADYS9 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":131:13:131:21|Input PREADYS10 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":132:13:132:21|Input PREADYS11 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":133:13:133:21|Input PREADYS12 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":134:13:134:21|Input PREADYS13 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":135:13:135:21|Input PREADYS14 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":136:13:136:21|Input PREADYS15 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":138:13:138:21|Input PSLVERRS0 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":139:13:139:21|Input PSLVERRS1 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":140:13:140:21|Input PSLVERRS2 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":142:13:142:21|Input PSLVERRS4 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":143:13:143:21|Input PSLVERRS5 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":144:13:144:21|Input PSLVERRS6 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":145:13:145:21|Input PSLVERRS7 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":146:13:146:21|Input PSLVERRS8 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":147:13:147:21|Input PSLVERRS9 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":148:13:148:22|Input PSLVERRS10 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":149:13:149:22|Input PSLVERRS11 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":150:13:150:22|Input PSLVERRS12 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":151:13:151:22|Input PSLVERRS13 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":152:13:152:22|Input PSLVERRS14 is unused
+@W: CL159 :"F:\project\test_4463andcpuopration\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v":153:13:153:22|Input PSLVERRS15 is unused
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Sep 03 15:34:39 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Sep 03 15:34:40 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Sep 03 15:34:40 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Sep 03 15:34:41 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 1659R, Built Dec 10 2015 09:44:42
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@L: F:\project\test_4463andcpuopration\synthesis\test_4463andcpuopration_scck.rpt 
+Printing clock  summary report in "F:\project\test_4463andcpuopration\synthesis\test_4463andcpuopration_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 112MB)
+
+@N: BN115 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":174:56:174:67|Removing instance usr_rd_dly_0 of view:work.edac_kitDelay_bit_reg_1(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\component\actel\directcore\coreedac\2.8.100\rtl\vlog\core\edac_kit.v":276:6:276:11|Removing sequential instance genblk1\.delayLine_0_ of view:PrimLib.dffre(prim) in hierarchy view:work.edac_kitDelay_bit_reg_1(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":159:24:159:44|Removing instance read_ok_on_r_domain\.cross_read_ok_wr2rd_0 of view:work.edac_kitCrossClk(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\component\actel\directcore\coreedac\2.8.100\rtl\vlog\core\edac_kit.v":73:2:73:7|Removing sequential instance outp of view:PrimLib.dffr(prim) in hierarchy view:work.edac_kitCrossClk(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\component\actel\directcore\coreedac\2.8.100\rtl\vlog\core\edac_kit.v":73:2:73:7|Removing sequential instance inp_tick of view:PrimLib.dffr(prim) in hierarchy view:work.edac_kitCrossClk(verilog) because there are no references to its outputs 
+@W: MT462 :"f:\project\test_4463andcpuopration\hdl\divider_2.v":19:40:19:47|Net divider_2_0.un12_cnt_next[1] appears to be an unidentified clock source. Assuming default frequency. 
+syn_allowed_resources : blockrams=21  set on top level netlist test_4463andcpuopration
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 144MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                                          Requested     Requested     Clock        Clock              
+Clock                                                          Frequency     Period        Type         Group              
+---------------------------------------------------------------------------------------------------------------------------
+System                                                         100.0 MHz     10.000        system       system_clkgroup    
+divider|Bit_Count_inferred_clock[2]                            100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock       100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+test_4463andcpuopration|clk                                    100.0 MHz     10.000        inferred     Inferred_clkgroup_3
+===========================================================================================================================
+
+@W: MT532 :"f:\project\test_4463andcpuopration\hdl\asm_generato.v":62:2:62:7|Found signal identified as System clock which controls 81 sequential elements including ASM_Generato_0.pending.  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
+@W: MT530 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\test_4463andcpuopration_coreedac_0_actram.v":31:12:31:57|Found inferred clock divider|Bit_Count_inferred_clock[2] which controls 366 sequential elements including COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\test_4463andcpuopration_coreedac_0_actram.v":31:12:31:57|Found inferred clock test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock which controls 18 sequential elements including COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration_mss\test_4463andcpuopration_mss.v":203:0:203:13|Found inferred clock test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock which controls 0 sequential elements including test_4463andcpuopration_MSS_0.MSS_ADLIB_INST. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"f:\project\test_4463andcpuopration\hdl\divider_2.v":22:0:22:5|Found inferred clock test_4463andcpuopration|clk which controls 2 sequential elements including divider_2_0.cnt[1:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file F:\project\test_4463andcpuopration\synthesis\test_4463andcpuopration.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Sep 03 15:34:42 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Generic Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:44:42
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":115:9:115:21|Tristate driver now_scrubbing on net now_scrubbing has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_sub_edac_Z3) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":135:7:135:17|Tristate driver scrub_corr on net scrub_corr has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_sub_edac_Z3) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":113:9:113:18|Tristate driver scrub_done on net scrub_done has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_sub_edac_Z3) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":112:9:112:16|Tristate driver tmoutflg on net tmoutflg has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_sub_edac_Z3) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\rtl\vlog\core\sub_edac.v":111:9:111:16|Tristate driver slowdown on net slowdown has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_sub_edac_Z3) 
+@W: MO111 :|Tristate driver slowdown_t on net slowdown has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_edac_Z4) 
+@W: MO111 :|Tristate driver tmoutflg_t on net tmoutflg has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_edac_Z4) 
+@W: MO111 :|Tristate driver scrub_done_t on net scrub_done has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_edac_Z4) 
+@W: MO111 :|Tristate driver scrub_corr_t on net scrub_corr has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_edac_Z4) 
+@W: MO111 :|Tristate driver now_scrubbing_t on net now_scrubbing has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_edac_Z4) 
+@W: MO111 :|Tristate driver NOW_SCRUBBING_t on net NOW_SCRUBBING has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5) 
+@W: MO111 :|Tristate driver SLOWDOWN_t on net SLOWDOWN has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5) 
+@W: MO111 :|Tristate driver TMOUTFLG_t on net TMOUTFLG has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5) 
+@W: MO111 :|Tristate driver SCRUB_DONE_t on net SCRUB_DONE has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5) 
+@W: MO111 :|Tristate driver SCRUB_CORR_t on net SCRUB_CORR has its enable tied to GND (module test_4463andcpuopration_COREEDAC_0_COREEDAC_Z5) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC on net XTLOSC_CCC has its enable tied to GND (module test_4463andcpuopration_OSC_0_OSC) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F on net RCOSC_1MHZ_O2F has its enable tied to GND (module test_4463andcpuopration_OSC_0_OSC) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC on net RCOSC_1MHZ_CCC has its enable tied to GND (module test_4463andcpuopration_OSC_0_OSC) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F on net RCOSC_25_50MHZ_O2F has its enable tied to GND (module test_4463andcpuopration_OSC_0_OSC) 
+@W: MO111 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC on net RCOSC_25_50MHZ_CCC has its enable tied to GND (module test_4463andcpuopration_OSC_0_OSC) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"f:\project\test_4463andcpuopration\hdl\divider_2.v":19:40:19:47|Net divider_2_0_out appears to be an unidentified clock source. Assuming default frequency. 
+@N: FA239 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\test_4463andcpuopration_coreedac_0_edac_auto.v":236:4:236:7|ROM err_w[12:0] mapped in logic.
+@N: FA239 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\test_4463andcpuopration_coreedac_0_edac_auto.v":236:4:236:7|ROM err_w[12:0] mapped in logic.
+@N: MO106 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\coreedac_0\test_4463andcpuopration_coreedac_0_edac_auto.v":236:4:236:7|Found ROM, 'err_w[12:0]', 13 words by 13 bits 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 138MB)
+
+@W: MO129 :"f:\project\test_4463andcpuopration\hdl\divider_2.v":22:0:22:5|Sequential instance divider_2_0.cnt[1] reduced to a combinational gate by constant propagation
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\rest.v":27:0:27:5|Removing sequential instance rest_0.flag_one in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+Encoding state machine State[2:0] (view:work.CPU_W_HDL_R(verilog))
+original code -> new code
+   00001 -> 00
+   00010 -> 01
+   00100 -> 10
+@N:"f:\project\test_4463andcpuopration\hdl\cpu_w_hdl_r.v":142:0:142:5|Found counter in view:work.CPU_W_HDL_R(verilog) inst byte_count[5:0]
+@N:"f:\project\test_4463andcpuopration\hdl\parallel_to_serial.v":30:0:30:5|Found counter in view:work.parallel_to_serial(verilog) inst bit[15:0]
+Encoding state machine State[3:0] (view:work.RSControl(verilog))
+original code -> new code
+   00000 -> 00
+   00001 -> 01
+   00010 -> 10
+   00100 -> 11
+@N: MO225 :"f:\project\test_4463andcpuopration\hdl\rscontrol.v":50:0:50:5|No possible illegal states for state machine State[3:0],safe FSM implementation is disabled
+@N:"f:\project\test_4463andcpuopration\hdl\rscontrol.v":50:0:50:5|Found counter in view:work.RSControl(verilog) inst Byte_Count[7:0]
+@N:"f:\project\test_4463andcpuopration\component\work\tm_rsenc\tm_rsenc_0\rtl\vlog\core\rsenc_kit.v":100:2:100:7|Found counter in view:CORERSENC_LIB.TM_RSENC_TM_RSENC_0_kitCountS_8s_253s_1s(verilog) inst Q[7:0]
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[0] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[1] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[2] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[3] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[4] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[5] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[6] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\glue_logic.v":103:0:103:5|Removing sequential instance Glue_Logic_0.MSG_TRP1[7] in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\project\test_4463andcpuopration\hdl\rest.v":27:0:27:5|Removing sequential instance rest_0.rst in hierarchy view:work.test_4463andcpuopration(verilog) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 145MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 145MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 145MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 139MB peak: 145MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 145MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 152MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:01s		     0.57ns		 581 /       453
+   2		0h:00m:01s		     0.57ns		 573 /       453
+   3		0h:00m:01s		     0.63ns		 573 /       453
+@N: FP130 |Promoting Net divider_0.Bit_Count_i_1[2] on CLKINT  I_193 
+@N: FP130 |Promoting Net RSControl_0_NGRST on CLKINT  I_194 
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 152MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 150MB peak: 152MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+2 non-gated/non-generated clock tree(s) driving 11 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 446 clock pin(s) of sequential element(s)
+0 instances converted, 446 sequential instances remain driven by gated/generated clocks
+
+========================================== Non-Gated/Non-Generated Clocks ==========================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                             
+--------------------------------------------------------------------------------------------------------------------
+@K:CKID0004       clk                 port                   1          divider_2_0.cnt[0]                          
+@K:CKID0005       FCCC_0.GL0_INST     CLKINT                 10         test_4463andcpuopration_MSS_0.MSS_ADLIB_INST
+====================================================================================================================
+============================================================================================ Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                  Drive Element Type     Fanout     Sample Instance                                  Explanation                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       divider_0.Bit_Count[2]                           SLE                    364        RSControl_0.Byte_Count[7]                        No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0002       divider_2_0.cnt[0]                               SLE                    81         Switch_0.Out                                     No gated clock conversion method for cell cell:ACG4.SLE    
+@K:CKID0003       test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     MSS_010                1          test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     No gated clock conversion method for cell cell:work.MSS_010
+=================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 152MB)
+
+Writing Analyst data base F:\project\test_4463andcpuopration\synthesis\synwork\test_4463andcpuopration_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 152MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 152MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 148MB peak: 152MB)
+
+@W: MT246 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\osc_0\test_4463andcpuopration_osc_0_osc.v":26:47:26:54|Blackbox XTLOSC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"f:\project\test_4463andcpuopration\component\work\test_4463andcpuopration\fccc_0\test_4463andcpuopration_fccc_0_fccc.v":20:36:20:43|Blackbox CCC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock test_4463andcpuopration|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
+
+@W: MT420 |Found inferred clock test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:test_4463andcpuopration_MSS_0.SPI_0_CLK_M2F"
+
+@W: MT420 |Found inferred clock test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:FCCC_0.GL0_net"
+
+@W: MT420 |Found inferred clock divider|Bit_Count_inferred_clock[2] with period 10.00ns. Please declare a user-defined clock on object "n:divider_0.Bit_Count[2]"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Sep 03 15:34:45 2016
+#
+
+
+Top view:               test_4463andcpuopration
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.638
+
+                                                               Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                                 Frequency     Frequency     Period        Period        Slack     Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+divider|Bit_Count_inferred_clock[2]                            100.0 MHz     145.6 MHz     10.000        6.869         3.131     inferred     Inferred_clkgroup_0
+test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     100.0 MHz     119.6 MHz     10.000        8.362         1.638     inferred     Inferred_clkgroup_1
+test_4463andcpuopration_MSS|SPI_0_CLK_M2F_inferred_clock       100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_2
+test_4463andcpuopration|clk                                    100.0 MHz     410.8 MHz     10.000        2.434         7.566     inferred     Inferred_clkgroup_3
+System                                                         100.0 MHz     252.4 MHz     10.000        3.962         6.039     system       system_clkgroup    
+=================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                  |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                    Ending                                                      |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                      System                                                      |  10.000      6.039  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                      divider|Bit_Count_inferred_clock[2]                         |  No paths    -      |  No paths    -      |  10.000      5.684  |  No paths    -    
+divider|Bit_Count_inferred_clock[2]                         System                                                      |  No paths    -      |  No paths    -      |  No paths    -      |  10.000      6.356
+divider|Bit_Count_inferred_clock[2]                         divider|Bit_Count_inferred_clock[2]                         |  No paths    -      |  10.000      3.131  |  No paths    -      |  No paths    -    
+divider|Bit_Count_inferred_clock[2]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock  divider|Bit_Count_inferred_clock[2]                         |  No paths    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock  test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock  |  10.000      1.638  |  No paths    -      |  No paths    -      |  No paths    -    
+test_4463andcpuopration|clk                                 test_4463andcpuopration|clk                                 |  10.000      7.566  |  No paths    -      |  No paths    -      |  No paths    -    
+==============================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: divider|Bit_Count_inferred_clock[2]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                    Starting                                                                                 Arrival          
+Instance                                                                                                            Reference                               Type        Pin            Net                   Time        Slack
+                                                                                                                    Clock                                                                                                     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[12]     CODE_FROM_RAM[12]     2.263       3.131
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[11]     CODE_FROM_RAM[11]     2.263       3.195
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[9]      CODE_FROM_RAM[9]      2.263       3.202
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[4]      CODE_FROM_RAM[4]      2.263       3.251
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[7]      CODE_FROM_RAM[7]      2.263       3.266
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[6]      CODE_FROM_RAM[6]      2.263       3.303
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[8]      CODE_FROM_RAM[8]      2.263       3.959
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0     divider|Bit_Count_inferred_clock[2]     RAM1K18     A_DOUT[10]     CODE_FROM_RAM[10]     2.263       4.021
+TM_RSENC_0.TM_RSENC_0.gfIIR_0.tap_31.dInp_reg[7]                                                                    divider|Bit_Count_inferred_clock[2]     SLE         Q              dInp_reg_w[7]         0.108       4.059
+TM_RSENC_0.TM_RSENC_0.gfIIR_0.tap_31.pre_fbOut[7]                                                                   divider|Bit_Count_inferred_clock[2]     SLE         Q              pre_fb_w[7]           0.108       4.084
+==============================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                      Starting                                                                            Required          
+Instance                                              Reference                               Type     Pin     Net                        Time         Slack
+                                                      Clock                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+RSControl_0.Data_Buff[3]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[3]     9.745        3.131
+RSControl_0.Data_Buff[7]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[7]     9.745        3.147
+RSControl_0.Data_Buff[0]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[0]     9.745        3.202
+RSControl_0.Data_Buff[6]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[6]     9.745        3.202
+RSControl_0.Data_Buff[1]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[1]     9.745        3.231
+RSControl_0.Data_Buff[5]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[5]     9.745        3.231
+RSControl_0.Data_Buff[2]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[2]     9.745        3.247
+RSControl_0.Data_Buff[4]                              divider|Bit_Count_inferred_clock[2]     SLE      D       CPU_W_HDL_R_0_DataO[4]     9.745        3.247
+TM_RSENC_0.TM_RSENC_0.gfIIR_0.tap_31.pre_fbOut[1]     divider|Bit_Count_inferred_clock[2]     SLE      D       pre_fbOut_4[1]             9.745        4.059
+TM_RSENC_0.TM_RSENC_0.gfIIR_0.tap_31.shftOut[1]       divider|Bit_Count_inferred_clock[2]     SLE      D       shftOut_2[1]               9.745        4.295
+============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      6.614
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 3.131
+
+    Number of logic level(s):                4
+    Starting point:                          COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0 / A_DOUT[12]
+    Ending point:                            RSControl_0.Data_Buff[3] / D
+    The start point is clocked by            divider|Bit_Count_inferred_clock[2] [falling] on pin A_CLK
+    The end   point is clocked by            divider|Bit_Count_inferred_clock[2] [falling] on pin CLK
+
+Instance / Net                                                                                                                                                                                                                                       Pin            Pin               Arrival     No. of    
+Name                                                                                                                                                                                                                                     Type        Name           Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COREEDAC_0.lsram_g4\.test_4463andcpuopration_COREEDAC_0_actram_0.test_4463andcpuopration_COREEDAC_0_actram_R0C0                                                                                                                          RAM1K18     A_DOUT[12]     Out     2.263     2.263       -         
+CODE_FROM_RAM[12]                                                                                                                                                                                                                        Net         -              -       1.126     -           3         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_4.genXOR\[1\]\.layer_xor_0.m17         CFG2        B              In      -         3.389       -         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_4.genXOR\[1\]\.layer_xor_0.m17         CFG2        Y              Out     0.165     3.554       -         
+N_18                                                                                                                                                                                                                                     Net         -              -       0.630     -           2         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_2.genXOR\[1\]\.layer_xor_0.outp[0]     CFG4        D              In      -         4.184       -         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_2.genXOR\[1\]\.layer_xor_0.outp[0]     CFG4        Y              Out     0.326     4.510       -         
+synd_w[2]                                                                                                                                                                                                                                Net         -              -       0.715     -           4         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_4.genXOR\[1\]\.layer_xor_0.m1          CFG4        C              In      -         5.225       -         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.wide_xor_4.genXOR\[1\]\.layer_xor_0.m1          CFG4        Y              Out     0.226     5.451       -         
+N_2                                                                                                                                                                                                                                      Net         -              -       0.678     -           3         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.re_code[8]                                      CFG4        D              In      -         6.129       -         
+COREEDAC_0.test_4463andcpuopration_COREEDAC_0_edac_0.test_4463andcpuopration_COREEDAC_0_sub_edac_0.test_4463andcpuopration_COREEDAC_0_ecc_0.test_4463andcpuopration_COREEDAC_0_decoder_0.re_code[8]                                      CFG4        Y              Out     0.326     6.455       -         
+CPU_W_HDL_R_0_DataO[3]                                                                                                                                                                                                                   Net         -              -       0.159     -           1         
+RSControl_0.Data_Buff[3]                                                                                                                                                                                                                 SLE         D              In      -         6.614       -         
+============================================================================================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 6.869 is 3.561(51.8%) logic and 3.308(48.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                 Starting                                                                                                                          Arrival          
+Instance                                         Reference                                                      Type        Pin                Net                                 Time        Slack
+                                                 Clock                                                                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[12]     CoreAPB3_0_APBmslave3_PADDR[12]     3.677       1.638
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[22]     CoreAPB3_0_APBmslave3_PADDR[22]     3.686       1.724
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[14]     CoreAPB3_0_APBmslave3_PADDR[14]     3.652       1.764
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[5]      CoreAPB3_0_APBmslave3_PADDR[5]      3.657       1.827
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[13]     CoreAPB3_0_APBmslave3_PADDR[13]     3.647       1.863
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[0]      CoreAPB3_0_APBmslave3_PADDR[0]      3.660       1.873
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[1]      CoreAPB3_0_APBmslave3_PADDR[1]      3.597       1.901
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[20]     CoreAPB3_0_APBmslave3_PADDR[20]     3.631       1.954
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[28]     CoreAPB3_0_APBmslave3_PADDR[28]     4.096       1.964
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_ADDR[2]      CoreAPB3_0_APBmslave3_PADDR[2]      3.576       1.965
+====================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                 Starting                                                                                                                                                   Required          
+Instance                                         Reference                                                      Type        Pin                Net                                                          Time         Slack
+                                                 Clock                                                                                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Glue_Logic_0.PRDATA_1[0]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 un1_PRDATA_0_sqmuxa                                          9.662        1.638
+Glue_Logic_0.PRDATA_1[1]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 un1_PRDATA_0_sqmuxa                                          9.662        1.638
+Glue_Logic_0.PRDATA_1[7]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 un1_PRDATA_0_sqmuxa                                          9.662        1.638
+Glue_Logic_0.Flag_Int                            test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 un1_Flag_Int_0_sqmuxa_1_i_0                                  9.662        1.732
+Glue_Logic_0.Flag_A_Tx                           test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 Flag_A_Tx_0_sqmuxa_1_i_0                                     9.662        1.810
+Glue_Logic_0.Flag_B_Tx                           test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         EN                 N_32                                                         9.662        1.810
+Glue_Logic_0.PRDATA_1[0]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         D                  PRDATA_6[0]                                                  9.745        2.019
+Glue_Logic_0.PRDATA_1[1]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         D                  PRDATA_6[1]                                                  9.745        2.019
+Glue_Logic_0.PRDATA_1[7]                         test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     SLE         D                  PRDATA_6[7]                                                  9.745        2.019
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock     MSS_010     F_HM0_RDATA[0]     test_4463andcpuopration_MSS_0_FIC_0_APB_MASTER_PRDATA[0]     9.551        2.132
+==============================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.338
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.662
+
+    - Propagation time:                      8.024
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     1.638
+
+    Number of logic level(s):                4
+    Starting point:                          test_4463andcpuopration_MSS_0.MSS_ADLIB_INST / F_HM0_ADDR[12]
+    Ending point:                            Glue_Logic_0.PRDATA_1[0] / EN
+    The start point is clocked by            test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK_BASE
+    The end   point is clocked by            test_4463andcpuopration_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                               Pin                Pin               Arrival     No. of    
+Name                                             Type        Name               Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+test_4463andcpuopration_MSS_0.MSS_ADLIB_INST     MSS_010     F_HM0_ADDR[12]     Out     3.677     3.677       -         
+CoreAPB3_0_APBmslave3_PADDR[12]                  Net         -                  -       1.117     -           1         
+Glue_Logic_0.Flag_A_Tx10_0_a3_17                 CFG4        D                  In      -         4.794       -         
+Glue_Logic_0.Flag_A_Tx10_0_a3_17                 CFG4        Y                  Out     0.317     5.111       -         
+Flag_A_Tx10_0_a3_17                              Net         -                  -       0.556     -           1         
+Glue_Logic_0.Flag_A_Tx10_0_a3_1                  CFG4        D                  In      -         5.667       -         
+Glue_Logic_0.Flag_A_Tx10_0_a3_1                  CFG4        Y                  Out     0.326     5.993       -         
+Flag_A_Tx10_0_a3_1                               Net         -                  -       0.556     -           1         
+Glue_Logic_0.Flag_A_Tx10_0_a3                    CFG4        B                  In      -         6.549       -         
+Glue_Logic_0.Flag_A_Tx10_0_a3                    CFG4        Y                  Out     0.148     6.697       -         
+N_164                                            Net         -                  -       0.792     -           7         
+Glue_Logic_0.un1_PRDATA_0_sqmuxa                 CFG3        A                  In      -         7.490       -         
+Glue_Logic_0.un1_PRDATA_0_sqmuxa                 CFG3        Y                  Out     0.100     7.590       -         
+un1_PRDATA_0_sqmuxa                              Net         -                  -       0.434     -           3         
+Glue_Logic_0.PRDATA_1[0]                         SLE         EN                 In      -         8.024       -         
+========================================================================================================================
+Total path delay (propagation time + setup) of 8.362 is 4.907(58.7%) logic and 3.455(41.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: test_4463andcpuopration|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                       Starting                                                             Arrival          
+Instance               Reference                       Type     Pin     Net                 Time        Slack
+                       Clock                                                                                 
+-------------------------------------------------------------------------------------------------------------
+divider_2_0.cnt[0]     test_4463andcpuopration|clk     SLE      Q       divider_2_0_out     0.108       7.566
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                       Starting                                                                 Required          
+Instance               Reference                       Type     Pin     Net                     Time         Slack
+                       Clock                                                                                      
+------------------------------------------------------------------------------------------------------------------
+divider_2_0.cnt[0]     test_4463andcpuopration|clk     SLE      D       divider_2_0_out_i_0     9.745        7.566
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      2.179
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 7.566
+
+    Number of logic level(s):                1
+    Starting point:                          divider_2_0.cnt[0] / Q
+    Ending point:                            divider_2_0.cnt[0] / D
+    The start point is clocked by            test_4463andcpuopration|clk [rising] on pin CLK
+    The end   point is clocked by            test_4463andcpuopration|clk [rising] on pin CLK
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                       Type     Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+divider_2_0.cnt[0]         SLE      Q        Out     0.108     0.108       -         
+divider_2_0_out            Net      -        -       1.812     -           83        
+divider_2_0.cnt_RNO[0]     CFG1     A        In      -         1.920       -         
+divider_2_0.cnt_RNO[0]     CFG1     Y        Out     0.100     2.020       -         
+divider_2_0_out_i_0        Net      -        -       0.159     -           1         
+divider_2_0.cnt[0]         SLE      D        In      -         2.179       -         
+=====================================================================================
+Total path delay (propagation time + setup) of 2.434 is 0.464(19.0%) logic and 1.970(81.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                                                  Arrival          
+Instance                              Reference     Type       Pin        Net                                   Time        Slack
+                                      Clock                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------
+CPU_W_HDL_R_0.byte_count[0]           System        SLE        Q          byte_count[0]                         0.108       5.684
+CPU_W_HDL_R_0.byte_count[1]           System        SLE        Q          byte_count[1]                         0.108       5.779
+CPU_W_HDL_R_0.byte_count[4]           System        SLE        Q          byte_count[4]                         0.108       5.853
+CPU_W_HDL_R_0.byte_count[5]           System        SLE        Q          byte_count[5]                         0.108       5.908
+parallel_to_serial_0.Bit_Count[1]     System        SLE        Q          Bit_Count[1]                          0.108       6.039
+OSC_0.I_XTLOSC                        System        XTLOSC     CLKOUT     N_XTLOSC_CLKOUT                       0.000       6.082
+parallel_to_serial_0.Bit_Count[2]     System        SLE        Q          Bit_Count[2]                          0.108       6.176
+parallel_to_serial_0.En_Read_Buff     System        SLE        Q          parallel_to_serial_0_En_Read_Buff     0.108       6.543
+CPU_W_HDL_R_0.byte_count[2]           System        SLE        Q          byte_count[2]                         0.108       6.628
+CPU_W_HDL_R_0.byte_count[3]           System        SLE        Q          byte_count[3]                         0.108       6.676
+=================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                               Starting                                       Required          
+Instance                       Reference     Type     Pin     Net             Time         Slack
+                               Clock                                                            
+------------------------------------------------------------------------------------------------
+CPU_W_HDL_R_0.Addr[0]          System        SLE      D       N_114           9.745        5.684
+CPU_W_HDL_R_0.Bit_Count[1]     System        SLE      D       Bit_Count       9.745        5.780
+CPU_W_HDL_R_0.Addr[5]          System        SLE      D       Addr            9.745        5.869
+CPU_W_HDL_R_0.Bit_Count[0]     System        SLE      D       Bit_Count_0     9.745        5.903
+CPU_W_HDL_R_0.Addr[1]          System        SLE      D       N_113           9.745        5.907
+CPU_W_HDL_R_0.Addr[2]          System        SLE      D       N_112           9.745        5.907
+CPU_W_HDL_R_0.Addr[3]          System        SLE      D       N_111           9.745        5.907
+CPU_W_HDL_R_0.Addr[4]          System        SLE      D       N_110           9.745        5.907
+CPU_W_HDL_R_0.Addr[8]          System        SLE      EN      Addr_RNO[8]     9.662        5.908
+CPU_W_HDL_R_0.Addr[7]          System        SLE      D       Addr_1          9.745        5.913
+================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.255
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.745
+
+    - Propagation time:                      4.061
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 5.684
+
+    Number of logic level(s):                4
+    Starting point:                          CPU_W_HDL_R_0.byte_count[0] / Q
+    Ending point:                            CPU_W_HDL_R_0.Addr[0] / D
+    The start point is clocked by            System [rising] on pin CLK
+    The end   point is clocked by            divider|Bit_Count_inferred_clock[2] [falling] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                     Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+CPU_W_HDL_R_0.byte_count[0]              SLE      Q        Out     0.108     0.108       -         
+byte_count[0]                            Net      -        -       0.674     -           2         
+CPU_W_HDL_R_0.En_ASG_0_sqmuxa_0_a3_1     CFG4     D        In      -         0.783       -         
+CPU_W_HDL_R_0.En_ASG_0_sqmuxa_0_a3_1     CFG4     Y        Out     0.317     1.100       -         
+En_ASG_0_sqmuxa_0_a3_1                   Net      -        -       0.630     -           2         
+CPU_W_HDL_R_0.En_ASG_0_sqmuxa_0_a3_0     CFG3     C        In      -         1.730       -         
+CPU_W_HDL_R_0.En_ASG_0_sqmuxa_0_a3_0     CFG3     Y        Out     0.203     1.933       -         
+State4                                   Net      -        -       0.861     -           11        
+CPU_W_HDL_R_0.Addr_11_0_i_m2_ns_1[0]     CFG4     C        In      -         2.794       -         
+CPU_W_HDL_R_0.Addr_11_0_i_m2_ns_1[0]     CFG4     Y        Out     0.226     3.020       -         
+Addr_11_0_i_m2_ns_1[0]                   Net      -        -       0.556     -           1         
+CPU_W_HDL_R_0.Addr_11_0_i_m2_ns[0]       CFG4     D        In      -         3.576       -         
+CPU_W_HDL_R_0.Addr_11_0_i_m2_ns[0]       CFG4     Y        Out     0.326     3.902       -         
+N_114                                    Net      -        -       0.159     -           1         
+CPU_W_HDL_R_0.Addr[0]                    SLE      D        In      -         4.061       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 4.316 is 1.436(33.3%) logic and 2.880(66.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 148MB peak: 152MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 148MB peak: 152MB)
+
+---------------------------------------
+Resource Usage Report for test_4463andcpuopration 
+
+Mapping to part: m2s010tq144std
+Cell usage:
+CCC             1 use
+CLKINT          4 uses
+MSS_010         1 use
+SYSRESET        1 use
+XTLOSC          1 use
+XTLOSC_FAB      1 use
+CFG1           8 uses
+CFG2           166 uses
+CFG3           158 uses
+CFG4           191 uses
+
+Carry primitives used for arithmetic functions:
+ARI1           51 uses
+
+
+Sequential Cells: 
+SLE            453 uses
+
+DSP Blocks:    0
+
+I/O ports: 8
+I/O primitives: 6
+INBUF          2 uses
+OUTBUF         4 uses
+
+
+Global Clock Buffers: 4
+
+
+RAM/ROM usage summary
+Block Rams (RAM1K18) : 1
+
+Total LUTs:    574
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
+RAM1K18  Interface Logic : SLEs = 36; LUTs = 36;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  453 + 0 + 36 + 0 = 489;
+Total number of LUTs after P&R:  574 + 0 + 36 + 0 = 610;
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 53MB peak: 152MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Sat Sep 03 15:34:46 2016
+
+###########################################################]

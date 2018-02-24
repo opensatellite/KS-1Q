@@ -1,0 +1,150 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=1322882267
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=24000000
+ClockAutoDetect=1
+ClockWanted=250000
+JtagSpeed=250000
+Prescaler=96
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[stlink]
+stlinkserialNo=457174E0
+stlinkfoundProbes=
+[struct_types]
+Fmt0=CanTxMsg-ExtId	4	0
+Fmt1=DMA_Stream_TypeDef-CR	3	0
+Fmt2=DMA_Stream_TypeDef-NDTR	3	0
+Fmt3=GPIO_InitTypeDef-GPIO_Pin	4	0
+Fmt4=RCC_ClocksTypeDef-HCLK_Frequency	3	0
+Fmt5=RCC_ClocksTypeDef-PCLK1_Frequency	3	0
+Fmt6=RCC_ClocksTypeDef-SYSCLK_Frequency	3	0
+Fmt7=struct dm_var_s-magtemp	3	0
+Fmt8=struct dm_var_s-magx	3	0
+Fmt9=struct dm_var_s-magy	3	0
+Fmt10=struct dm_var_s-magz	3	0
+Fmt11=uart_var_t-rxHead	3	0
+Fmt12=uart_var_t-rxPos	3	0
+Fmt13=uart_var_t-rxTail	3	0
+Fmt14=uart_var_t-txHead	3	0
+Fmt15=uart_var_t-txTail	3	0
+[array_types]
+Fmt0=int16_t[4]	3	0
+Fmt1=uint8_t[2]	4	0
+Fmt2=uint8_t[5]	4	0
+[watch_formats]
+Fmt0={W}1:filebytes	3	0
+Fmt1={W}1:s_var[1].rxPos	3	0
+Fmt2={W}42:sdcard_last_checked	4	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+Title_0=I0
+Symbol_0=0 4 0
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+Count=0
+SuppressDialog=0

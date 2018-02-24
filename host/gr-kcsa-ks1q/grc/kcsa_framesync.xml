@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<block>
+  <name>Frame Sync</name>
+  <key>kcsa_framesync</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.framesync($mode, $gray, $nrz, $syncword, $syncbits, $maxerrs, $framebits)</make>
+
+  <param>
+    <name>Mode</name>
+    <key>mode</key>
+    <type>int</type>
+    <option>
+        <name>bit</name>
+        <key>-1</key>
+    </option>
+    <option>
+	    <name>BPSK</name>
+	    <key>0</key>
+    </option>
+    <option>
+	    <name>QPSK</name>
+	    <key>1</key>
+    </option>
+    <!--option>
+        <name>OQPSK</name>
+        <key>2</key>
+    </option-->
+    <!--option>
+	    <name>8PSK</name>
+	    <key>3</key>
+    </option-->
+  </param>
+  <param>
+      <name>Gray</name>
+      <key>gray</key>
+      <value>True</value>
+      <type>bool</type>
+      <option>
+        <name>On</name>
+        <key>True</key>
+      </option>
+      <option>
+  	    <name>Off</name>
+  	    <key>False</key>
+      </option>
+  </param>
+  <param>
+      <name>NRZ</name>
+      <key>nrz</key>
+      <value>0</value>
+      <type>int</type>
+      <option>
+  	    <name>L</name>
+  	    <key>0</key>
+      </option>
+      <option>
+  	    <name>M</name>
+  	    <key>1</key>
+      </option>
+      <option>
+          <name>S</name>
+          <key>2</key>
+      </option>
+  </param>
+  <param>
+    <name>Sync word</name>
+    <key>syncword</key>
+    <value>0x2dd4</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Sync bits</name>
+    <key>syncbits</key>
+    <value>16</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Max errors</name>
+    <key>maxerrs</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Frame bits</name>
+    <key>framebits</key>
+	<value>1024</value>
+    <type>int</type>
+  </param>
+  <check>$syncbits &lt;= 256</check>
+  <check>$syncbits &gt;= 1</check>
+  <check>$framebits &lt;= 1048576</check>
+  <check>$framebits &gt;= 0</check>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+    <optional>1</optional>
+  </source>
+
+</block>

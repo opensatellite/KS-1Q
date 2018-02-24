@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<block>
+  <name>gating_cbc</name>
+  <key>kcsa_gating_cbc</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.gating_cbc()</make>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>
+

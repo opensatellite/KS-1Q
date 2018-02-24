@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<block>
+  <name>KISS Server</name>
+  <key>kcsa_kiss_server</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.kiss_server($address, $port, $mtu, $tx_len, $flush_timeout)</make>
+  <param>
+    <name>Address</name>
+    <key>address</key>
+    <value>127.0.0.1</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Port</name>
+    <key>port</key>
+    <value>2610</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>MTU</name>
+    <key>mtu</key>
+    <value>1024</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Tx Length</name>
+    <key>tx_len</key>
+    <value>220</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Flush(ms)</name>
+    <key>flush_timeout</key>
+    <value>10</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  	<optional>1</optional>
+  </sink>
+  <sink>
+    <name>status</name>
+    <type>message</type>
+    <optional>1</optional>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  	<optional>1</optional>
+  </source>
+  <source>
+  	<name>ctrl</name>
+  	<type>message</type>
+  	<optional>1</optional>
+  </source>
+</block>
+

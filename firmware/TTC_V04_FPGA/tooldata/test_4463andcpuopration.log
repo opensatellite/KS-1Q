@@ -1,0 +1,16 @@
+Project Name: test_4463andcpuopration
+Location: C:\Users\Administrator\Desktop\10.14_v04workplace\v04workplace
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S010S-TQ144I
+Family         : SmartFusion2
+Die            : M2S010S
+Package        : 144 TQ
+Speed          : STD
+Core Voltage   : 1.2
+Range          : IND

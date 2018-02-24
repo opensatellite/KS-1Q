@@ -1,0 +1,51 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Mon Oct 31 14:44:53 2016
+Project   :  C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace
+Component :  test_4463andcpuopration
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/edac_kit.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/scrub.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/wideXor.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/hamming.mon
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/COREEDAC.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/ecc.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/edac.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/functions.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/sub_edac.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/test_4463andcpuopration_COREEDAC_0_actram.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/test_4463andcpuopration_COREEDAC_0_edac_auto.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/hamming.mon
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/COREEDAC.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/ecc.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/edac.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/functions.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/sub_edac.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/test_4463andcpuopration_COREEDAC_1_actram.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/test_4463andcpuopration_COREEDAC_1_edac_auto.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/OSC_0/test_4463andcpuopration_OSC_0_OSC.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/test_4463andcpuopration.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/subsystem.bfm
+
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/test/user/bhvKit.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/coreparameters.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/test/user/edac_tb.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/coreparameters.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/test/user/edac_tb.v
+    C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v
+

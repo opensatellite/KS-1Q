@@ -1,0 +1,42 @@
+Software Version: 11.7.0.119
+Driver : 3.0.0 build 1
+programmer '96040' : FlashPro4
+Opened 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration_fp/test_4463andcpuopration.pro'
+The 'open_project' command succeeded.
+IPD file 'C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/designer/test_4463andcpuopration/test_4463andcpuopration.ipd' has been loaded successfully.
+DESIGN : test_4463andcpuopration;  CHECKSUM : B0BF;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+Warning: Programming is already enabled for device 'M2S010S'.
+The 'enable_device' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '96040' : Scan Chain...
+Warning: programmer '96040' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '96040' : Check Chain...
+programmer '96040' : Scan and Check Chain PASSED.
+programmer '96040' : device 'M2S010S' : Executing action PROGRAM
+programmer '96040' : device 'M2S010S' : Family: Igloo2
+programmer '96040' : device 'M2S010S' : Product:      M2GL005
+programmer '96040' : device 'M2S010S' : EXPORT ISC_ENABLE_RESULT[32] = 00796544
+programmer '96040' : device 'M2S010S' : EXPORT CRCERR: [1] = 0
+programmer '96040' : device 'M2S010S' : EXPORT EDCERR: [1] = 0
+programmer '96040' : device 'M2S010S' : TEMPGRADE: ROOM
+programmer '96040' : device 'M2S010S' : EXPORT VPPRANGE: [3] = 2
+programmer '96040' : device 'M2S010S' : VPPRANGE: HIGH
+programmer '96040' : device 'M2S010S' : EXPORT TEMP: [8] = 65
+programmer '96040' : device 'M2S010S' : EXPORT VPP: [8] = 79
+programmer '96040' : device 'M2S010S' : Programming FPGA Array...
+programmer '96040' : device 'M2S010S' : ===================================================================================
+programmer '96040' : device 'M2S010S' : EXPORT DSN[128] = 78ed3f9e959fd9fec79bcc0b107237aa
+programmer '96040' : device 'M2S010S' : ===================================================================================
+programmer '96040' : device 'M2S010S' : Finished: Mon Oct 31 14:56:06 2016 (Elapsed time 00:00:24)
+programmer '96040' : device 'M2S010S' : Executing action PROGRAM PASSED.
+programmer '96040' : Chain programming PASSED.
+Chain Programming Finished: Mon Oct 31 14:56:06 2016 (Elapsed time 00:00:24)
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

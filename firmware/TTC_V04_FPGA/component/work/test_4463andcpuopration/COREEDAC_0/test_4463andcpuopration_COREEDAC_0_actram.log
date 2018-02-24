@@ -1,0 +1,85 @@
+
+****************
+Macro Parameters
+****************
+
+Name                            : test_4463andcpuopration_COREEDAC_0_actram
+Family                          : SmartFusion2
+Output Format                   : VERILOG
+Type                            : RAM
+Write Block Enable              : Active High
+Read Block Enable               : Active High
+A_DOUT_EN                       : None
+B_DOUT_EN                       : None
+A_DOUT_SRST_N                   : None
+B_DOUT_SRST_N                   : None
+A_DOUT_ARST_N                   : None
+B_DOUT_ARST_N                   : None
+A_DOUT_CLK                      : None
+B_DOUT_CLK                      : None
+Reset Polarity                  : None
+Read Clock                      : Rising
+Write Clock                     : Rising
+A_REN                           : None
+B_REN                           : None
+Write Depth                     : 1024
+Write Width                     : 13
+Read Depth                      : 1024
+Read Width                      : 13
+Portname DataIn                 : DI
+Portname DataOut                : DO
+Portname WClock                 : WCLOCK
+Portname RClock                 : RCLOCK
+Portname WAddress               : WADDR
+Portname RAddress               : RADDR
+Portname Clock                  : clk
+Portname Reset                  : ARST
+Portname DataAIn                : 
+Portname DataBIn                : 
+Portname DataAOut               : 
+Portname DataBOut               : 
+Portname AddressA               : 
+Portname AddressB               : 
+Portname CLKA                   : 
+Portname CLKB                   : 
+Portname RWA                    : 
+Portname RWB                    : 
+Portname BLKA                   : 
+Portname BLKB                   : 
+Portname A_DOUT_EN              : PIPE_EN
+Portname B_DOUT_EN              : PIPE_EN
+Portname A_DOUT_SRST_N          : 
+Portname B_DOUT_SRST_N          : 
+Portname A_DOUT_ARST_N          : 
+Portname B_DOUT_ARST_N          : 
+Portname A_DOUT_CLK             : 
+Portname B_DOUT_CLK             : 
+Portname Write Enable           : WRB
+Portname Read Enable            : RDB
+Portname A_WBYTE_EN             : 
+Portname B_WBYTE_EN             : 
+Portname A_REN                  : 
+Portname B_REN                  : 
+LPM_HINT                        : 
+Device                          : 1000
+RAM Type                        : Two Port
+Optimized for                   : Speed
+Initialize RAM                  : False
+Clocks                          : Independent Read and Write Clocks
+Byte Enables                    : No
+Read Pipeline A                 : No
+Read Pipeline B                 : No
+Write Mode A                    : Hold Data
+Write Mode B                    : Hold Data
+ECC Type                        : Disabled
+SET Mitigation                  : Off
+SII Lock                        : Off
+Busy Flag                       : Disabled
+
+Cascade Configuration: 
+     Write Port configuration   : 1024x18
+     Read Port configuration    : 1024x18
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 1
+
+Wrote Verilog netlist to C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/\test_4463andcpuopration_COREEDAC_0_actram.v.

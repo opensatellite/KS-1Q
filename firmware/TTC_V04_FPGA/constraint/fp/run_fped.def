@@ -1,0 +1,22 @@
+data DESIGN test_4463andcpuopration
+data HPATH 'E:/Microsemi_proj/9.23_v03workplace/designer/test_4463andcpuopration'
+data CPATH 'E:/Microsemi_proj/9.23_v03workplace/constraint/fp'
+data CDIR 'E:/Microsemi_proj/9.23_v03workplace/constraint'
+data ETYPE CP
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE tq144
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE OLD
+data AFL 'E:/Microsemi_proj/9.23_v03workplace/designer/test_4463andcpuopration/test_4463andcpuopration.afl'
+data ADL 'E:/Microsemi_proj/9.23_v03workplace/designer/test_4463andcpuopration/test_4463andcpuopration.adl'
+data LOC 'E:/Microsemi_proj/9.23_v03workplace/designer/test_4463andcpuopration/test_4463andcpuopration.loc'
+data SEG 'E:/Microsemi_proj/9.23_v03workplace/designer/test_4463andcpuopration/test_4463andcpuopration.seg'
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+

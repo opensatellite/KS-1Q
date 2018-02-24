@@ -1,0 +1,24 @@
+#===========================================================
+# Enter your BFM commands in this file. 
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+include "subsystem.bfm"
+
+procedure user_main;
+
+# perform subsystem initialization routine
+  call subsystem_init; 
+
+# add your BFM commands below:
+
+return

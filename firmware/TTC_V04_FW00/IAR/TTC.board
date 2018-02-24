@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$PROJ_DIR$\TTC.flash</loader>
+    <range>CODE 0x60000000 0x6003ffff</range>
+  </pass>
+</flash_board>
+
+

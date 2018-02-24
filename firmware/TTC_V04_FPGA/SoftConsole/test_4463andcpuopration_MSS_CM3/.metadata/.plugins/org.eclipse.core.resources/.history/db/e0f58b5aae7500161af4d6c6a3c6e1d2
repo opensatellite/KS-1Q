@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../drivers/mss_spi/mss_spi.c 
+
+OBJS += \
+./drivers/mss_spi/mss_spi.o 
+
+C_DEPS += \
+./drivers/mss_spi/mss_spi.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+drivers/mss_spi/%.o: ../drivers/mss_spi/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU C Compiler'
+	arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\CMSIS -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\CMSIS\startup_gcc -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers\mss_gpio -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers\mss_spi -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers\mss_timer -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers_config -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\drivers_config\sys_config -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\hal -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\hal\CortexM3 -IF:\project\test_4463andcpuopration\SoftConsole\test_4463andcpuopration_MSS_CM3\test_4463andcpuopration_MSS_CM3_hw_platform\hal\CortexM3\GNU -O0 -ffunction-sections -fdata-sections -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

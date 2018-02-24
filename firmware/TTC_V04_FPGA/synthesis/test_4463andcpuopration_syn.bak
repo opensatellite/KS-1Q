@@ -1,0 +1,112 @@
+#--  Synopsys, Inc.
+#--  Version J-2015.03M-SP1-2
+#--  Project file C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace\synthesis\test_4463andcpuopration_syn.prj
+
+#project files
+add_file -include "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/functions.v"
+add_file -include "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/functions.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/ASM_Generato.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/CLTU.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/CPU_W_HDL_R.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/Convolutional_Encoder.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/DATA_OUT.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/Glue_Logic.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/HDL_W_CPU_R_BUFF.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/RSControl.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/RXRandomizer.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/randomizer.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/Switch.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/TC_Decode.v"
+add_file -verilog -lib CORERSENC_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/TM_RSENC_TM_RSENC_0_RSEnc_auto.v"
+add_file -verilog -lib CORERSENC_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/RSENC.v"
+add_file -verilog -lib CORERSENC_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/RSENC_KIT.v"
+add_file -verilog -lib CORERSENC_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/TM_RSENC/TM_RSENC_0/rtl/vlog/core/CoreRSENC.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/TM_RSENC/TM_RSENC.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/Timer_Clear.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/divider.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/parallel_to_serial.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/hdl/rest.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/edac_kit.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/test_4463andcpuopration_COREEDAC_0_actram.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/COREEDAC.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/scrub.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/COREEDAC/2.8.100/rtl/vlog/core/wideXor.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/test_4463andcpuopration_COREEDAC_0_edac_auto.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/ecc.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/sub_edac.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_0/rtl/vlog/core/edac.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/test_4463andcpuopration_COREEDAC_1_actram.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/COREEDAC.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/test_4463andcpuopration_COREEDAC_1_edac_auto.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/ecc.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/sub_edac.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/COREEDAC_1/rtl/vlog/core/edac.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test_4463andcpuopration_MSS_syn.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration_MSS/test_4463andcpuopration_MSS.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/SgCore/OSC/2.0.101/osc_comps.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/OSC_0/test_4463andcpuopration_OSC_0_OSC.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core/coreapb3.v"
+add_file -verilog "C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/component/work/test_4463andcpuopration/test_4463andcpuopration.v"
+
+
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+
+#device options
+set_option -technology SmartFusion2
+set_option -part M2S010S
+set_option -package TQ144
+set_option -speed_grade STD
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "test_4463andcpuopration"
+
+# mapper_options
+set_option -frequency 100.000
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# actel_options
+set_option -rw_check_on_ram 0
+
+# Microsemi G4
+set_option -run_prop_extract 1
+set_option -maxfan 10000
+set_option -clock_globalthreshold 2
+set_option -async_globalthreshold 12
+set_option -globalthreshold 5000
+set_option -low_power_ram_decomp 1
+set_option -disable_io_insertion 0
+set_option -opcond COMTC
+set_option -retiming 0
+set_option -report_path 4000
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./test_4463andcpuopration.edn"
+impl -active "synthesis"

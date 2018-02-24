@@ -1,0 +1,15 @@
+<block>
+  <name>Vitfilt 27 BB</name>
+  <key>kcsa_vitfilt27_bb</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.vitfilt27_bb()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

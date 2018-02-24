@@ -1,0 +1,30 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       7 
+      Globals that cannot be demoted:      0 
+      Globals considered for demotion:     7 
+
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    372    0      0      'RX_GPIO1_ibuf_RNIEM3F' 
+    345    0      0      'divider_0/Bit_Count_16dec_inferred_clock_RNI1ANC_0[3]' 
+    130    0      1      'divider_0/Bit_Count_2dec_inferred_clock_RNI1195' 
+    104    0      0      'OSC_0/I_XTLOSC_FAB_CLKINT' 
+    6      0      0      'TX_GPIO1_ibuf_RNIGE8B' 
+    0      633    2      'test_4463andcpuopration_MSS_0/MSS_ADLIB_INST_RNIHTQ8' 
+    0      315    0      'RSControl_0/NGRST_RNIHQ59' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'divider_0/Bit_Count_2dec_inferred_clock_RNI1195'. 
+      Disconnected 2 data pins from global 'test_4463andcpuopration_MSS_0/MSS_ADLIB_INST_RNIHTQ8'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+
+INFO: Reading User PDC file C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/constraint/io/test_4463andcpuopration.io.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:/Users/Administrator/Desktop/10_27_v04workplace/v04workplace/constraint/fp/test_4463andcpuopration.fp.pdc. 0 error(s) and 0 warning(s)

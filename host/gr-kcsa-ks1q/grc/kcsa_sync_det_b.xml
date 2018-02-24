@@ -1,0 +1,67 @@
+<block>
+  <name>Sync Det</name>
+  <key>kcsa_sync_det_b</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.sync_det_b($sync_word, $sync_mask, $len_mode, $len, $nrz, $maxerrs)</make>
+  <param>
+    <name>Sync Word</name>
+    <key>sync_word</key>
+    <value>0x00002dd4</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Sync Mask</name>
+    <key>sync_mask</key>
+    <value>0x0000ffff</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Frame Length Mode</name>
+    <key>len_mode</key>
+	<value>True</value>	  
+    <type>bool</type>
+    <option>
+	<name>Fixed</name>
+	<key>True</key>
+    </option>
+    <option>
+	<name>Variable</name>
+	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Frame Length</name>
+    <key>len</key>
+	<value>131</value>  
+    <type>int</type>
+  </param>
+  <param>
+    <name>NRZ</name>
+    <key>nrz</key>
+	<value>False</value>	  
+    <type>bool</type>
+    <option>
+	<name>On</name>
+	<key>True</key>
+    </option>
+    <option>
+	<name>Off</name>
+	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>MaxErrs</name>
+    <key>maxerrs</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>message</type>
+  </source>
+</block>

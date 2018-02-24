@@ -1,0 +1,43 @@
+syncmode:
+#       Mode   Gray     NRZ     Bit shift                         Sync test
+0       bit    False    L       reg = (reg<<1) |   in[0];         test(reg == syncword)
+2       bit    False    M/S     reg = (reg<<1) | ~(in[0] ^ prev); test(reg == syncword || ~reg == syncword)
+1       bpsk   False    L       reg = (reg<<1) |   in;            test(reg == syncword || ~reg == syncword)
+2       bpsk   False    M/S     reg = (reg<<1) | ~(in[0] ^ prev); test(reg == syncword || ~reg == syncword)
+
+4       qpsk   True     L       reg = (reg<<2) |   in[0];         test(reg == syncword[0-7])
+6       qpsk   True     M/S     ????IS THIS RIGHT?
+7       8psk   False    L       reg = (reg<<3) |   in[0];         test(reg == syncword[0-7])
+#3       qpsk       L       reg = (reg<<2) |   in[0];         test(reg == syncword[0-3])
+#5       qpsk       M/S     reg = (reg<<1) | ~(in[0] ^ prev); test(reg == syncword[0-7])
+
+graycode:
+QPSK
+---normal sense---
+0       +I +Q
+1       -Q +I
+2       -I -Q
+3       +Q -I
+
+QPSK (0)   (3)   (2)   (1)
+0    00    01    11    10
+1    01    11    10    00
+2    11    10    00    01
+3    10    00    01    11
+     +I+Q  +Q-I  -I-Q  -Q+I
+
+---I/Q swaped-----
+4       +Q +I
+5       +I -Q
+6       -Q -I
+7       -I +Q
+
+8PSK(0)  (1)  (2)  (3)  (4)  (5)  (6)  (7)
+0   000  001  011  010  110  111  101  100
+1   001  011  010  110  111  101  100  000
+2   011  010  110  111  101  100  000  001
+3   010  110  111  101  100  000  001  011
+4   110  111  101  100  000  001  011  010
+5   111  101  100  000  001  011  010  110
+6   101  100  000  001  011  010  110  111
+7   100  000  001  011  010  110  111  101

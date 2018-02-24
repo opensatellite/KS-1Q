@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<block>
+  <name>Halfduplex TC</name>
+  <key>kcsa_halfduplex_tc</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.halfduplex_tc($spacecraft_id, $version, $randomizer, $acq_samples, $cltus)</make>
+  <param>
+    <name>Spacecraft ID</name>
+    <key>spacecraft_id</key>
+    <value>1</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Version</name>
+    <key>version</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Randomizer</name>
+    <key>randomizer</key>
+    <value>True</value>
+    <type>bool</type>
+    <option>
+    	<name>On</name>
+    	<key>True</key>
+    </option>
+    <option>
+    	<name>Off</name>
+    	<key>False</key>
+    </option>
+  </param>
+  <param>
+    <name>Acq_samples</name>
+    <key>acq_samples</key>
+    <value>64</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>CLTU's</name>
+    <key>cltus</key>
+    <value>32</value>
+    <type>int</type>
+  </param>
+  <check>$acq_samples &gt;= 16</check>
+  <check>$cltus &gt;= 0</check>
+  <sink>
+    <name>pdu</name>
+    <type>message</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+  <doc>
+Half-duplex Telecommand controller
+Send kiss message through TC uplink.
+|-----------KISS DATA------------|
+|---32 * CLTU = 224 bytes--------|
+Data will be truncated if too long
+It use SOB and EOB tags to control burst
+  </doc>
+</block>

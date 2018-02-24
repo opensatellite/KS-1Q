@@ -1,0 +1,15 @@
+<block>
+  <name>Encode 27 BB</name>
+  <key>kcsa_encode27_bb</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.encode27_bb()</make>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

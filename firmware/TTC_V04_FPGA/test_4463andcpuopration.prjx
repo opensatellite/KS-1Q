@@ -1,0 +1,1712 @@
+KEY LIBERO "11.7"
+KEY CAPTURE "11.7.0.119"
+KEY DEFAULT_IMPORT_LOC "C:\Actelprj\A3P_Verilog_labs\lab2"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M1000_S"
+KEY VendorTechnology_Package "tq144"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "IND"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "0"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M1000_S"
+KEY VendorTechnology_TEMPR "IND"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "IND"
+KEY ProjectLocation "C:\Users\Administrator\Desktop\10_27_v04workplace\v04workplace"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "test_4463andcpuopration::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST LIBRARIES
+CORERSENC_LIB
+COREAPB3_LIB
+ENDLIST
+LIST LIBRARY_CORERSENC_LIB
+ALIAS=CORERSENC_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_COREAPB3_LIB
+ALIAS=COREAPB3_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896279"
+SIZE="2736"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1477896279"
+SIZE="1284"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+STATE="utd"
+TIME="1463474153"
+SIZE="912"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="4636"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="9073"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="25129"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="36275"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="122456"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="29701"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v,hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="4465"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v,hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="5708"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1463474153"
+SIZE="23651"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\COREEDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896285"
+SIZE="1048"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v,hdl"
+STATE="utd"
+TIME="1470301222"
+SIZE="19777"
+PARENT="<project>\component\Actel\DirectCore\COREEDAC\2.8.100\COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v,hdl"
+STATE="utd"
+TIME="1470301222"
+SIZE="33289"
+PARENT="<project>\component\Actel\DirectCore\COREEDAC\2.8.100\COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v,hdl"
+STATE="utd"
+TIME="1470301222"
+SIZE="4745"
+PARENT="<project>\component\Actel\DirectCore\COREEDAC\2.8.100\COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+STATE="utd"
+TIME="1470301222"
+SIZE="4670"
+PARENT="<project>\component\Actel\DirectCore\COREEDAC\2.8.100\COREEDAC.cxf"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CORERSENC\3.4.103\CORERSENC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1474001642"
+SIZE="482"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896287"
+SIZE="684"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+STATE="utd"
+TIME="1463217830"
+SIZE="924"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+STATE="utd"
+TIME="1463217830"
+SIZE="726"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.400\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673049"
+SIZE="526"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CAN\1.0.100\MSS_CAN.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="253"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="253"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="252"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="253"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DMA\1.0.100\MSS_DMA.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="253"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="255"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.100\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="254"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="256"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="255"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="258"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="253"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="256"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_WATCHDOG\1.0.100\MSS_WATCHDOG.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673044"
+SIZE="258"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477669011"
+SIZE="2485"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="830"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="14154"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="4192"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="14351"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\functions.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="6595"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="14734"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="35666"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+MODULE_UNDER_TEST=""
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v,hdl"
+STATE="utd"
+TIME="1477896283"
+SIZE="2150"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896283"
+SIZE="2324"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v,hdl"
+STATE="utd"
+TIME="1477896281"
+SIZE="8847"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v,tb_hdl"
+STATE="utd"
+TIME="1477896281"
+SIZE="57846"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="829"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="14154"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\ecc.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="4192"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\edac.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="14351"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\functions.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="6595"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\sub_edac.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="14734"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="35666"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+MODULE_UNDER_TEST=""
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_actram.v,hdl"
+STATE="utd"
+TIME="1477896285"
+SIZE="3599"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896285"
+SIZE="2324"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_auto.v,hdl"
+STATE="utd"
+TIME="1477896284"
+SIZE="18372"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v,tb_hdl"
+STATE="utd"
+TIME="1477896284"
+SIZE="1947"
+PARENT="<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_COREEDAC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896287"
+SIZE="489"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v,hdl"
+STATE="utd"
+TIME="1477896287"
+SIZE="756"
+PARENT="<project>\component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477896293"
+SIZE="10463"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.v,hdl"
+STATE="utd"
+TIME="1477896287"
+SIZE="41424"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1477673050"
+SIZE="23634"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v,hdl"
+STATE="utd"
+TIME="1477673049"
+SIZE="49359"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_pre.v,hdl"
+STATE="utd"
+TIME="1477673048"
+SIZE="56251"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_syn.v,hdl"
+STATE="utd"
+TIME="1477673048"
+SIZE="49167"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1474001644"
+SIZE="3585"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC.v,hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="2781"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="485"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v,hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="3512"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v,hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="7577"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v,hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="3479"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v,hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="11822"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v,tb_hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="30087"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1474001642"
+SIZE="8620"
+LIBRARY="CORERSENC_LIB"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\TM_RSENC_TM_RSENC_0_CORERSENC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1474001642"
+SIZE="1958"
+PARENT="<project>\component\work\TM_RSENC\TM_RSENC.cxf"
+ENDFILE
+VALUE "<project>\constraint\fp\test_4463andcpuopration.fp.pdc,fp_pdc"
+STATE="utd"
+TIME="1477309664"
+SIZE="358"
+ENDFILE
+VALUE "<project>\constraint\io\test_4463andcpuopration.io.pdc,io_pdc"
+STATE="utd"
+TIME="1477309664"
+SIZE="4445"
+ENDFILE
+VALUE "<project>\designer\impl1\test_4463andcpuopration.ide_des,ide_des"
+STATE="utd"
+TIME="1477309664"
+SIZE="601"
+ENDFILE
+VALUE "<project>\hdl\APB_v2_CPU_W_HDL_R.v,hdl"
+STATE="utd"
+TIME="1472649112"
+SIZE="5834"
+ENDFILE
+VALUE "<project>\hdl\APB_V3_CPU_R_HDL_W.V,hdl"
+STATE="utd"
+TIME="1471253702"
+SIZE="5734"
+ENDFILE
+VALUE "<project>\hdl\ASM_Generato.v,hdl"
+STATE="utd"
+TIME="1476426675"
+SIZE="2115"
+ENDFILE
+VALUE "<project>\hdl\CLTU.v,hdl"
+STATE="utd"
+TIME="1477537751"
+SIZE="13134"
+ENDFILE
+VALUE "<project>\hdl\Convolutional_Encoder.v,hdl"
+STATE="utd"
+TIME="1476426579"
+SIZE="3481"
+ENDFILE
+VALUE "<project>\hdl\CPU_W_HDL_R.v,hdl"
+STATE="utd"
+TIME="1476351292"
+SIZE="4597"
+ENDFILE
+VALUE "<project>\hdl\crc_soft.v,hdl"
+STATE="utd"
+TIME="1472615670"
+SIZE="6399"
+ENDFILE
+VALUE "<project>\hdl\crc_soft_text.v,hdl"
+STATE="utd"
+TIME="1471857096"
+SIZE="897"
+ENDFILE
+VALUE "<project>\hdl\data_gene.v,hdl"
+STATE="utd"
+TIME="1472544456"
+SIZE="959"
+ENDFILE
+VALUE "<project>\hdl\DATA_OUT.v,hdl"
+STATE="utd"
+TIME="1476426716"
+SIZE="1158"
+ENDFILE
+VALUE "<project>\hdl\divider.v,hdl"
+STATE="utd"
+TIME="1476426603"
+SIZE="582"
+ENDFILE
+VALUE "<project>\hdl\divider_2.v,hdl"
+STATE="utd"
+TIME="1472782182"
+SIZE="396"
+ENDFILE
+VALUE "<project>\hdl\Glue_Logic.v,hdl"
+STATE="utd"
+TIME="1477538602"
+SIZE="15005"
+ENDFILE
+VALUE "<project>\hdl\HDL_W_CPU_R_BUFF.v,hdl"
+STATE="utd"
+TIME="1477538467"
+SIZE="6294"
+ENDFILE
+VALUE "<project>\hdl\ip_packet.v,hdl"
+STATE="utd"
+TIME="1473400123"
+SIZE="1955"
+ENDFILE
+VALUE "<project>\hdl\parallel_to_serial.v,hdl"
+STATE="utd"
+TIME="1476426566"
+SIZE="1434"
+ENDFILE
+VALUE "<project>\hdl\randomizer.v,hdl"
+STATE="utd"
+TIME="1476426518"
+SIZE="1584"
+ENDFILE
+VALUE "<project>\hdl\reboot.v,hdl"
+STATE="utd"
+TIME="1473837111"
+SIZE="727"
+ENDFILE
+VALUE "<project>\hdl\rec.v,hdl"
+STATE="utd"
+TIME="1467257946"
+SIZE="1174"
+ENDFILE
+VALUE "<project>\hdl\Record_Data.v,hdl"
+STATE="utd"
+TIME="1472615464"
+SIZE="1804"
+ENDFILE
+VALUE "<project>\hdl\rest.v,hdl"
+STATE="utd"
+TIME="1476933283"
+SIZE="1278"
+ENDFILE
+VALUE "<project>\hdl\RSControl.v,hdl"
+STATE="utd"
+TIME="1476426623"
+SIZE="2759"
+ENDFILE
+VALUE "<project>\hdl\RXRandomizer.v,hdl"
+STATE="utd"
+TIME="1476351691"
+SIZE="1437"
+ENDFILE
+VALUE "<project>\hdl\soft_crc32.v,hdl"
+STATE="utd"
+TIME="1471953684"
+SIZE="5455"
+ENDFILE
+VALUE "<project>\hdl\Switch.v,hdl"
+STATE="utd"
+TIME="1476426656"
+SIZE="1113"
+ENDFILE
+VALUE "<project>\hdl\TC_Decode.v,hdl"
+STATE="utd"
+TIME="1477537770"
+SIZE="2857"
+ENDFILE
+VALUE "<project>\hdl\text_rest.v,hdl"
+STATE="utd"
+TIME="1476685296"
+SIZE="955"
+ENDFILE
+VALUE "<project>\hdl\Timer_Clear.v,hdl"
+STATE="utd"
+TIME="1476412033"
+SIZE="1360"
+ENDFILE
+VALUE "<project>\hdl\TM_CRC32.v,hdl"
+STATE="utd"
+TIME="1471859794"
+SIZE="4854"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.log,log"
+STATE="utd"
+TIME="1474193533"
+SIZE="407"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+STATE="utd"
+TIME="1463474153"
+SIZE="1229"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+STATE="utd"
+TIME="1477673048"
+SIZE="500"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+STATE="utd"
+TIME="1463474154"
+SIZE="8016"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+STATE="utd"
+TIME="1463217824"
+SIZE="8450"
+PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.400\MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1474193529"
+SIZE="1644"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1477896287"
+SIZE="635"
+PARENT="<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.cxf"
+ENDFILE
+VALUE "<project>\simulation\test.bfm,sim"
+STATE="utd"
+TIME="1477673048"
+SIZE="734"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\user.bfm,sim"
+STATE="utd"
+TIME="1472886244"
+SIZE="555"
+PARENT="<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.cxf"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1476511293"
+SIZE="159"
+ENDFILE
+VALUE "<project>\synthesis\test_4463andcpuopration.edn,syn_edn"
+STATE="utd"
+TIME="1477673234"
+SIZE="2824417"
+ENDFILE
+VALUE "<project>\synthesis\test_4463andcpuopration.so,so"
+STATE="utd"
+TIME="1477673235"
+SIZE="278"
+ENDFILE
+VALUE "<project>\synthesis\test_4463andcpuopration.v,syn_hdl"
+STATE="utd"
+TIME="1477673244"
+SIZE="1008725"
+ENDFILE
+VALUE "<project>\synthesis\test_4463andcpuopration_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1477673234"
+SIZE="2179"
+ENDFILE
+VALUE "<project>\synthesis\test_4463andcpuopration_syn.prj,prj"
+STATE="utd"
+TIME="1477673235"
+SIZE="7878"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "test_4463andcpuopration::work"
+FILE "<project>\component\work\test_4463andcpuopration\test_4463andcpuopration.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\test_4463andcpuopration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\test_4463andcpuopration\test_4463andcpuopration_pinrpt_name.rpt,log"
+VALUE "<project>\designer\test_4463andcpuopration\test_4463andcpuopration_pinrpt_number.rpt,log"
+VALUE "<project>\designer\test_4463andcpuopration\test_4463andcpuopration_bankrpt.rpt,log"
+VALUE "<project>\designer\test_4463andcpuopration\test_4463andcpuopration_ioff.xml,log"
+ENDLIST
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_COREEDAC::work"
+FILE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_COREEDAC::work"
+FILE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "test_4463andcpuopration_MSS::work"
+FILE "<project>\component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_CORERSENC::CORERSENC_LIB"
+FILE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\coreparameters.v,tb_hdl"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\coreparameters.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST TM_RSENC_TM_RSENC_0_CORERSENC
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\coreparameters.v,tb_hdl"
+ENDLIST
+LIST test_4463andcpuopration_COREEDAC_0_COREEDAC
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST test_4463andcpuopration_COREEDAC_1_COREEDAC
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+LIST test_4463andcpuopration
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST TM_RSENC_TM_RSENC_0_CORERSENC
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\TM_RSENC\TM_RSENC_0\coreparameters.v,tb_hdl"
+ENDLIST
+LIST test_4463andcpuopration_COREEDAC_0_COREEDAC
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST test_4463andcpuopration_COREEDAC_1_COREEDAC
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v,tb_hdl"
+ENDLIST
+LIST test_4463andcpuopration_MSS
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="G:\Microsemi\Libero_SoC_v11.7\SoftConsole\Eclipse\eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="G:\Microsemi\Libero_SoC_v11.7\Synplify\bin\synplify_pro.exe"
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="G:\Microsemi\Libero_SoC_v11.7\Model\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FlashPro"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="G:\Microsemi\Libero_SoC_v11.7\Designer\bin\flashpro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="G:\Microsemi\Libero_SoC_v11.7\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "test_4463andcpuopration::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\test_4463andcpuopration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_COREEDAC::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_COREEDAC::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_CORERSENC::CORERSENC_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Run PROGRAM Action:test_4463andcpuopration_PROGRAM.log
+SmartDesign;test_4463andcpuopration;0
+SmartDesign;test_4463andcpuopration_MSS;0
+HDL;hdl\Glue_Logic.v;0
+HDL;hdl\HDL_W_CPU_R_BUFF.v;0
+HDL;hdl\TC_Decode.v;0
+HDL;hdl\CPU_W_HDL_R.v;0
+HDL;hdl\Convolutional_Encoder.v;0
+HDL;hdl\Timer_Clear.v;0
+StartPage;StartPage;0
+HDL;hdl\RXRandomizer.v;0
+HDL;hdl\CLTU.v;0
+ACTIVEVIEW;Reports
+ENDLIST
+LIST ModuleSubBlockList
+LIST "APB_v2_CPU_W_HDL_R::work","hdl\APB_v2_CPU_W_HDL_R.v","FALSE","FALSE"
+ENDLIST
+LIST "APB_V3_CPU_R_HDL_W::work","hdl\APB_V3_CPU_R_HDL_W.V","FALSE","FALSE"
+ENDLIST
+LIST "ASM_Generato::work","hdl\ASM_Generato.v","FALSE","FALSE"
+ENDLIST
+LIST "CLTU::work","hdl\CLTU.v","FALSE","FALSE"
+ENDLIST
+LIST "Convolutional_Encoder::work","hdl\Convolutional_Encoder.v","FALSE","FALSE"
+ENDLIST
+LIST "CPU_W_HDL_R::work","hdl\CPU_W_HDL_R.v","FALSE","FALSE"
+ENDLIST
+LIST "crc::work","hdl\crc_soft.v","FALSE","FALSE"
+ENDLIST
+LIST "crc_soft_text::work","hdl\crc_soft_text.v","FALSE","FALSE"
+ENDLIST
+LIST "data_gene::work","hdl\data_gene.v","FALSE","FALSE"
+ENDLIST
+LIST "DATA_OUT::work","hdl\DATA_OUT.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_CAN_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "divider::work","hdl\divider.v","FALSE","FALSE"
+ENDLIST
+LIST "divider_2::work","hdl\divider_2.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kit_pulse_trap::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kit_stop_scrub::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCrossClk::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kit_x_domain::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitCountC::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitCountS::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitCrossClk::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitDelay_bit_ripple::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitMajority::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitRAM_two_port::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "edac_kitSync_ngrst::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "Glue_Logic::work","hdl\Glue_Logic.v","FALSE","FALSE"
+ENDLIST
+LIST "HDL_W_CPU_R_BUFF::work","hdl\HDL_W_CPU_R_BUFF.v","FALSE","FALSE"
+ENDLIST
+LIST "initializer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCountC::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitSync_ngrst::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "ip_packet::work","hdl\ip_packet.v","FALSE","FALSE"
+ENDLIST
+LIST "layer_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_010::work","component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "muxScal2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "muxScal3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "muxVect2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "muxVect3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "parallel_to_serial::work","hdl\parallel_to_serial.v","FALSE","FALSE"
+ENDLIST
+LIST "Randomizer::work","hdl\randomizer.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "reboot::work","hdl\reboot.v","FALSE","FALSE"
+ENDLIST
+LIST "rec::work","hdl\rec.v","FALSE","FALSE"
+ENDLIST
+LIST "Record_Data::work","hdl\Record_Data.v","FALSE","FALSE"
+ENDLIST
+LIST "rest::work","hdl\rest.v","FALSE","FALSE"
+ENDLIST
+LIST "RSControl::work","hdl\RSControl.v","FALSE","FALSE"
+ENDLIST
+LIST "RXRandomize::work","hdl\RXRandomizer.v","FALSE","FALSE"
+ENDLIST
+LIST "scrub::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "scrubi::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "scrubii::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+ENDLIST
+LIST "scrubi::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCountC::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_ripple::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "timeout_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+ENDLIST
+LIST "scrubii::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCountC::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kit_stop_scrub::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kit_x_domain::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "timeout_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_CAN_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "soft_crc32::work","hdl\soft_crc32.v","FALSE","FALSE"
+ENDLIST
+LIST "Switch::work","hdl\Switch.v","FALSE","FALSE"
+ENDLIST
+LIST "TC_Decode::work","hdl\TC_Decode.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration::work","component\work\test_4463andcpuopration\test_4463andcpuopration.v","TRUE","FALSE"
+SUBBLOCK "ASM_Generato::work","hdl\ASM_Generato.v","FALSE","FALSE"
+SUBBLOCK "CLTU::work","hdl\CLTU.v","FALSE","FALSE"
+SUBBLOCK "CPU_W_HDL_R::work","hdl\CPU_W_HDL_R.v","FALSE","FALSE"
+SUBBLOCK "Convolutional_Encoder::work","hdl\Convolutional_Encoder.v","FALSE","FALSE"
+SUBBLOCK "DATA_OUT::work","hdl\DATA_OUT.v","FALSE","FALSE"
+SUBBLOCK "Glue_Logic::work","hdl\Glue_Logic.v","FALSE","FALSE"
+SUBBLOCK "HDL_W_CPU_R_BUFF::work","hdl\HDL_W_CPU_R_BUFF.v","FALSE","FALSE"
+SUBBLOCK "RSControl::work","hdl\RSControl.v","FALSE","FALSE"
+SUBBLOCK "RXRandomize::work","hdl\RXRandomizer.v","FALSE","FALSE"
+SUBBLOCK "Randomizer::work","hdl\randomizer.v","FALSE","FALSE"
+SUBBLOCK "Switch::work","hdl\Switch.v","FALSE","FALSE"
+SUBBLOCK "TC_Decode::work","hdl\TC_Decode.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC::work","component\work\TM_RSENC\TM_RSENC.v","TRUE","FALSE"
+SUBBLOCK "divider::work","hdl\divider.v","FALSE","FALSE"
+SUBBLOCK "parallel_to_serial::work","hdl\parallel_to_serial.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_MSS::work","component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v","TRUE","FALSE"
+SUBBLOCK "test_4463andcpuopration_OSC_0_OSC::work","component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_actram::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_ax_ram::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_actram::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "edac_kitRAM_two_port::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_actram::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_actram.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_ax_ram::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_edac::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_uram::work","","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_ecc::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_ham_dec_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_ham_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_edac::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\edac.v","FALSE","FALSE"
+SUBBLOCK "edac_kitMajority::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_sub_edac::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_ham_dec_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "wide_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_ham_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "wide_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_sub_edac::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\sub_edac.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCrossClk::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "initializer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxScal2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxScal3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxVect2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxVect3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "scrub::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_ecc::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\ecc.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_0_uram::work","","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_actram::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_actram.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_ax_ram::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_actram::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_actram.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "edac_kitRAM_two_port::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_actram::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_actram.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_ax_ram::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_edac::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\edac.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_uram::work","","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_ecc::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\ecc.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_ham_dec_vlog::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_ham_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_auto.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_edac::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\edac.v","FALSE","FALSE"
+SUBBLOCK "edac_kitMajority::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_sub_edac::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\sub_edac.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_ham_dec_vlog::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "wide_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_ham_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_auto.v","FALSE","FALSE"
+SUBBLOCK "wide_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_sub_edac::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\sub_edac.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCrossClk::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitDelay_bit_reg::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "initializer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxScal2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxScal3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxVect2to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "muxVect3to1::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "scrub::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_ecc::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\ecc.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_COREEDAC_1_uram::work","","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_MSS::work","component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS.v","TRUE","FALSE"
+SUBBLOCK "MSS_010::work","component\work\test_4463andcpuopration_MSS\test_4463andcpuopration_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "test_4463andcpuopration_OSC_0_OSC::work","component\work\test_4463andcpuopration\OSC_0\test_4463andcpuopration_OSC_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+SUBBLOCK "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "text_rest::work","hdl\text_rest.v","FALSE","FALSE"
+ENDLIST
+LIST "timeout_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\scrub.v","FALSE","FALSE"
+SUBBLOCK "edac_kitCountS::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kitEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+SUBBLOCK "edac_kit_pulse_trap::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\edac_kit.v","FALSE","FALSE"
+ENDLIST
+LIST "Timer_Clear::work","hdl\Timer_Clear.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_CRC32::work","hdl\TM_CRC32.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC::work","component\work\TM_RSENC\TM_RSENC.v","TRUE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_CORERSENC::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v","FALSE","FALSE"
+ENDLIST
+LIST "wide_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+SUBBLOCK "layer_xor::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\core\wideXor.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "bhv_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_1\test_4463andcpuopration_COREEDAC_1_edac_bhv_auto.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_timeout::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_uAccess_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvClockGen::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvDelay::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "mode_seq::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_timeout::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "mode_seq::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_timeout::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "bhvClockGen::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvDelay::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v","FALSE","TRUE"
+SUBBLOCK "bhv_uAccess_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "mode_seq::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_0_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+ENDLIST
+LIST "testbench::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "bhvClockGen::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvDelay::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_enc_vlog::work","component\work\test_4463andcpuopration\COREEDAC_0\test_4463andcpuopration_COREEDAC_0_edac_bhv_auto.v","FALSE","TRUE"
+SUBBLOCK "bhv_uAccess_timer::work","component\Actel\DirectCore\COREEDAC\2.8.100\rtl\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "mode_seq::work","component\work\test_4463andcpuopration\COREEDAC_0\rtl\vlog\test\user\edac_tb.v","FALSE","TRUE"
+SUBBLOCK "test_4463andcpuopration_COREEDAC_1_COREEDAC::work","component\work\test_4463andcpuopration\COREEDAC_1\rtl\vlog\core\COREEDAC.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_CORERSENC::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_gfIIR::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_rsEnc_SM::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_tal1tab::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_taltab::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_gf_mult::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_gfIIR::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_rsEnc_lastTap::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_rsEnc_tap::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_kitCountS::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_kitDelay_bit_reg::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_rsEnc_lastTap::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_gf_mult::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_rsEnc_SM::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_kitCountS::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_kitDelay_bit_reg::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC_KIT.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_rsEnc_tap::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_gf_mult::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\TM_RSENC_TM_RSENC_0_RSEnc_auto.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_tal1tab::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+ENDLIST
+LIST "TM_RSENC_TM_RSENC_0_taltab::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\RSENC.v","FALSE","FALSE"
+ENDLIST
+LIST "alpha_to::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvClockGen::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvDelay::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvEncInpVect::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvEncOutpVect::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvOneClk::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvTest::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "bhvEncInpVect::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+ENDLIST
+LIST "index_of::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "TM_RSENC_TM_RSENC_0_CORERSENC::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\core\CoreRSENC.v","FALSE","FALSE"
+SUBBLOCK "bhvClockGen::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "bhvDelay::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "bhvEncOutpVect::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\RSEnc_bhv.v","FALSE","TRUE"
+SUBBLOCK "bhvOneClk::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "bhvTest::CORERSENC_LIB","component\work\TM_RSENC\TM_RSENC_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "COREAPB3_MUXPTOB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v","FALSE","FALSE"
+SUBBLOCK "coreapb3_iaddr_reg::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "coreapb3_iaddr_reg::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "COREAPB3_MUXPTOB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3_muxptob3.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core\coreapb3.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\test_4463andcpuopration.io.pdc"
+ENDLIST
+LIST FPTabList
+VALUE "constraint\fp\test_4463andcpuopration.fp.pdc"
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST
