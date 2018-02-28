@@ -69,7 +69,7 @@ if(NOT kcsa_sources)
 endif(NOT kcsa_sources)
 
 add_library(gnuradio-kcsa SHARED ${kcsa_sources})
-target_link_libraries(gnuradio-kcsa ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} volk_gnsssdr)
+target_link_libraries(gnuradio-kcsa ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
 set_target_properties(gnuradio-kcsa PROPERTIES DEFINE_SYMBOL "gnuradio_kcsa_EXPORTS")
 
 if(APPLE)
