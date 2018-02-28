@@ -1,0 +1,5 @@
+TTC_V04 knonw issues
+1. clock buffer use too much power
+2. TPS62130 output capacitor should increase
+3. MMCX connect CN201 need to rotate 180 degree
+4. add bandpass filter before receiver LNA

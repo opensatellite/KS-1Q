@@ -1,0 +1,15 @@
+"G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armjlink.dll" 
+
+"F:\¿Æ´´º½Ìì\KS01_EPS_FW02\IAR\Debug\Exe\EPS.out" 
+
+--plugin "G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--device_macro "G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader "G:\Program Files (x86)\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\ST\FlashSTM32F105xB.board" 
+
+
+
+
