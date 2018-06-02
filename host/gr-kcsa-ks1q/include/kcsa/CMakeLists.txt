@@ -21,7 +21,7 @@
 # Install public header files
 ########################################################################
 install(FILES
-    api.h
+     api.h
     kiss_server.h
     ccsds_tc.h
     ccsds_udp_tc.h
@@ -34,6 +34,7 @@ install(FILES
     clock_recovery_gardner_cc.h
     halfduplex_tc.h
     pdu_to_stream.h
+    pdu_to_stream2.h 
     byte_interpolator.h
     gating_cbc.h
     afsk1200_raw_rx.h
@@ -43,5 +44,5 @@ install(FILES
     sync_det_b.h
     halfduplex_pdu_to_stream.h
     fullduplex_pdu_to_stream.h
-    pdu_to_stream2.h DESTINATION include/kcsa
+    power_sensor.h DESTINATION include/kcsa
 )

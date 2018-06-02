@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>808</width>
-    <height>759</height>
+    <height>763</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,7 @@
         <string>CSP</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
-        <item row="5" column="0">
+        <item row="6" column="0">
          <spacer name="horizontalSpacer_2">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -52,7 +52,7 @@
           </property>
          </spacer>
         </item>
-        <item row="5" column="2">
+        <item row="6" column="2">
          <spacer name="horizontalSpacer">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
@@ -65,7 +65,7 @@
           </property>
          </spacer>
         </item>
-        <item row="3" column="1">
+        <item row="4" column="1">
          <layout class="QHBoxLayout" name="horizontalLayout" stretch="3,1">
           <item>
            <widget class="QLineEdit" name="tcphost">
@@ -89,7 +89,7 @@
           </item>
          </layout>
         </item>
-        <item row="5" column="1">
+        <item row="6" column="1">
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
            <widget class="QLabel" name="tcpstatus">
@@ -127,7 +127,7 @@
           </property>
          </spacer>
         </item>
-        <item row="12" column="1">
+        <item row="13" column="1">
          <spacer name="verticalSpacer_4">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
@@ -140,26 +140,43 @@
           </property>
          </spacer>
         </item>
-        <item row="7" column="1">
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item row="8" column="1">
+         <layout class="QHBoxLayout" name="mode_select">
           <item>
            <widget class="QLabel" name="label_2">
             <property name="text">
-             <string>Record</string>
+             <string>Mode</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_18"/>
+           <widget class="QRadioButton" name="mode_mission">
+            <property name="text">
+             <string>Mission</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mode_groundtest">
+            <property name="text">
+             <string>GroundTest</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="mode_groundtest_2">
+            <property name="text">
+             <string>Playback</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
          </layout>
-        </item>
-        <item row="8" column="1">
-         <widget class="QPushButton" name="csptest">
-          <property name="text">
-           <string>Test</string>
-          </property>
-         </widget>
         </item>
         <item row="1" column="1">
          <widget class="QTextEdit" name="binaryEditor"/>
@@ -168,6 +185,13 @@
          <widget class="QPushButton" name="inject">
           <property name="text">
            <string>Inject</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="csptest">
+          <property name="text">
+           <string>CSPTest</string>
           </property>
          </widget>
         </item>
@@ -1889,7 +1913,7 @@ Timeout</string>
      <x>0</x>
      <y>0</y>
      <width>808</width>
-     <height>25</height>
+     <height>28</height>
     </rect>
    </property>
   </widget>

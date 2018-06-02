@@ -14,13 +14,13 @@
   <param>
     <name>Filler</name>
     <key>filler</key>
-    <value>0x00</value>
+    <value>0x55</value>
     <type>raw</type>
   </param>
   <sink>
     <name>in</name>
     <type>complex</type>
-  </sink> 
+  </sink>
   <sink>
     <name>pdu</name>
     <type>message</type>
@@ -34,4 +34,3 @@
     <type>byte</type>
   </source>
 </block>
-

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<block>
+  <name>Power Sensor</name>
+  <key>kcsa_power_sensor</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.power_sensor($decim, $cal)</make>
+  <param>
+    <name>Decimation</name>
+    <key>decim</key>
+    <value>1024</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Cal offset</name>
+    <key>cal</key>
+    <value>0</value>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <optional>1</optional>
+  </source>
+</block>

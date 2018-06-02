@@ -39,13 +39,6 @@ install(FILES
     kcsa_sync_det_b.xml
     kcsa_halfduplex_pdu_to_stream.xml
     kcsa_fullduplex_pdu_to_stream.xml
-    kcsa_feedforward_agc.xml
-    variable_kcsa_pncode.xml
-    kcsa_dsss_rx.xml
-    kcsa_dsss_tx.xml
-    #kcsa_psk_rx.xml
-    #kcsa_framesync.xml
-    kcsa_qpskdiffsplit.xml
     kcsa_power_sensor.xml
     kcsa_pdu_to_stream2.xml DESTINATION share/gnuradio/grc/blocks
 )

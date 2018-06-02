@@ -50,6 +50,7 @@ list(APPEND kcsa_sources
     clock_recovery_gardner_cc_impl.cc
     halfduplex_tc_impl.cc
     pdu_to_stream_impl.cc
+    pdu_to_stream2_impl.cc
     byte_interpolator_impl.cc
     gating_cbc_impl.cc
     afsk1200_raw_rx_impl.cc
@@ -59,7 +60,7 @@ list(APPEND kcsa_sources
     sync_det_b_impl.cc
     halfduplex_pdu_to_stream_impl.cc
     fullduplex_pdu_to_stream_impl.cc
-    pdu_to_stream2_impl.cc
+    power_sensor_impl.cc
 )
 
 set(kcsa_sources "${kcsa_sources}" PARENT_SCOPE)

@@ -20,6 +20,7 @@
 #include "kcsa/clock_recovery_gardner_cc.h"
 #include "kcsa/halfduplex_tc.h"
 #include "kcsa/pdu_to_stream.h"
+#include "kcsa/pdu_to_stream2.h"
 #include "kcsa/byte_interpolator.h"
 #include "kcsa/gating_cbc.h"
 #include "kcsa/afsk1200_raw_rx.h"
@@ -29,7 +30,7 @@
 #include "kcsa/sync_det_b.h"
 #include "kcsa/halfduplex_pdu_to_stream.h"
 #include "kcsa/fullduplex_pdu_to_stream.h"
-#include "kcsa/pdu_to_stream2.h"
+#include "kcsa/power_sensor.h"
 %}
 
 %include "kcsa/kiss_server.h"
@@ -54,6 +55,9 @@ GR_SWIG_BLOCK_MAGIC2(kcsa, clock_recovery_gardner_ff);
 GR_SWIG_BLOCK_MAGIC2(kcsa, clock_recovery_gardner_cc);
 %include "kcsa/halfduplex_tc.h"
 GR_SWIG_BLOCK_MAGIC2(kcsa, halfduplex_tc);
+%include "kcsa/power_sensor.h"
+GR_SWIG_BLOCK_MAGIC2(kcsa, power_sensor);
+
 
 
 %include "kcsa/pdu_to_stream.h"

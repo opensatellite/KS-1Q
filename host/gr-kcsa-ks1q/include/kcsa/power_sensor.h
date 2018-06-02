@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /*
- * Copyright 2017 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2018 <+YOU OR YOUR COMPANY+>.
  *
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
  */
 
 
-#ifndef INCLUDED_KCSA_SYNC_DET_B_H
-#define INCLUDED_KCSA_SYNC_DET_B_H
+#ifndef INCLUDED_KCSA_POWER_SENSOR_H
+#define INCLUDED_KCSA_POWER_SENSOR_H
 
 #include <kcsa/api.h>
-#include <gnuradio/sync_block.h>
+#include <gnuradio/sync_decimator.h>
 
 namespace gr {
   namespace kcsa {
@@ -33,25 +33,27 @@ namespace gr {
      * \ingroup kcsa
      *
      */
-    class KCSA_API sync_det_b : virtual public gr::sync_block
+    class KCSA_API power_sensor : virtual public gr::sync_decimator
     {
      public:
-      typedef boost::shared_ptr<sync_det_b> sptr;
+      typedef boost::shared_ptr<power_sensor> sptr;
 
       /*!
-       * \brief Return a shared_ptr to a new instance of kcsa::sync_det_b.
+       * \brief Return a shared_ptr to a new instance of kcsa::power_sensor.
        *
-       * To avoid accidental use of raw pointers, kcsa::sync_det_b's
+       * To avoid accidental use of raw pointers, kcsa::power_sensor's
        * constructor is in a private implementation
-       * class. kcsa::sync_det_b::make is the public interface for
+       * class. kcsa::power_sensor::make is the public interface for
        * creating new instances.
        */
+      static sptr make(int decim, float cal);
 
-       //len_mode : true = fixed, false = variable
-      static sptr make(uint64_t sync_word, uint64_t sync_mask, bool len_mode, int len, uint8_t nrz, int maxerrs);
+      virtual float power() = 0;
+      virtual float cal() = 0;
+      virtual void set_cal(float _cal) = 0;
     };
 
   } // namespace kcsa
 } // namespace gr
 
-#endif /* INCLUDED_KCSA_SYNC_DET_B_H */
+#endif /* INCLUDED_KCSA_POWER_SENSOR_H */

@@ -316,7 +316,10 @@ void MainWindow::on_csptest_clicked()
         0,0,0,0,0,0,0,0,0,0,0,0,0,0xff,0xff,0xff,
         0xff,0x01,0x73,0x4c,0xfa,0x0b,0xd1,0x92,0x74,0xc0
     };
-    csp_kiss_rx(&csp_if_kiss, testdata, sizeof(testdata), NULL);
+    if(ui->mode_groundtest->isChecked()) {
+        //only used in ground test mode
+        csp_kiss_rx(&csp_if_kiss, testdata, sizeof(testdata), NULL);
+    }
 }
 
 void MainWindow::on_camoff_clicked()
@@ -560,5 +563,7 @@ void MainWindow::on_inject_clicked()
     QByteArray injectdata = QByteArray::fromHex(hextext2.toLatin1());
     //print_packet_bytes((uint8_t*)leddata.data(), leddata.length());
 
-    csp_kiss_rx(&csp_if_kiss, (uint8_t*)injectdata.data(), injectdata.length(), NULL);
+    if(ui->mode_groundtest->isChecked()) {
+        csp_kiss_rx(&csp_if_kiss, (uint8_t*)injectdata.data(), injectdata.length(), NULL);
+    }
 }

@@ -38,7 +38,8 @@ namespace gr {
          //message input buffer
          std::queue<uint8_t> q;
          gr::thread::mutex d_mutex;
-         double rem_samples;
+         int to_fill;
+         long double rem_samples;
 
          void pdu_callback(pmt::pmt_t msg);
 

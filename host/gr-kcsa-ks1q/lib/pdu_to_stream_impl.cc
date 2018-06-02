@@ -1,17 +1,17 @@
 /* -*- c++ -*- */
-/* 
+/*
  * Copyright 2016 <+YOU OR YOUR COMPANY+>.
- * 
+ *
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3, or (at your option)
  * any later version.
- * 
+ *
  * This software is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this software; see the file COPYING.  If not, write to
  * the Free Software Foundation, Inc., 51 Franklin Street,
@@ -41,7 +41,8 @@ namespace gr {
     pdu_to_stream_impl::pdu_to_stream_impl(int decim, uint8_t filler)
       : gr::sync_decimator("pdu_to_stream",
               gr::io_signature::make(1, 1, sizeof(gr_complex)),
-              gr::io_signature::make(2, 2, sizeof(uint8_t)), decim)
+              gr::io_signature::make(2, 2, sizeof(uint8_t)), decim),
+        d_filler(filler)
     {
         d_pdu_port = pmt::mp("pdu");
         message_port_register_in(d_pdu_port);
@@ -66,7 +67,7 @@ namespace gr {
 
         gr::thread::scoped_lock guard(d_mutex);
         for(size_t i = 0; i < msg_len; i++)
-        {    
+        {
             q.push(bytes_in[i]);
         }
     }
@@ -106,4 +107,3 @@ namespace gr {
 
   } /* namespace kcsa */
 } /* namespace gr */
-
