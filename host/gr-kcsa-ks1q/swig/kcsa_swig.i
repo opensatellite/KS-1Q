@@ -84,3 +84,4 @@ GR_SWIG_BLOCK_MAGIC2(kcsa, halfduplex_pdu_to_stream);
 GR_SWIG_BLOCK_MAGIC2(kcsa, fullduplex_pdu_to_stream);
 %include "kcsa/pdu_to_stream2.h"
 GR_SWIG_BLOCK_MAGIC2(kcsa, pdu_to_stream2);
+

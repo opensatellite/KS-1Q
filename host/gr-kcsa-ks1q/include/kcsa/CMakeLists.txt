@@ -44,5 +44,6 @@ install(FILES
     sync_det_b.h
     halfduplex_pdu_to_stream.h
     fullduplex_pdu_to_stream.h
-    power_sensor.h DESTINATION include/kcsa
+    power_sensor.h
+    DESTINATION include/kcsa
 )

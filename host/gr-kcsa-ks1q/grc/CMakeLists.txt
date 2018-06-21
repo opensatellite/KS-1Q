@@ -40,5 +40,6 @@ install(FILES
     kcsa_halfduplex_pdu_to_stream.xml
     kcsa_fullduplex_pdu_to_stream.xml
     kcsa_power_sensor.xml
-    kcsa_pdu_to_stream2.xml DESTINATION share/gnuradio/grc/blocks
+    kcsa_pdu_to_stream2.xml
+    DESTINATION share/gnuradio/grc/blocks
 )

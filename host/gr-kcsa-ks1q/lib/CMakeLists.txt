@@ -61,7 +61,7 @@ list(APPEND kcsa_sources
     halfduplex_pdu_to_stream_impl.cc
     fullduplex_pdu_to_stream_impl.cc
     power_sensor_impl.cc
-)
+    )
 
 set(kcsa_sources "${kcsa_sources}" PARENT_SCOPE)
 if(NOT kcsa_sources)
