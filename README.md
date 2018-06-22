@@ -9,7 +9,7 @@ Opensat first generation cubesat bus
 # Features
 * Complete Cubesat bus design: hardware + software + documents
 * Payloads: camera, LED array, radiation dosimeter
-* Onboard computer: STM32F4, software stack including RTOS, FS, CANbus, libcsp, navigation, logging
+* Onboard computer: STM32F4, software stack including RTOS, FS, CANbus, libcsp (Cubesat Space Protocol), navigation, logging
 * Onboard communications: half duplex or full duplex on amateur VHF and UHF band (140-148MHz, 430-440MHz). Tx power 2W, Rx sensitivity -113dBm @ 10kbps. FPGA radio baseband compliant to CCSDS standard, with libcsp support. 
 * Power system: MPPT solar charging, battery management, power distribution, safety switch, magnetorquer driver, sun sensor input, EED driver and RTC clock. Telemetry and protection for all critical components.
 * Ground control: Qt based UI, provide display and control for all onboard modules.
@@ -17,6 +17,8 @@ Opensat first generation cubesat bus
 * Documents: interface control document (ICD) and safety report submit to launch service provider, including mechanical stress test and EMC test report. Brief product introduction, schematic and flowgraph for all modules.
 
 # Latest features
+* 2016/11/3: fix radio telemetry packet early-ending problem.
+* 2016/11/20: fix battery under-voltage protection issues.
 * 2018/6/2: gr-kcsa-ks1q pdu_to_stream2 support fractional decimation ratio.
 
 # Project folders
@@ -57,7 +59,13 @@ Opensat first generation cubesat bus
   * Ground control: Qt 5.2+ ( it's free )
   * Radio transceiver: Ubuntu with Gnuradio 3.7.10+, UHD 003.010.001+ installed. ( USRP B210 only supported in UHD 003.010.001+, windows virtual machine won't work. )
 
-# TODO
+# How to use
   * work in progress
 
+# TODO list
+  * Move all firmware to gcc toolchain
+  * Web based ground control 
+  * Onboard scripting support
+  * OBC firmware upgrade support
+  * Better half-duplex radio link.
 
