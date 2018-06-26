@@ -10,7 +10,7 @@ Opensat first generation cubesat bus
 * Complete Cubesat bus design: hardware + software + documents
 * Payloads: camera, LED array, radiation dosimeter
 * Onboard computer: STM32F4, software stack including RTOS, FS, CANbus, libcsp (Cubesat Space Protocol), navigation, logging
-* Onboard communications: half duplex or full duplex on amateur VHF and UHF band (140-148MHz, 430-440MHz). Tx power 2W, Rx sensitivity -113dBm @ 10kbps. FPGA radio baseband compliant to CCSDS standard, with libcsp support. 
+* Onboard communications: half duplex or full duplex on amateur VHF and UHF band (140-148MHz, 430-440MHz). Tx power 2W, Rx sensitivity -113dBm @ 10kbps, both tx and rx support 2k~500kbps rate. FPGA radio baseband compliant to CCSDS standard, with libcsp support. With USRP B210, downlink rx sensitivity -126dBm @ 10kbps.
 * Power system: MPPT solar charging, battery management, power distribution, safety switch, magnetorquer driver, sun sensor input, EED driver and RTC clock. Telemetry and protection for all critical components.
 * Ground control: Qt based UI, provide display and control for all onboard modules.
 * Gnuradio extension: custom OOT module gr-kcsa-ks1q for telemetry and telecommand. Contains necessary blocks for building custom satellite transceivers.
@@ -24,7 +24,7 @@ Opensat first generation cubesat bus
 # Project folders
 * documents: system design documents, intro pages, ICD and safety report.
 * firmware: embedded software for all onborad modules.
-  * firmware/binary: prebuilt firmware images. 
+  * firmware/binary: prebuilt firmware images.
   * firmware/(MODULE)_FW(VER)/: firmware VER, code and project files for MODULE.
   * firmware/(MODULE)_FW(VER)_flowgraph.pdf: firmware VER program flowgraph for MODULE.
   * firmware/(MODULE)_FW_ChangeLog.txt: firmware changelog for MODULE.
@@ -71,51 +71,51 @@ Opensat first generation cubesat bus
 * Preparing - how to install gnuradio and usrp driver
   * if using Ubuntu 18.04, use `sudo apt install gnuradio-dev uhd-host` is the easist way
   * if using Ubuntu 16.04, compile and install gnuradio from source ( http://github.com/gnuradio/gnuradio ) by yourself, usrp driver must use latest PPA ( https://files.ettus.com/manual/page_install.html )
-    `sudo add-apt-repository ppa:ettusresearch/uhd
-    `sudo apt-get update
-    `sudo apt-get install libuhd-dev libuhd003 uhd-host
+    * `sudo add-apt-repository ppa:ettusresearch/uhd`
+    * `sudo apt-get update`
+    * `sudo apt-get install libuhd-dev libuhd003 uhd-host`
   * other linux distribution not tested, compile on your own is suggested.
 * Install host software
   * Install ubuntu linux
   * Install gnuradio and usrp driver
   * Build and install libcsp
-    # cd KS-1Q/host/csp
-    # ./build_csp.sh && sudo ./install_csp.sh
+    * `cd KS-1Q/host/csp`
+    * `./build_csp.sh`
+    * `sudo ./install_csp.sh`
   * Build KS1GCS
-    launch QtCreator, open project KS-1Q/host/KS1GCS/KS1GCS.pro
-    press `Build` button ( the hammer icon near left-bottom )
+    * launch QtCreator, open project KS-1Q/host/KS1GCS/KS1GCS.pro
+    * press `Build` button ( the hammer icon near left-bottom )
 * Load bootloader / firmware
   * Step 1: Connect KS1 debug tool to KS-1Q
   * Step 2: Connect stlink or jlink to EPS SWD port
   * Step 3: Connect li-ion battery charger to CHARGE port
   * Step 4: Set EPS_RBF switch to `UNLOCK` position
   * Step 5: Load KS1_EPS_FW03 (firmware) to KS1_EPS module
-            -> if failed, check STM32 on KS1_EPS have power supply
-            -> possible reason: RBF in `LOCK` position or battery rans out.
+    * if failed, check STM32 on KS1_EPS have power supply
+    * possible reason: RBF in `LOCK` position or battery rans out.
   * Step 6: Set TTC_DEBUG_SELECT switch to `JTAG` position
   * Step 7: Load TTC_V04_FPGA (fpga bitstream) to TTC module
-            -> if failed, check TTC module have power supply.
-            -> possible reason: KS1_EPS no output. 
-            -> RBF unlocked ? KS1_EPS firmware loaded ? 
+    * if failed, check TTC module have power supply.
+    * possible reason: KS1_EPS no output.
+    * RBF unlocked ? KS1_EPS firmware loaded ?
   * Step 8: Set TTC_DEBUG_SELECT switch to `SWD` position
   * Step 9: Load TTC_V04_FW00 to TTC module
-            -> if failed, check TTC module have power supply.
+    * if failed, check TTC module have power supply.
   * Step 10: connect USRP to host USB3.0 port
-  * Step 11: Run gnuradio to establish wireless connection to KS-1Q. 
-	    # cd KS-1Q/host/KS1GCS/
-            # python ccsds-halfduplex-tcpserver2.py
-	    to edit flowgraph, run gnuradio-companion and open KS-1Q/host/gr-kcsa-ks1q/examples/ccsds-halfduplex-tcpserver2.grc
+  * Step 11: Run gnuradio to establish wireless connection to KS-1Q.
+	* cd KS-1Q/host/KS1GCS/
+    * python ccsds-halfduplex-tcpserver2.py
+	* to edit flowgraph, run gnuradio-companion and open KS-1Q/host/gr-kcsa-ks1q/examples/ccsds-halfduplex-tcpserver2.grc
   * Step 12: Run KS1GCS, then click `Connect` button.
   * Step 13: Send telecommand to enable OBC power. click `EPS` page in KS1GCS, then click `OBC on` button. if success, EPS telemetry PwrOBC will change to nonzero value after ~10seconds.
-            -> Now OBC have power supply
+    * Now OBC have power supply
   * Step 14: Load OBC_2D_FW03 to OBC module.
-            -> if failed, check OBC module have power supply.
-            -> use an external power supply ( equal to battery voltage, 7.2~8.4V ) can power on OBC directly. here step 10 - 13 is not required.
+    * if failed, check OBC module have power supply.
+    * use an external power supply ( equal to battery voltage, 7.2~8.4V ) can power on OBC directly. here step 10 - 13 is not required.
 
 # TODO list
   * Move all firmware to gcc toolchain
-  * Web based ground control 
+  * Web based ground control
   * Onboard scripting support
   * OBC firmware upgrade support
   * Better half-duplex radio link.
-
