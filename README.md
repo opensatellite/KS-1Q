@@ -54,13 +54,63 @@ Opensat first generation cubesat bus
   * http://kcsa.taobao.com ( work in progress )
 
 # Build environment
-  * Firmware: IAR EWARM 7.2+ ( commerical toolchain. gcc support work in progress )
-  * FPGA: Microsemi Libero SoC 11.3+ ( it's free, see licensing section in https://www.microsemi.com/product-directory/design-resources/1750-libero-soc  )
-  * Ground control: Qt 5.2+ ( it's free )
-  * Radio transceiver: Ubuntu with Gnuradio 3.7.10+, UHD 003.010.001+ installed. ( USRP B210 only supported in UHD 003.010.001+, windows virtual machine won't work. )
+* Firmware: IAR EWARM 7.2+ ( commerical toolchain. gcc support work in progress )
+* FPGA: if you want to recompile fpga logics, install Microsemi Libero SoC 11.3+ ( it's free, see licensing section in https://www.microsemi.com/product-directory/design-resources/1750-libero-soc  )
+* Ground control: Qt 5.2+ ( it's free )
+* Radio transceiver: Ubuntu with Gnuradio 3.7.10+, UHD 003.010.001+ installed. ( USRP B210 only supported in UHD 003.010.001+, windows virtual machine won't work. )
+* STLink utility: if using stlink debugger, need this for firmware hex download. ( download link https://www.st.com/en/development-tools/stsw-link004.html )
+* J-Flash: if using jlink debugger, need this for firmware hex download. ( shipped with your jlink )
 
 # How to use
-  * work in progress
+* Preparing - how to load mcu firmware
+  * if build with source, configure debugger in IAR `Project Settings`, then use `Download and debug` button.
+  * if loading prebuilt image, use STLink utility or J-Flash.
+* Preparing - how to load fpga image
+  * if build with source, use `Program Device` in Libero SoC. ( https://www.eecs.umich.edu/courses/eecs373/labs/LiberoRefGuides/projectflow_SoC.html )
+  * if loading prebuilt image, use FlashPro software, user guide here http://coredocs.s3.amazonaws.com/Libero/11_7_0/Tool/flashpro_ug.pdf
+* Preparing - how to install gnuradio and usrp driver
+  * if using Ubuntu 18.04, use `sudo apt install gnuradio-dev uhd-host` is the easist way
+  * if using Ubuntu 16.04, compile and install gnuradio from source ( http://github.com/gnuradio/gnuradio ) by yourself, usrp driver must use latest PPA ( https://files.ettus.com/manual/page_install.html )
+    `sudo add-apt-repository ppa:ettusresearch/uhd
+    `sudo apt-get update
+    `sudo apt-get install libuhd-dev libuhd003 uhd-host
+  * other linux distribution not tested, compile on your own is suggested.
+* Install host software
+  * Install ubuntu linux
+  * Install gnuradio and usrp driver
+  * Build and install libcsp
+    # cd KS-1Q/host/csp
+    # ./build_csp.sh && sudo ./install_csp.sh
+  * Build KS1GCS
+    launch QtCreator, open project KS-1Q/host/KS1GCS/KS1GCS.pro
+    press `Build` button ( the hammer icon near left-bottom )
+* Load bootloader / firmware
+  * Step 1: Connect KS1 debug tool to KS-1Q
+  * Step 2: Connect stlink or jlink to EPS SWD port
+  * Step 3: Connect li-ion battery charger to CHARGE port
+  * Step 4: Set EPS_RBF switch to `UNLOCK` position
+  * Step 5: Load KS1_EPS_FW03 (firmware) to KS1_EPS module
+            -> if failed, check STM32 on KS1_EPS have power supply
+            -> possible reason: RBF in `LOCK` position or battery rans out.
+  * Step 6: Set TTC_DEBUG_SELECT switch to `JTAG` position
+  * Step 7: Load TTC_V04_FPGA (fpga bitstream) to TTC module
+            -> if failed, check TTC module have power supply.
+            -> possible reason: KS1_EPS no output. 
+            -> RBF unlocked ? KS1_EPS firmware loaded ? 
+  * Step 8: Set TTC_DEBUG_SELECT switch to `SWD` position
+  * Step 9: Load TTC_V04_FW00 to TTC module
+            -> if failed, check TTC module have power supply.
+  * Step 10: connect USRP to host USB3.0 port
+  * Step 11: Run gnuradio to establish wireless connection to KS-1Q. 
+	    # cd KS-1Q/host/KS1GCS/
+            # python ccsds-halfduplex-tcpserver2.py
+	    to edit flowgraph, run gnuradio-companion and open KS-1Q/host/gr-kcsa-ks1q/examples/ccsds-halfduplex-tcpserver2.grc
+  * Step 12: Run KS1GCS, then click `Connect` button.
+  * Step 13: Send telecommand to enable OBC power. click `EPS` page in KS1GCS, then click `OBC on` button. if success, EPS telemetry PwrOBC will change to nonzero value after ~10seconds.
+            -> Now OBC have power supply
+  * Step 14: Load OBC_2D_FW03 to OBC module.
+            -> if failed, check OBC module have power supply.
+            -> use an external power supply ( equal to battery voltage, 7.2~8.4V ) can power on OBC directly. here step 10 - 13 is not required.
 
 # TODO list
   * Move all firmware to gcc toolchain

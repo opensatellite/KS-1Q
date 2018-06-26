@@ -49,7 +49,7 @@
   * OBC ( 星载计算机 ) 模块
   * NI USRP B210 ( 其他的SDR收发机例如LimeSDR也可以使用, 需要进行一些软件修改 )
   * KS-1Q电缆束
-  * KS1调试工具 ( 包括一个接线板卡, 2个stlink或jlink, 1个flashpro 4 )
+  * KS1_DEBUG_TOOL ( 调试工具, 包括一个接线板卡, 2个stlink或jlink, 1个flashpro4 )
 * 购买渠道
   * http://deepace.net
   * http://kcsa.taobao.com ( 建设中 )
@@ -59,9 +59,59 @@
   * FPGA: Microsemi Libero SoC 11.3+ ( 免费, 在此处申请license: https://www.microsemi.com/product-directory/design-resources/1750-libero-soc  )
   * 地面控制软件: Qt 5.2以上 ( 免费 )
   * 软件无线电收发: Ubuntu系统, 安装了Gnuradio 3.7.10+, UHD 003.010.001+ ( 只有UHD 003.010.001以上版本支持USRP B210, 无法使用Windows系统的虚拟机运行. )
+  * STLink utility: ST-Link调试器使用这个软件进行HEX固件下载。 ( 软件下载链接 https://www.st.com/en/development-tools/stsw-link004.html )
+  * J-Flash: JLink调试器使用这个软件进行HEX固件下载 ( JLink购买处附带 )
 
 # 使用方法
-  * 完善中
+* 准备工作 - 下载MCU固件
+  * 使用源码编译下载: 在IAR的`Project Settings`菜单, 选择你使用的Debugger, 然后点击`Download and debug`按钮。
+  * 载入预先编译好的固件: 使用STLink utility或者J-Flash.
+* 准备工作 - 下载FPGA固件
+  * 使用源码编译下载: 使用Libero SoC的`Program Device`功能页面. ( 教程页面 https://www.eecs.umich.edu/courses/eecs373/labs/LiberoRefGuides/projectflow_SoC.html )
+  * 载入预先编译好的固件: 安装FlashPro软件, 使用说明书: http://coredocs.s3.amazonaws.com/Libero/11_7_0/Tool/flashpro_ug.pdf
+* 准备工作 - 安装Gnuradio和USRP驱动程序
+  * 如果系统是Ubuntu 18.04, 最简单的方法是运行命令`sudo apt install gnuradio-dev uhd-host`
+  * 如果系统是Ubuntu 16.04, 需要从源码编译安装Gnuradio ( 源码链接 http://github.com/gnuradio/gnuradio ), USRP驱动程序使用最新的PPA源安装 ( 教程页面 https://files.ettus.com/manual/page_install.html )
+    `sudo add-apt-repository ppa:ettusresearch/uhd
+    `sudo apt-get update
+    `sudo apt-get install libuhd-dev libuhd003 uhd-host
+  * 其他Linux发行版还没有测试过,推荐的方法是自行从源码编译安装
+* 安装地面控制软件
+  * 安装Ubuntu系统
+  * 安装安装Gnuradio和USRP驱动程序
+  * 编译安装libcsp
+    # cd KS-1Q/host/csp
+    # ./build_csp.sh && sudo ./install_csp.sh
+  * 安装KS1GCS
+    运行QtCreator, 打开工程文件 KS-1Q/host/KS1GCS/KS1GCS.pro
+    点击`Build` ( 靠近左下角的锤子图标 )
+* 载入bootloader/固件
+  * 步骤1: 将KS1 Debug Tool连接到KS-1Q
+  * 步骤2: 将STLink或者JLink连接到EPS SWD端口
+  * 步骤3: 将锂电池充电器连接到CHARGE端口
+  * 步骤4: EPS_RBF开关切换到`UNLOCK`
+  * 步骤5: 下载KS1_EPS_FW03固件到KS1_EPS模块
+            -> 如果下载失败,检查KS1_EPS内部的STM32供电是否正常
+            -> 可能的原因: RBF开关设置到`LOCK`位置, KS1_EPS没有安装电池，或者电池已经耗尽。
+  * 步骤6: TTC_DEBUG_SELECT开关切换到`JTAG`位置
+  * 步骤7: 下载TTC_V04_FPGA (FPGA位流) 到TTC模块
+            -> 如果下载失败,检查TTC模块供电是否正常.
+            -> 可能的原因: KS1_EPS没有为TTC模块供电. 
+            -> RBF开关设置到`Unlock`位置? KS1_EPS固件已经装载? 
+  * 步骤8: TTC_DEBUG_SELECT开关切换到`SWD`位置
+  * 步骤9: 下载TTC_V04_FW00到TTC模块
+            -> 如果下载失败,检查TTC模块供电是否正常.
+  * 步骤10: 将USRP连接到主机的USB3.0端口
+  * 步骤11: 通过Gnuradio与KS-1Q建立测控链路
+	    # cd KS-1Q/host/KS1GCS/
+            # python ccsds-halfduplex-tcpserver2.py
+	    若要编辑Gnuradio的处理流图, 运行gnuradio-companion命令, 然后打开KS-1Q/host/gr-kcsa-ks1q/examples/ccsds-halfduplex-tcpserver2.grc文件
+  * 步骤12: 运行KS1GCS, 点击`连接`按钮
+  * 步骤13: 发送遥控指令开启OBC电源. 点击KS1GCS的`EPS`页面, 然后点击`OBC开启`按钮. 成功后,EPS遥测量PwrOBC会在大约10秒之后变为一个非零数值
+            -> 现在, OBC电源已经开启
+  * 步骤14: 下载OBC_2D_FW03到OBC模块
+            -> 如果下载失败,检查OBC模块供电是否正常.
+            -> 使用一个外部电源(与电池电压相同, 7.2～8.4V之间)可以直接启动OBC. 这样做可以省去步骤10-13.
 
 # 待做事项
   * 所有的固件转移到gcc工具链
