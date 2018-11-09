@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<block>
+  <name>PSK Receiver</name>
+  <key>kcsa_psk_rx</key>
+  <category>[KCSA]</category>
+  <import>import kcsa</import>
+  <make>kcsa.psk_rx($mod, $sps, $sym_rate, $sym_rate_dev, $sym_bw, $carr_rate, $carr_rate_dev, $carr_bw)</make>
+  <param>
+      <name>Mod</name>
+      <key>mod</key>
+      <value>0</value>
+      <type>int</type>
+      <option>
+          <name>BPSK</name>
+          <key>0</key>
+      </option>
+      <option>
+          <name>QPSK</name>
+          <key>1</key>
+      </option>
+      <option>
+          <name>8PSK</name>
+          <key>2</key>
+      </option>
+  </param>
+  <param>
+      <name>sps</name>
+      <key>sps</key>
+      <value>4</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Symbol Rate</name>
+      <key>sym_rate</key>
+      <value>1.0</value>
+      <type>real</type>
+  </param>
+  <param>
+      <name>Symbol Rate Dev</name>
+      <key>sym_rate_dev</key>
+      <value>0.001</value>
+      <type>real</type>
+  </param>
+  <param>
+      <name>Symbol Loop BW</name>
+      <key>sym_bw</key>
+      <value>0.01</value>
+      <type>real</type>
+  </param>
+  <param>
+      <name>Carrier Rate</name>
+      <key>carr_rate</key>
+      <value>0.0</value>
+      <type>real</type>
+  </param>
+  <param>
+      <name>Carrier Rate Dev</name>
+      <key>carr_rate_dev</key>
+      <value>3.1416/2.0</value>
+      <type>real</type>
+  </param>
+  <param>
+      <name>Carrier Loop BW</name>
+      <key>carr_bw</key>
+      <value>0.01</value>
+      <type>real</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

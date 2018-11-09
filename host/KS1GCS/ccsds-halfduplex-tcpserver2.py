@@ -28,7 +28,7 @@ from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from gnuradio.qtgui import Range, RangeWidget
 from optparse import OptionParser
-import gpredict
+#import gpredict
 import kcsa
 import math
 import numpy as np
@@ -249,7 +249,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.kcsa_halfduplex_tc_0 = kcsa.halfduplex_tc(1, 0, True, 128, 4)
         self.kcsa_fec_decode_b_0_0_0 = kcsa.fec_decode_b(223, False, False, True, False)
         self.kcsa_fec_decode_b_0_0 = kcsa.fec_decode_b(223, False, False, True, False)
-        self.gpredict_doppler_0 = gpredict.doppler(self.set_fcorr, "localhost", 4532, True)
+        #self.gpredict_doppler_0 = gpredict.doppler(self.set_fcorr, "localhost", 4532, True)
         self.freq_xlating_fir_filter_xxx_0 = filter.freq_xlating_fir_filter_ccc(down_decim, (lpf_taps), vfo+fcorr, down_samprate)
         self.fir_filter_xxx_0 = filter.fir_filter_fff(1024, (np.ones(1024)/1024))
         self.fir_filter_xxx_0.declare_sample_delay(0)

@@ -45,5 +45,5 @@ install(FILES
     halfduplex_pdu_to_stream.h
     fullduplex_pdu_to_stream.h
     power_sensor.h
-    DESTINATION include/kcsa
+    psk_rx.h DESTINATION include/kcsa
 )

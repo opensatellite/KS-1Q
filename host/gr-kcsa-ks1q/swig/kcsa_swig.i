@@ -31,6 +31,7 @@
 #include "kcsa/halfduplex_pdu_to_stream.h"
 #include "kcsa/fullduplex_pdu_to_stream.h"
 #include "kcsa/power_sensor.h"
+#include "kcsa/psk_rx.h"
 %}
 
 %include "kcsa/kiss_server.h"
@@ -85,3 +86,5 @@ GR_SWIG_BLOCK_MAGIC2(kcsa, fullduplex_pdu_to_stream);
 %include "kcsa/pdu_to_stream2.h"
 GR_SWIG_BLOCK_MAGIC2(kcsa, pdu_to_stream2);
 
+%include "kcsa/psk_rx.h"
+GR_SWIG_BLOCK_MAGIC2(kcsa, psk_rx);
