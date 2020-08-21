@@ -64,11 +64,11 @@ void halfduplex_pdu_to_stream_impl::pdu_callback(pmt::pmt_t msg)
 {
     size_t msg_len;
     size_t i = 0;
-    uint32_t mask = (0x1 << d_syncbits) - 1;
-    uint32_t syncword = 0x55555555;
+    uint32_t mask = (0x1ULL << d_syncbits) - 1;
+    //uint32_t syncword = 0x55555555;
 
-    syncword &= ~mask;
-    syncword |= (d_syncword & mask);
+    //syncword &= ~mask;
+    //syncword |= (d_syncword & mask);
 
     //pmt::pmt_t meta = pmt::car(msg);
     pmt::pmt_t data = pmt::cdr(msg);
@@ -76,7 +76,7 @@ void halfduplex_pdu_to_stream_impl::pdu_callback(pmt::pmt_t msg)
     //get a message, push into queue
     const uint8_t* bytes_in = pmt::u8vector_elements(data, msg_len);
 
-    syncword = BigLittleSwap32(syncword);
+    uint32_t syncword = BigLittleSwap32(d_syncword & mask);
 
     if(!d_flenmode) //False:Variable Frame Length;   True:Fixed Frame Length,don't fill
     {

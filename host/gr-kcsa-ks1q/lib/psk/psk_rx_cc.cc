@@ -3,7 +3,7 @@
 #include <cmath>
 //volk_32fc_32f_dot_prod_32fc_a
 
-
+#define M_TWOPI (2.0f*M_PI)
 #define sign(X) ((X) < 0 ? -1.0 : 1.0)
 #define expj(X) (gr_complex(cosf(X), sinf(X)))
 #define saturate(X, MIN, MAX) ((X) > (MAX) ? (MAX) : ((X) < (MIN) ? (MIN) : (X)))
@@ -129,7 +129,7 @@ void psk_rx_cc::work(const gr_complex *in, int insize, int *consumed, gr_complex
 	int ii = 0, oo = 0;
 	while(1) {
 		if(sym_phase < hb_nsteps) {
-			int idx = floor(sym_phase);
+			int idx = floor(sym_phase < 0 ? 0 : sym_phase);
             //printf("sym_phase: %f, idx: %d\n", sym_phase, idx);
 			// interpolator
             gr_complex y = 0.0;
@@ -139,7 +139,12 @@ void psk_rx_cc::work(const gr_complex *in, int insize, int *consumed, gr_complex
 			sym_phase += sym_adj * hb_nsteps;
             // derotate
             gr_complex yy = y * expj(-carr_phase);
-            carr_phase += carr_adj;
+            float _carr_phase = carr_phase + carr_adj;
+      	    while(_carr_phase > M_TWOPI)
+                _carr_phase -= M_TWOPI;
+            while(_carr_phase < -M_TWOPI)
+                _carr_phase += M_TWOPI;
+	    carr_phase = _carr_phase;
             // matched filter
             mf_pos = (mf_pos + 1 ) % mf_ntaps;
             mf_state[mf_pos] = yy;
