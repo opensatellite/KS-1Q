@@ -40,7 +40,7 @@
   * host/NTCTest: NTC热敏电阻查找表数据生成工具, 更换NTC热敏电阻规格时需要使用.
   * host/gr-kcsa-ks1q: 用于卫星遥测遥控的Gnuradio扩展模块
   * host/KS1GCS: 地面控制软件界面, 使用Qt开发
-
+  * host/WebAPI: 地面控制WebAPI,包括TC、TM、数传数据等, 使用nodejs/python/cpp开发
 # 硬件
 * KS-1Q最小开发套件包括:
   * KS1_EPS ( 电源系统 ) 模块
