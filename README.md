@@ -6,6 +6,8 @@ Opensat first generation cubesat bus
 * Launch Date: 2016/11/11
 * NORAD Object: 2016-066E
 
+<img src="hardware/photo/KS-1Q testing.jpg">
+
 # Features
 * Complete Cubesat bus design: hardware + software + documents
 * Payloads: camera, LED array, radiation dosimeter
