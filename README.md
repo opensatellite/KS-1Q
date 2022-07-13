@@ -41,6 +41,7 @@ Opensat first generation cubesat bus
   * host/NTCTest: onboard NTC temp sensor lookup table generation tool, needed if custom NTC is used.
   * host/gr-kcsa-ks1q: custom OOT module for telemetry and telecommand.
   * host/KS1GCS: ground control user interface, qt based.
+  * host/WebAPI: ground control web interface, nodejs/python based.
 
 # Hardware
 * Minimal KS-1Q devkit including:
